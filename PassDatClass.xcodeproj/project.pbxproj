@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2367286C202D09EF00287175 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23672866202D09EE00287175 /* User.swift */; };
+		2367286D202D09EF00287175 /* SQLInteract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23672867202D09EE00287175 /* SQLInteract.swift */; };
+		2367286E202D09EF00287175 /* Course.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23672868202D09EF00287175 /* Course.swift */; };
+		2367286F202D09EF00287175 /* Sorting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23672869202D09EF00287175 /* Sorting.swift */; };
+		23672870202D09F000287175 /* Search.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2367286A202D09EF00287175 /* Search.swift */; };
+		23672871202D09F000287175 /* Tutor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2367286B202D09EF00287175 /* Tutor.swift */; };
 		65898A95202BF9E600E753E5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65898A94202BF9E600E753E5 /* AppDelegate.swift */; };
 		65898A97202BF9E600E753E5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65898A96202BF9E600E753E5 /* ViewController.swift */; };
 		65898A9A202BF9E600E753E5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65898A98202BF9E600E753E5 /* Main.storyboard */; };
@@ -14,6 +20,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		23672866202D09EE00287175 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		23672867202D09EE00287175 /* SQLInteract.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SQLInteract.swift; sourceTree = "<group>"; };
+		23672868202D09EF00287175 /* Course.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Course.swift; sourceTree = "<group>"; };
+		23672869202D09EF00287175 /* Sorting.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Sorting.swift; sourceTree = "<group>"; };
+		2367286A202D09EF00287175 /* Search.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Search.swift; sourceTree = "<group>"; };
+		2367286B202D09EF00287175 /* Tutor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tutor.swift; sourceTree = "<group>"; };
 		65898A91202BF9E600E753E5 /* PassDatClass.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PassDatClass.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		65898A94202BF9E600E753E5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		65898A96202BF9E600E753E5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -33,9 +45,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		23672865202D09C900287175 /* Objects */ = {
+			isa = PBXGroup;
+			children = (
+				23672868202D09EF00287175 /* Course.swift */,
+				2367286A202D09EF00287175 /* Search.swift */,
+				23672869202D09EF00287175 /* Sorting.swift */,
+				23672867202D09EE00287175 /* SQLInteract.swift */,
+				2367286B202D09EF00287175 /* Tutor.swift */,
+				23672866202D09EE00287175 /* User.swift */,
+			);
+			path = Objects;
+			sourceTree = "<group>";
+		};
 		65898A88202BF9E600E753E5 = {
 			isa = PBXGroup;
 			children = (
+				23672865202D09C900287175 /* Objects */,
 				65898A93202BF9E600E753E5 /* PassDatClass */,
 				65898A92202BF9E600E753E5 /* Products */,
 			);
@@ -132,8 +158,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2367286F202D09EF00287175 /* Sorting.swift in Sources */,
 				65898A97202BF9E600E753E5 /* ViewController.swift in Sources */,
 				65898A95202BF9E600E753E5 /* AppDelegate.swift in Sources */,
+				2367286E202D09EF00287175 /* Course.swift in Sources */,
+				23672871202D09F000287175 /* Tutor.swift in Sources */,
+				2367286D202D09EF00287175 /* SQLInteract.swift in Sources */,
+				2367286C202D09EF00287175 /* User.swift in Sources */,
+				23672870202D09F000287175 /* Search.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
