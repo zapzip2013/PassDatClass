@@ -43,4 +43,9 @@ public class Sorted{
         }
         return ret
     }
+    
+    class func onlyverified(tutors: [Tutor]) -> [Tutor]{
+        return tutors.filter{ $0.fsuverified == true}
+        
+    }
 }
