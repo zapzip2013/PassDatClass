@@ -26,9 +26,6 @@
                                     <constraint firstAttribute="width" secondItem="rZ8-NR-cqC" secondAttribute="height" multiplier="1:1" id="h5U-ir-Kf2"/>
                                 </constraints>
                                 <state key="normal" title="I help" image="12152-large-red-circle"/>
-                                <connections>
-                                    <segue destination="eMx-dP-Upw" kind="show" id="5Q8-dI-4ME"/>
-                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fsw-R0-aj3">
                                 <rect key="frame" x="84" y="376" width="207" height="207"/>
@@ -36,9 +33,6 @@
                                     <constraint firstAttribute="width" secondItem="Fsw-R0-aj3" secondAttribute="height" multiplier="1:1" id="KlI-PT-JBg"/>
                                 </constraints>
                                 <state key="normal" title="Need help" image="12152-large-red-circle"/>
-                                <connections>
-                                    <segue destination="Cl3-xR-Of4" kind="show" id="f4d-Sp-Npi"/>
-                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="NEED HELP" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cye-wE-SeN">
                                 <rect key="frame" x="98" y="429" width="180" height="100"/>
@@ -56,6 +50,26 @@
                                 <rect key="frame" x="16" y="20" width="50" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="hamburger menu"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FiF-zi-xIf">
+                                <rect key="frame" x="84" y="75" width="207" height="208"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="Cl3-xR-Of4" kind="presentation" id="LWc-Gj-ULn"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ztT-oP-K1d">
+                                <rect key="frame" x="85" y="376" width="207" height="208"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="eMx-dP-Upw" kind="presentation" id="Zgd-FK-mcF"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -93,7 +107,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Back"/>
                                 <connections>
-                                    <segue destination="BYZ-38-t0r" kind="show" id="kkm-Mo-Y2H"/>
+                                    <segue destination="BYZ-38-t0r" kind="presentation" id="HNt-EE-PmY"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -103,7 +117,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BMb-vk-SCv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1741.5999999999999" y="-272.11394302848578"/>
+            <point key="canvasLocation" x="1742" y="531"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="624-4y-vS3">
@@ -117,7 +131,7 @@
                                 <rect key="frame" x="16" y="20" width="46" height="30"/>
                                 <state key="normal" title="Back"/>
                                 <connections>
-                                    <segue destination="BYZ-38-t0r" kind="show" id="3Cy-Px-eQq"/>
+                                    <segue destination="BYZ-38-t0r" kind="presentation" id="7a5-OV-FKC"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select a Course" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="spx-KC-Hse">
@@ -164,7 +178,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bsY-W9-maM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1741.5999999999999" y="555.47226386806597"/>
+            <point key="canvasLocation" x="1741.5999999999999" y="-409.7451274362819"/>
         </scene>
     </scenes>
     <resources>
@@ -172,6 +186,6 @@
         <image name="hamburger menu" width="512" height="512"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="kkm-Mo-Y2H"/>
+        <segue reference="HNt-EE-PmY"/>
     </inferredMetricsTieBreakers>
 </document>
