@@ -22,6 +22,15 @@ conn = PGSQLConnection();
 conn.ConnectionString = connectionString
 if (conn.connect())
 {
-    ...
+    var rs = conn.open("select 'Hello Detabase!' as hello")
+    while (!rs!.IsEOF)
+    {
+        var hello = rs!.fieldByName("hello").asString()
+        println("Database says:  \(hello)")
+        rs!.moveNext()
+    }
+    rs!.close()
         conn.close();
 }
+
+
