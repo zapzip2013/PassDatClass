@@ -11,17 +11,17 @@ import UIKit
 
 public class Tutor : User {
     //MARK: Properties
-    var phone : Int
-    var email: String
-    var name: String
-    var rating: Decimal
-    var photo: UIImage?
-    var code: Int?
-    var fsuverified: Bool
-    var bio: String
+    public var phone : Int
+    public var email: String
+    public var name: String
+    public var rating: Decimal
+    public var photo: UIImage?
+    public var code: Int?
+    public var fsuverified: Bool
+    public var bio: String
     
     //MARK: Initializers
-    init(phone: Int, email: String, name: String, rating: Decimal, photo: UIImage? = nil, verified: Bool, bio: String){
+    public init(phone: Int, email: String, name: String, rating: Decimal, photo: UIImage? = nil, verified: Bool, bio: String){
         self.phone = phone
         self.email = email
         self.name = name
@@ -31,7 +31,7 @@ public class Tutor : User {
         self.bio = bio
     }
     
-    init(email: String){
+    public init(email: String){
         self.email = email
         //TODO: Retrieve from DB using SQLInteract
         self.phone = 0

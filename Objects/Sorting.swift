@@ -8,7 +8,7 @@
 
 import Foundation
 
-enum Sorting{
+public enum Sorting{
     case alph
     case rating
     case inversealph
@@ -17,16 +17,18 @@ enum Sorting{
 }
 
 public class Sorted{
-    class func sort(by: Sorting, tutors: [Tutor]) -> [Tutor]{
+    public class func sort(by: Sorting, tutors: [Tutor]) -> [Tutor]{
         let ret = tutors.sorted {
             switch(by){
-            case .alph:
+            case .lastnamealph:
                 return $0.name < $1.name
             case .rating:
-                return $0.rating > $1.rating
+                return $0.rating < $1.rating
             case .inversealph:
-                return $0.name < $1.name
-            case .lastnamealph:
+                let name0 = $0.name.split(separator: ",")[1]
+                let name1 = $1.name.split(separator: ",")[1]
+                return name0 > name1
+            case .alph:
                 let name0 = $0.name.split(separator: ",")[1]
                 let name1 = $1.name.split(separator: ",")[1]
                 return name0 < name1
@@ -44,7 +46,7 @@ public class Sorted{
         return ret
     }
     
-    class func onlyverified(tutors: [Tutor]) -> [Tutor]{
+    public class func onlyverified(tutors: [Tutor]) -> [Tutor]{
         return tutors.filter{ $0.fsuverified == true}
         
     }
