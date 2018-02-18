@@ -1,1 +1,5 @@
+//  Created by Bradley Close on 2/18/18.
+//  Copyright © 2018 Bradley Close. All rights reserved.
+
+//make is due to build completion done by Xcode software
 
