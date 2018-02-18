@@ -132,7 +132,7 @@
                                         <constraints>
                                             <constraint firstAttribute="height" constant="5000" id="RMT-fb-jt7"/>
                                         </constraints>
-                                        <mutableString key="text">Class ended in five minutes and all I could think was, an hour is too long for lunch.
+                                        <string key="text">Class ended in five minutes and all I could think was, an hour is too long for lunch.
 
 Since the start of the semester, I had been looking forward to the part of Mr. Gladly’s World Issues class where we’d start discussing capes.  Now that it had finally arrived, I couldn’t focus.  I fidgeted, my pen moving from hand to hand, tapping, or absently drawing some figure in the corner of the page to join the other doodles.  My eyes were restless too, darting from the clock above the door to Mr. Gladly and back to the clock.  I wasn’t picking up enough of his lesson to follow along.  Twenty minutes to twelve; five minutes left before class ended.
 
@@ -232,7 +232,7 @@ However much I wanted to, I couldn’t really follow through.  Even as I tremble
 
 I was going to be a superhero.  That was the goal I used to calm myself down at moments like these.  It was what I used to make myself get out of bed on a school day.  It was a crazy dream that made things tolerable.  It was something to look forward to, something to work towards.  It made it possible to keep from dwelling on the fact that Emma Barnes, leader of the trio, had once been my best friend.
 
-</mutableString>
+</string>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
@@ -369,7 +369,6 @@ I was going to be a superhero.  That was the goal I used to calm myself down at 
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BMb-vk-SCv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2080.8000000000002" y="530.28485757121439"/>
             <point key="canvasLocation" x="1741.5999999999999" y="530.28485757121439"/>
         </scene>
         <!--View Controller-->
@@ -407,17 +406,6 @@ I was going to be a superhero.  That was the goal I used to calm myself down at 
                                 <constraints>
                                     <constraint firstAttribute="width" constant="168" id="nDV-aY-OKQ"/>
                                 </constraints>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2Fv-QP-4nT" userLabel="FSUVerified">
-                                <rect key="frame" x="16" y="111" width="49" height="31"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </switch>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Show only FSUVerified© tutors" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="PFF-pu-FuG">
-                                <rect key="frame" x="86" y="112" width="222" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -613,15 +601,14 @@ I was going to be a superhero.  That was the goal I used to calm myself down at 
         </scene>
     </scenes>
     <resources>
-        <image name="12152-large-red-circle" width="512" height="512"/>
+        <image name="12152-large-red-circle" width="256" height="256"/>
         <image name="adrian" width="274" height="346"/>
-        <image name="hamburger menu" width="512" height="512"/>
+        <image name="hamburger menu" width="128" height="128"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="HNt-EE-PmY"/>
         <segue reference="7VZ-xY-qN3"/>
         <segue reference="c4j-h3-25Z"/>
-        <segue reference="I2j-O9-66D"/>
         <segue reference="7a5-OV-FKC"/>
+        <segue reference="I2j-O9-66D"/>
     </inferredMetricsTieBreakers>
 </document>
