@@ -19,7 +19,18 @@
 		65898A9C202BF9E600E753E5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 65898A9B202BF9E600E753E5 /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		1C5A7DFC2032649200C8C911 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1C5A7DF82032649100C8C911 /* PassDatSQL.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 1C5A7DEE2032649100C8C911;
+			remoteInfo = PassDatSQL;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		1C5A7DF82032649100C8C911 /* PassDatSQL.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = PassDatSQL.xcodeproj; path = Objects/PassDatSQL/PassDatSQL.xcodeproj; sourceTree = "<group>"; };
 		23672866202D09EE00287175 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		23672867202D09EE00287175 /* SQLInteract.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SQLInteract.swift; sourceTree = "<group>"; };
 		23672868202D09EF00287175 /* Course.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Course.swift; sourceTree = "<group>"; };
@@ -45,6 +56,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1C5A7DF92032649100C8C911 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1C5A7DFD2032649200C8C911 /* PassDatSQL */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		23672865202D09C900287175 /* Objects */ = {
 			isa = PBXGroup;
 			children = (
@@ -61,6 +80,7 @@
 		65898A88202BF9E600E753E5 = {
 			isa = PBXGroup;
 			children = (
+				1C5A7DF82032649100C8C911 /* PassDatSQL.xcodeproj */,
 				23672865202D09C900287175 /* Objects */,
 				65898A93202BF9E600E753E5 /* PassDatClass */,
 				65898A92202BF9E600E753E5 /* Products */,
@@ -134,12 +154,28 @@
 			mainGroup = 65898A88202BF9E600E753E5;
 			productRefGroup = 65898A92202BF9E600E753E5 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 1C5A7DF92032649100C8C911 /* Products */;
+					ProjectRef = 1C5A7DF82032649100C8C911 /* PassDatSQL.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				65898A90202BF9E600E753E5 /* PassDatClass */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		1C5A7DFD2032649200C8C911 /* PassDatSQL */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = PassDatSQL;
+			remoteRef = 1C5A7DFC2032649200C8C911 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		65898A8F202BF9E600E753E5 /* Resources */ = {
