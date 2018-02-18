@@ -6,6 +6,8 @@
 //  Copyright © 2018 Daniel Gibney. All rights reserved.
 //
 
+/*Implemented by Jose Carlos */
+
 import XCTest
 import PassDatClass
 
