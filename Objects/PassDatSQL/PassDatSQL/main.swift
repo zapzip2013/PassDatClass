@@ -5,7 +5,7 @@
 //  Created by Bradley Close on 2/12/18.
 //  Copyright © 2018 Bradley Close. All rights reserved.
 //
-
+/*implemented by Jordan and Brad*/
 import Foundation
 import PGSQLKit
 
