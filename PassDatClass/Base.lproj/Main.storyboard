@@ -318,20 +318,12 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="273"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="bottom" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RMl-D0-uTG">
-                                <rect key="frame" x="0.0" y="629" width="46" height="38"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Back"/>
-                                <connections>
-                                    <segue destination="ibP-Oe-dsh" kind="presentation" id="SfV-cU-4kw"/>
-                                </connections>
-                            </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="download-1.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="zwI-1l-vHX">
                                 <rect key="frame" x="112" y="181" width="150" height="150"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" heightSizable="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="right" contentVerticalAlignment="bottom" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pTm-fd-FLx">
-                                <rect key="frame" x="319" y="629" width="46" height="30"/>
+                                <rect key="frame" x="319" y="640" width="46" height="19"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Create"/>
                                 <connections>
@@ -373,6 +365,14 @@
                                     <!--2018-02-19 22:34:46 +0000-->
                                 </date>
                             </datePicker>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="bottom" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RMl-D0-uTG">
+                                <rect key="frame" x="16" y="633" width="46" height="26"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Back"/>
+                                <connections>
+                                    <segue destination="ibP-Oe-dsh" kind="presentation" id="SfV-cU-4kw"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="uWL-bc-g0c"/>
@@ -380,7 +380,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LzG-a8-Qyw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1425" y="803"/>
+            <point key="canvasLocation" x="1424.8" y="802.848575712144"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="oYx-l5-FBi">
@@ -401,43 +401,22 @@
                                     <rect key="frame" x="0.0" y="0.0" width="727" height="981"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
+                                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MS5-8O-wym">
+                                            <rect key="frame" x="59" y="367" width="257" height="30"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <color key="backgroundColor" red="0.58821886779999999" green="0.70069605109999999" blue="0.91734307999999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <state key="normal" title="Return to Home">
+                                                <color key="titleShadowColor" red="0.0238071885" green="0.022606447339999999" blue="0.0091507518659999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </state>
+                                        </button>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Account created!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="92J-lq-GY2">
-                                            <rect key="frame" x="122" y="212" width="131" height="21"/>
+                                            <rect key="frame" x="83" y="154" width="208" height="146"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MS5-8O-wym">
-                                            <rect key="frame" x="59" y="314" width="257" height="30"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            <color key="backgroundColor" red="0.58821886779999999" green="0.70069605109999999" blue="0.91734307999999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
-                                            <state key="normal" title="Return to Home">
-                                                <color key="titleShadowColor" red="0.0238071885" green="0.022606447339999999" blue="0.0091507518659999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            </state>
-                                        </button>
-                                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aCH-Td-hoe">
-                                            <rect key="frame" x="59" y="314" width="257" height="30"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            <color key="backgroundColor" red="0.58821886779999999" green="0.70069605109999999" blue="0.91734307999999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
-                                            <state key="normal" title="Return to Home">
-                                                <color key="titleShadowColor" red="0.0238071885" green="0.022606447339999999" blue="0.0091507518659999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            </state>
-                                        </button>
-                                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M20-Al-aif">
-                                            <rect key="frame" x="59" y="314" width="257" height="30"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            <color key="backgroundColor" red="0.58821886779999999" green="0.70069605109999999" blue="0.91734307999999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
-                                            <state key="normal" title="Return to Home">
-                                                <color key="titleShadowColor" red="0.0238071885" green="0.022606447339999999" blue="0.0091507518659999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            </state>
-                                            <connections>
-                                                <segue destination="q9n-dk-JVe" kind="presentation" id="AVP-MZ-Y7z"/>
-                                            </connections>
-                                        </button>
                                     </subviews>
                                 </view>
                                 <blurEffect style="regular"/>
@@ -459,6 +438,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="624878906.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="xPO-o6-Odk">
+                                <rect key="frame" x="-11" y="0.0" width="509" height="808"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TtW-q5-mVI">
                                 <rect key="frame" x="16" y="20" width="46" height="30"/>
                                 <state key="normal" title="Back"/>
@@ -518,7 +501,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bsY-W9-maM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1425" y="36"/>
+            <point key="canvasLocation" x="1424.8" y="35.532233883058474"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Jkm-3e-4iO">
@@ -644,6 +627,19 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="624878906.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="3dy-D8-VDu">
+                                <rect key="frame" x="0.0" y="-13" width="548" height="827"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <visualEffectView opaque="NO" alpha="0.84999999999999998" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4uD-P2-MAq">
+                                <rect key="frame" x="-18" y="-13" width="538" height="848"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" insetsLayoutMarginsFromSafeArea="NO" id="JLi-Fv-jh9">
+                                    <rect key="frame" x="0.0" y="0.0" width="538" height="848"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                </view>
+                                <blurEffect style="light"/>
+                            </visualEffectView>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bvh-OI-Fdv">
                                 <rect key="frame" x="67" y="269" width="240" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -689,11 +685,10 @@
         <image name="images.jpg" width="300" height="168"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="Cul-1w-G0g"/>
-        <segue reference="B31-NR-bsd"/>
+        <segue reference="7VZ-xY-qN3"/>
         <segue reference="yd9-ME-EZe"/>
-        <segue reference="AVP-MZ-Y7z"/>
-        <segue reference="I2j-O9-66D"/>
-        <segue reference="SfV-cU-4kw"/>
+        <segue reference="5qA-yM-U38"/>
+        <segue reference="LWc-Gj-ULn"/>
+        <segue reference="12s-Oe-5qt"/>
     </inferredMetricsTieBreakers>
 </document>
