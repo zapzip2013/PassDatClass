@@ -529,6 +529,19 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="624878906.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="gC0-Gk-n9F">
+                                <rect key="frame" x="-11" y="-11" width="497" height="782"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <visualEffectView opaque="NO" alpha="0.75" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fRS-pN-Bjn">
+                                <rect key="frame" x="0.0" y="0.0" width="516" height="804"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" insetsLayoutMarginsFromSafeArea="NO" id="BCz-Pv-fk6">
+                                    <rect key="frame" x="0.0" y="0.0" width="516" height="804"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                </view>
+                                <blurEffect style="light"/>
+                            </visualEffectView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RL2-e8-fkh">
                                 <rect key="frame" x="22" y="20" width="34" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -559,7 +572,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JID-kV-xDd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2209" y="36"/>
+            <point key="canvasLocation" x="2208.8000000000002" y="35.532233883058474"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="NoL-WC-HYL">
@@ -573,6 +586,19 @@
                                 <rect key="frame" x="67" y="233" width="240" height="200"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="wallpaper.wiki-Screen-Background-PC-Wallpapers-PIC-WPD006555.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="PUa-QD-Dt3">
+                                        <rect key="frame" x="-9" y="-14" width="260" height="227"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <visualEffectView opaque="NO" alpha="0.94999999999999996" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="B0X-Sz-Qtu">
+                                        <rect key="frame" x="-28" y="-14" width="296" height="227"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" insetsLayoutMarginsFromSafeArea="NO" id="w9F-cm-3gd">
+                                            <rect key="frame" x="0.0" y="0.0" width="296" height="227"/>
+                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                        </view>
+                                        <blurEffect style="light"/>
+                                    </visualEffectView>
                                     <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Contact Info" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="So3-03-DpU">
                                         <rect key="frame" x="8" y="8" width="97" height="30"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -608,7 +634,7 @@
                                         </connections>
                                     </button>
                                 </subviews>
-                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -617,7 +643,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gFt-V9-43u" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3502" y="-1151"/>
+            <point key="canvasLocation" x="3501.5999999999999" y="-1151.8740629685158"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="Hi5-uB-ClK">
@@ -683,12 +709,13 @@
         <image name="download-1.jpg" width="225" height="225"/>
         <image name="hamburger menu" width="128" height="128"/>
         <image name="images.jpg" width="300" height="168"/>
+        <image name="wallpaper.wiki-Screen-Background-PC-Wallpapers-PIC-WPD006555.jpg" width="1920" height="1200"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="7VZ-xY-qN3"/>
-        <segue reference="yd9-ME-EZe"/>
-        <segue reference="5qA-yM-U38"/>
-        <segue reference="LWc-Gj-ULn"/>
+        <segue reference="B31-NR-bsd"/>
+        <segue reference="c4j-h3-25Z"/>
+        <segue reference="7a5-OV-FKC"/>
+        <segue reference="I2j-O9-66D"/>
         <segue reference="12s-Oe-5qt"/>
     </inferredMetricsTieBreakers>
 </document>

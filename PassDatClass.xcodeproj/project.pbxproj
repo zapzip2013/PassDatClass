@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1C45F94C203DCAF6003A150C /* wallpaper.wiki-Screen-Background-PC-Wallpapers-PIC-WPD006555.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1C45F94A203DCAF6003A150C /* wallpaper.wiki-Screen-Background-PC-Wallpapers-PIC-WPD006555.jpg */; };
 		1CE3FD5B203B7B7E004256D0 /* images.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1CE3FD5A203B7B7E004256D0 /* images.jpg */; };
 		1CE3FD5D203B7BE1004256D0 /* download-1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1CE3FD5C203B7BE1004256D0 /* download-1.jpg */; };
 		1CE3FD5F203B853E004256D0 /* 624878906.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1CE3FD5E203B853E004256D0 /* 624878906.jpg */; };
@@ -42,6 +43,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1C45F94A203DCAF6003A150C /* wallpaper.wiki-Screen-Background-PC-Wallpapers-PIC-WPD006555.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "wallpaper.wiki-Screen-Background-PC-Wallpapers-PIC-WPD006555.jpg"; path = "../../../../Desktop/wallpaper.wiki-Screen-Background-PC-Wallpapers-PIC-WPD006555.jpg"; sourceTree = "<group>"; };
 		1C5A7DF82032649100C8C911 /* PassDatSQL.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = PassDatSQL.xcodeproj; path = Objects/PassDatSQL/PassDatSQL.xcodeproj; sourceTree = "<group>"; };
 		1CE3FD5A203B7B7E004256D0 /* images.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = images.jpg; path = ../../../../Desktop/images.jpg; sourceTree = "<group>"; };
 		1CE3FD5C203B7BE1004256D0 /* download-1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "download-1.jpg"; path = "../../../../Desktop/download-1.jpg"; sourceTree = "<group>"; };
@@ -136,6 +138,7 @@
 		65898A93202BF9E600E753E5 /* PassDatClass */ = {
 			isa = PBXGroup;
 			children = (
+				1C45F94A203DCAF6003A150C /* wallpaper.wiki-Screen-Background-PC-Wallpapers-PIC-WPD006555.jpg */,
 				1CE3FD5C203B7BE1004256D0 /* download-1.jpg */,
 				1CE3FD5A203B7B7E004256D0 /* images.jpg */,
 				1CE3FD5E203B853E004256D0 /* 624878906.jpg */,
@@ -258,6 +261,7 @@
 				65898A9A202BF9E600E753E5 /* Main.storyboard in Resources */,
 				1CE3FD5B203B7B7E004256D0 /* images.jpg in Resources */,
 				1CE3FD5F203B853E004256D0 /* 624878906.jpg in Resources */,
+				1C45F94C203DCAF6003A150C /* wallpaper.wiki-Screen-Background-PC-Wallpapers-PIC-WPD006555.jpg in Resources */,
 				1CE3FD5D203B7BE1004256D0 /* download-1.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
