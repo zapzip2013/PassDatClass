@@ -19,6 +19,7 @@
 		65898A97202BF9E600E753E5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65898A96202BF9E600E753E5 /* ViewController.swift */; };
 		65898A9A202BF9E600E753E5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65898A98202BF9E600E753E5 /* Main.storyboard */; };
 		65898A9C202BF9E600E753E5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 65898A9B202BF9E600E753E5 /* Assets.xcassets */; };
+		B1A75FCB1D7C1D7F203393A1 /* Pods_PassDatClass.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D199629CD0715ED23AE0B367 /* Pods_PassDatClass.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,12 +43,15 @@
 		2367289420362CCC00287175 /* PassDatClassTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PassDatClassTests.swift; sourceTree = "<group>"; };
 		2367289620362CCC00287175 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2367289C20362CE400287175 /* Sorting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sorting.swift; sourceTree = "<group>"; };
+		406FF83DF932D49549A3CBA0 /* Pods-PassDatClass.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PassDatClass.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PassDatClass/Pods-PassDatClass.debug.xcconfig"; sourceTree = "<group>"; };
+		5E4C7D028698DEB4DB0A08A7 /* Pods-PassDatClass.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PassDatClass.release.xcconfig"; path = "Pods/Target Support Files/Pods-PassDatClass/Pods-PassDatClass.release.xcconfig"; sourceTree = "<group>"; };
 		65898A91202BF9E600E753E5 /* PassDatClass.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PassDatClass.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		65898A94202BF9E600E753E5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		65898A96202BF9E600E753E5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		65898A99202BF9E600E753E5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		65898A9B202BF9E600E753E5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		65898AA0202BF9E600E753E5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D199629CD0715ED23AE0B367 /* Pods_PassDatClass.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PassDatClass.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +66,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B1A75FCB1D7C1D7F203393A1 /* Pods_PassDatClass.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -98,6 +103,8 @@
 				65898A93202BF9E600E753E5 /* PassDatClass */,
 				2367289320362CCC00287175 /* PassDatClassTests */,
 				65898A92202BF9E600E753E5 /* Products */,
+				9A7A6F2DD65E941E003EEC66 /* Pods */,
+				984036AC3A76E1CDAE2B8F70 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -120,6 +127,23 @@
 				65898AA0202BF9E600E753E5 /* Info.plist */,
 			);
 			path = PassDatClass;
+			sourceTree = "<group>";
+		};
+		984036AC3A76E1CDAE2B8F70 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D199629CD0715ED23AE0B367 /* Pods_PassDatClass.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9A7A6F2DD65E941E003EEC66 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				406FF83DF932D49549A3CBA0 /* Pods-PassDatClass.debug.xcconfig */,
+				5E4C7D028698DEB4DB0A08A7 /* Pods-PassDatClass.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -147,9 +171,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 65898AA3202BF9E600E753E5 /* Build configuration list for PBXNativeTarget "PassDatClass" */;
 			buildPhases = (
+				31A16683E899F631A4CAC0FA /* [CP] Check Pods Manifest.lock */,
 				65898A8D202BF9E600E753E5 /* Sources */,
 				65898A8E202BF9E600E753E5 /* Frameworks */,
 				65898A8F202BF9E600E753E5 /* Resources */,
+				DD6687056C963239C9E4FE60 /* [CP] Embed Pods Frameworks */,
+				CE2C868FE0B492939FECFAD0 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -218,6 +245,60 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		31A16683E899F631A4CAC0FA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PassDatClass-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CE2C868FE0B492939FECFAD0 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PassDatClass/Pods-PassDatClass-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DD6687056C963239C9E4FE60 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-PassDatClass/Pods-PassDatClass-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/DRDatabase/DRDatabase.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DRDatabase.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PassDatClass/Pods-PassDatClass-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		2367288E20362CCC00287175 /* Sources */ = {
@@ -405,6 +486,7 @@
 		};
 		65898AA4202BF9E600E753E5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 406FF83DF932D49549A3CBA0 /* Pods-PassDatClass.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -419,6 +501,7 @@
 		};
 		65898AA5202BF9E600E753E5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5E4C7D028698DEB4DB0A08A7 /* Pods-PassDatClass.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

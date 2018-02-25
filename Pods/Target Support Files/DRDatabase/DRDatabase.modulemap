@@ -1,0 +1,6 @@
+framework module DRDatabase {
+  umbrella header "DRDatabase-umbrella.h"
+
+  export *
+  module * { export * }
+}

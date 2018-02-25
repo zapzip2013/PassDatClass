@@ -1,0 +1,12 @@
+PODS:
+  - DRDatabase (1.0.1)
+
+DEPENDENCIES:
+  - DRDatabase
+
+SPEC CHECKSUMS:
+  DRDatabase: 7b0142cebd35a2b21d121ed80164b707a8ab7426
+
+PODFILE CHECKSUM: eed8bb7db1eb153e10cdeabeb5dad34f4d2cbecb
+
+COCOAPODS: 1.4.0
