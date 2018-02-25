@@ -43,19 +43,41 @@ public class Tutor : User {
     }
     
     //MARK: Methods
-    func RequestEdit() {
-        //TODO: Generate code automatically
-        
-        //TODO: Send code to EmailSender
+    class func ParseResult(_ row: RowQuery) -> Tutor {
+        let firstname = row["firstName"] as! String
+        let lastname = row["lastName"] as! String
+        //let priceperhour = row["pricePerHour"] as! Double
+        let phone = row["phoneNumber"] as! Int
+        let bio = row["bio"] as! String
+        let rating = row["rating"] as! Decimal
+        let fsuverified = row["fsuverified"] as! Bool
+        let email = row["email"] as! String
+        let ret = Tutor(phone: phone, email: email, name: lastname+","+firstname, rating: rating, verified: fsuverified, bio: bio)
+        return ret
     }
     
-    func EditProfile(code: Int) -> Bool {
-        if (self.code == code){
-            //TODO: Save on DB using SQLInteract
-            return true
-        }
-        else{
-            return false
-        }
+    class func QueryAccount(email: String) -> Tutor {
+        let query = "SELECT * FROM tutors WHERE email='" + email + "';"
+        let resquery = SQLInteract.ExecuteSelect(query: query)
+        let tutor = Tutor.ParseResult(resquery.first!)
+        return tutor
     }
+    
+    class func EditAccount(tutor: Tutor) -> (Bool,String) {
+        //TODO
+        let query = "UPDATE tutors VALUES (..) WHERE email='" + tutor.email + "';"
+        return SQLInteract.ExecuteModification(query: query)
+    }
+    
+    class func DeleteAccount(tutor: Tutor) -> (Bool,String)  {
+        let query = "DELETE FROM tutors WHERE email='" + tutor.email + "';"
+        return SQLInteract.ExecuteModification(query: query)
+    }
+    
+    class func CreateAccount(tutor: Tutor) -> (Bool,String) {
+        let query = "INSERT INTO tutors VALUES (...);"
+        return SQLInteract.ExecuteModification(query: query)
+    }
+    
 }
+
