@@ -1,10 +1,10 @@
 // !$*UTF8*$!
 {
-	archiveVersion = 1;
-	classes = {
-	};
-	objectVersion = 48;
-	objects = {
+    archiveVersion = 1;
+    classes = {
+    };
+    objectVersion = 48;
+    objects = {
 
 /* Begin PBXBuildFile section */
 		2367286C202D09EF00287175 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23672866202D09EE00287175 /* User.swift */; };
@@ -23,13 +23,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		2367289720362CCC00287175 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 65898A89202BF9E600E753E5 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 65898A90202BF9E600E753E5;
-			remoteInfo = PassDatClass;
-		};
+        1C5A7DFC2032649200C8C911 /* PBXContainerItemProxy */ = {
+            isa = PBXContainerItemProxy;
+            containerPortal = 1C5A7DF82032649100C8C911 /* PassDatSQL.xcodeproj */;
+            proxyType = 2;
+            remoteGlobalIDString = 1C5A7DEE2032649100C8C911;
+            remoteInfo = PassDatSQL;
+        };
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
@@ -190,60 +190,76 @@
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		65898A89202BF9E600E753E5 /* Project object */ = {
-			isa = PBXProject;
-			attributes = {
-				LastSwiftUpdateCheck = 0920;
-				LastUpgradeCheck = 0920;
-				ORGANIZATIONNAME = "Daniel Gibney";
-				TargetAttributes = {
-					2367289120362CCC00287175 = {
-						CreatedOnToolsVersion = 9.2;
-						ProvisioningStyle = Automatic;
-						TestTargetID = 65898A90202BF9E600E753E5;
-					};
-					65898A90202BF9E600E753E5 = {
-						CreatedOnToolsVersion = 9.2;
-						ProvisioningStyle = Automatic;
-					};
-				};
-			};
-			buildConfigurationList = 65898A8C202BF9E600E753E5 /* Build configuration list for PBXProject "PassDatClass" */;
-			compatibilityVersion = "Xcode 8.0";
-			developmentRegion = en;
-			hasScannedForEncodings = 0;
-			knownRegions = (
-				en,
-				Base,
-			);
-			mainGroup = 65898A88202BF9E600E753E5;
-			productRefGroup = 65898A92202BF9E600E753E5 /* Products */;
-			projectDirPath = "";
-			projectRoot = "";
-			targets = (
-				65898A90202BF9E600E753E5 /* PassDatClass */,
-				2367289120362CCC00287175 /* PassDatClassTests */,
-			);
-		};
+        65898A89202BF9E600E753E5 /* Project object */ = {
+            isa = PBXProject;
+            attributes = {
+                LastSwiftUpdateCheck = 0920;
+                LastUpgradeCheck = 0920;
+                ORGANIZATIONNAME = "Daniel Gibney";
+                TargetAttributes = {
+                    2367289120362CCC00287175 = {
+                        CreatedOnToolsVersion = 9.2;
+                        ProvisioningStyle = Automatic;
+                        TestTargetID = 65898A90202BF9E600E753E5;
+                    };
+                    65898A90202BF9E600E753E5 = {
+                        CreatedOnToolsVersion = 9.2;
+                        ProvisioningStyle = Automatic;
+                    };
+                };
+            };
+            buildConfigurationList = 65898A8C202BF9E600E753E5 /* Build configuration list for PBXProject "PassDatClass" */;
+            compatibilityVersion = "Xcode 8.0";
+            developmentRegion = en;
+            hasScannedForEncodings = 0;
+            knownRegions = (
+                en,
+                Base,
+            );
+            mainGroup = 65898A88202BF9E600E753E5;
+            productRefGroup = 65898A92202BF9E600E753E5 /* Products */;
+            projectDirPath = "";
+            projectReferences = (
+                {
+                    ProductGroup = 1C5A7DF92032649100C8C911 /* Products */;
+                    ProjectRef = 1C5A7DF82032649100C8C911 /* PassDatSQL.xcodeproj */;
+                },
+            );
+            projectRoot = "";
+            targets = (
+                65898A90202BF9E600E753E5 /* PassDatClass */,
+                2367289120362CCC00287175 /* PassDatClassTests */,
+            );
+        };
 /* End PBXProject section */
 
+/* Begin PBXReferenceProxy section */
+        1C5A7DFD2032649200C8C911 /* PassDatSQL */ = {
+            isa = PBXReferenceProxy;
+            fileType = "compiled.mach-o.executable";
+            path = PassDatSQL;
+            remoteRef = 1C5A7DFC2032649200C8C911 /* PBXContainerItemProxy */;
+            sourceTree = BUILT_PRODUCTS_DIR;
+        };
+/* End PBXReferenceProxy section */
+
 /* Begin PBXResourcesBuildPhase section */
-		2367289020362CCC00287175 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		65898A8F202BF9E600E753E5 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				65898A9C202BF9E600E753E5 /* Assets.xcassets in Resources */,
-				65898A9A202BF9E600E753E5 /* Main.storyboard in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
+        2367289020362CCC00287175 /* Resources */ = {
+            isa = PBXResourcesBuildPhase;
+            buildActionMask = 2147483647;
+            files = (
+            );
+            runOnlyForDeploymentPostprocessing = 0;
+        };
+        65898A8F202BF9E600E753E5 /* Resources */ = {
+            isa = PBXResourcesBuildPhase;
+            buildActionMask = 2147483647;
+            files = (
+                65898A9C202BF9E600E753E5 /* Assets.xcassets in Resources */,
+                65898A9A202BF9E600E753E5 /* Main.storyboard in Resources */,
+            );
+            runOnlyForDeploymentPostprocessing = 0;
+        };
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
@@ -301,49 +317,49 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		2367288E20362CCC00287175 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				2367289D20362CE400287175 /* Sorting.swift in Sources */,
-				2367289520362CCC00287175 /* PassDatClassTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		65898A8D202BF9E600E753E5 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				2367286F202D09EF00287175 /* Sorting.swift in Sources */,
-				65898A97202BF9E600E753E5 /* ViewController.swift in Sources */,
-				65898A95202BF9E600E753E5 /* AppDelegate.swift in Sources */,
-				2367286E202D09EF00287175 /* Course.swift in Sources */,
-				23672871202D09F000287175 /* Tutor.swift in Sources */,
-				2367286D202D09EF00287175 /* SQLInteract.swift in Sources */,
-				2367286C202D09EF00287175 /* User.swift in Sources */,
-				23672870202D09F000287175 /* Search.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
+        2367288E20362CCC00287175 /* Sources */ = {
+            isa = PBXSourcesBuildPhase;
+            buildActionMask = 2147483647;
+            files = (
+                2367289D20362CE400287175 /* Sorting.swift in Sources */,
+                2367289520362CCC00287175 /* PassDatClassTests.swift in Sources */,
+            );
+            runOnlyForDeploymentPostprocessing = 0;
+        };
+        65898A8D202BF9E600E753E5 /* Sources */ = {
+            isa = PBXSourcesBuildPhase;
+            buildActionMask = 2147483647;
+            files = (
+                2367286F202D09EF00287175 /* Sorting.swift in Sources */,
+                65898A97202BF9E600E753E5 /* ViewController.swift in Sources */,
+                65898A95202BF9E600E753E5 /* AppDelegate.swift in Sources */,
+                2367286E202D09EF00287175 /* Course.swift in Sources */,
+                23672871202D09F000287175 /* Tutor.swift in Sources */,
+                2367286D202D09EF00287175 /* SQLInteract.swift in Sources */,
+                2367286C202D09EF00287175 /* User.swift in Sources */,
+                23672870202D09F000287175 /* Search.swift in Sources */,
+            );
+            runOnlyForDeploymentPostprocessing = 0;
+        };
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		2367289820362CCC00287175 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 65898A90202BF9E600E753E5 /* PassDatClass */;
-			targetProxy = 2367289720362CCC00287175 /* PBXContainerItemProxy */;
-		};
+        2367289820362CCC00287175 /* PBXTargetDependency */ = {
+            isa = PBXTargetDependency;
+            target = 65898A90202BF9E600E753E5 /* PassDatClass */;
+            targetProxy = 2367289720362CCC00287175 /* PBXContainerItemProxy */;
+        };
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		65898A98202BF9E600E753E5 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				65898A99202BF9E600E753E5 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
+        65898A98202BF9E600E753E5 /* Main.storyboard */ = {
+            isa = PBXVariantGroup;
+            children = (
+                65898A99202BF9E600E753E5 /* Base */,
+            );
+            name = Main.storyboard;
+            sourceTree = "<group>";
+        };
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
@@ -517,34 +533,34 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		2367289B20362CCC00287175 /* Build configuration list for PBXNativeTarget "PassDatClassTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				2367289920362CCC00287175 /* Debug */,
-				2367289A20362CCC00287175 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		65898A8C202BF9E600E753E5 /* Build configuration list for PBXProject "PassDatClass" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				65898AA1202BF9E600E753E5 /* Debug */,
-				65898AA2202BF9E600E753E5 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		65898AA3202BF9E600E753E5 /* Build configuration list for PBXNativeTarget "PassDatClass" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				65898AA4202BF9E600E753E5 /* Debug */,
-				65898AA5202BF9E600E753E5 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
+        2367289B20362CCC00287175 /* Build configuration list for PBXNativeTarget "PassDatClassTests" */ = {
+            isa = XCConfigurationList;
+            buildConfigurations = (
+                2367289920362CCC00287175 /* Debug */,
+                2367289A20362CCC00287175 /* Release */,
+            );
+            defaultConfigurationIsVisible = 0;
+            defaultConfigurationName = Release;
+        };
+        65898A8C202BF9E600E753E5 /* Build configuration list for PBXProject "PassDatClass" */ = {
+            isa = XCConfigurationList;
+            buildConfigurations = (
+                65898AA1202BF9E600E753E5 /* Debug */,
+                65898AA2202BF9E600E753E5 /* Release */,
+            );
+            defaultConfigurationIsVisible = 0;
+            defaultConfigurationName = Release;
+        };
+        65898AA3202BF9E600E753E5 /* Build configuration list for PBXNativeTarget "PassDatClass" */ = {
+            isa = XCConfigurationList;
+            buildConfigurations = (
+                65898AA4202BF9E600E753E5 /* Debug */,
+                65898AA5202BF9E600E753E5 /* Release */,
+            );
+            defaultConfigurationIsVisible = 0;
+            defaultConfigurationName = Release;
+        };
 /* End XCConfigurationList section */
-	};
-	rootObject = 65898A89202BF9E600E753E5 /* Project object */;
+    };
+    rootObject = 65898A89202BF9E600E753E5 /* Project object */;
 }

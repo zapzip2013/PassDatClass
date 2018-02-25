@@ -6,6 +6,8 @@
 //  Copyright © 2018 PassDatClass. All rights reserved.
 //
 
+/* Implemented by Jose Carlos */
+
 import Foundation
 
 public enum Sorting{
