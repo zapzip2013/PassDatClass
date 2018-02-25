@@ -23,10 +23,24 @@ public class Search {
         self.order = order
     }
     
+    func parseResult(_ res: ResQuery) -> [Tutor] {
+        var ret = [Tutor]()
+        
+        for row in res {
+            ret += [Tutor.ParseResult(row)]
+        }
+        
+        return ret
+    }
+    
     //MARK: Methods
-    func ExecuteQuery() -> Course? {
-        //TODO: Use SQLInteract to retrieve the results and then sort them using Sorted.sort() so finally it can return the Course
-        return nil
+    func ExecuteQuery() -> [Tutor] {
+        var ret = [Tutor]()
+        let query = "SELECT * FROM tutors WHERE courses LIKE '%" + prefix + "" + String(number) + "%';"
+        let resquery = SQLInteract.ExecuteSelect(query: query)
+        ret += parseResult(resquery)
+        let orderret = Sorted.sort(by: order, tutors: ret)
+        return orderret
     }
     
     
