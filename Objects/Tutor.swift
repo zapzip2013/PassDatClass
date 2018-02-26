@@ -14,14 +14,14 @@ public class Tutor : User {
     public var phone : Int
     public var email: String
     public var name: String
-    public var rating: Decimal
+    public var rating: Int
     public var photo: UIImage?
     public var code: Int?
     public var fsuverified: Bool
     public var bio: String
     
     //MARK: Initializers
-    public init(phone: Int, email: String, name: String, rating: Decimal, photo: UIImage? = nil, verified: Bool, bio: String){
+    public init!(phone: Int, email: String, name: String, rating: Int, photo: UIImage? = nil, verified: Bool, bio: String){
         self.phone = phone
         self.email = email
         self.name = name
@@ -36,7 +36,7 @@ public class Tutor : User {
         //TODO: Retrieve from DB using SQLInteract
         self.phone = 0
         self.name = ""
-        self.rating = 0.0
+        self.rating = 0
         self.photo = nil
         self.fsuverified = false
         self.bio = ""
