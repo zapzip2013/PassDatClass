@@ -49,11 +49,11 @@ public class Tutor : User {
         //let priceperhour = row["pricePerHour"] as! Double
         let phone = row["phoneNumber"] as! Int
         let bio = row["bio"] as! String
-        let rating = row["rating"] as! Decimal
+        let rating = row["rating"] as! Int
         let fsuverified = row["fsuverified"] as! Bool
         let email = row["email"] as! String
         let ret = Tutor(phone: phone, email: email, name: lastname+","+firstname, rating: rating, verified: fsuverified, bio: bio)
-        return ret
+        return ret!
     }
     
     class func QueryAccount(email: String) -> Tutor {
