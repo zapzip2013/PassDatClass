@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="q9n-dk-JVe">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="a61-BM-Efe">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -382,6 +382,56 @@
             </objects>
             <point key="canvasLocation" x="1424.8" y="802.848575712144"/>
         </scene>
+        <!--Tutor Table View Controller-->
+        <scene sceneID="6qL-aO-GmA">
+            <objects>
+                <tableViewController id="a61-BM-Efe" customClass="TutorTableViewController" customModule="PassDatClass" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="90" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="88w-PG-0Fz">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="TutorViewCell" rowHeight="90" id="G0c-ER-xdg" customClass="TutorTableViewCell" customModule="PassDatClass" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="375" height="90"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="G0c-ER-xdg" id="CDn-Dk-fSh" customClass="TutorTableViewCell" customModule="PassDatClass" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="89.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="K0V-kz-7Jw">
+                                            <rect key="frame" x="0.0" y="0.0" width="126" height="90"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Bl-7o-0wb">
+                                            <rect key="frame" x="134" y="11" width="225" height="21"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="g4i-QA-gbx" customClass="ratings" customModule="PassDatClass" customModuleProvider="target">
+                                            <rect key="frame" x="134" y="40" width="225" height="39"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        </stackView>
+                                    </subviews>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="namelabel" destination="6Bl-7o-0wb" id="uDg-xj-vAz"/>
+                                    <outlet property="profileimage" destination="K0V-kz-7Jw" id="VhV-PJ-LaK"/>
+                                    <outlet property="rating" destination="g4i-QA-gbx" id="2XQ-QF-ezX"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="a61-BM-Efe" id="ica-ki-sUk"/>
+                            <outlet property="delegate" destination="a61-BM-Efe" id="0Hz-fg-eiR"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gJj-wP-hWd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2781.5999999999999" y="462.8185907046477"/>
+        </scene>
         <!--View Controller-->
         <scene sceneID="oYx-l5-FBi">
             <objects>
@@ -713,8 +763,8 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="B31-NR-bsd"/>
-        <segue reference="c4j-h3-25Z"/>
-        <segue reference="7a5-OV-FKC"/>
+        <segue reference="yd9-ME-EZe"/>
+        <segue reference="HNt-EE-PmY"/>
         <segue reference="I2j-O9-66D"/>
         <segue reference="12s-Oe-5qt"/>
     </inferredMetricsTieBreakers>
