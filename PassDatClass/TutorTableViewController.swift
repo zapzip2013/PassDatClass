@@ -46,7 +46,7 @@ class TutorTableViewController: UITableViewController {
         // Configure the cell...
         cell.namelabel.text = tutor.name
         cell.profileimage.image = tutor.photo
-        cell.rating.rating = tutor.rating
+        cell.rating.rating = Int(tutor.rating)
         return cell
     }
 
@@ -108,14 +108,8 @@ class TutorTableViewController: UITableViewController {
         let photo1 = UIImage(named: "tutor1")
         let photo2 = UIImage(named: "tutor2")
         let photo3 = UIImage(named: "tutor3")
-        guard let tutor1 = Tutor(phone: 6, email: "1", name: "adam", rating: 2, photo: photo1, verified: true, bio: "String") else {
-            fatalError("Unable to instantiate tutor1")
-        }
-        guard let tutor2 = Tutor(phone: 4, email: "1", name: "amanda", rating: 3, photo: photo2, verified: true, bio: "Stringelse") else {
-            fatalError("Unable to instantiate tutor2")
-        }
-        guard let tutor3 = Tutor(phone: 5, email: "1", name: "anakin", rating: 1, photo: photo3, verified: true, bio: "String") else {
-            fatalError("Unable to instantiate tutor3")
-        }
+        let tutor1 = Tutor(phone: 6, email: "1", name: "adam", lastname: "ok", rating: 2, numbervotes: 110, photo: photo1, price: 3.2, verified: true, bio: "String")
+        let tutor2 = Tutor(phone: 4, email: "1", name: "amanda", lastname: "nop", rating: 3, numbervotes: 2200, photo: photo2, price: 11.1, verified: true, bio: "Stringelse")
+        let tutor3 = Tutor(phone: 5, email: "1", name: "anakin", lastname: "aja", rating: 1, numbervotes: 23, photo: photo3, price: 22222.2, verified: true, bio: "String")
         tutors += [tutor1, tutor2, tutor3]
     }}
