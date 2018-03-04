@@ -27,13 +27,14 @@ class ViewController: UIViewController {
     @IBAction func faqButtonIsPressed(_ sender: Any) {
         if (FAQ.isHidden){
             FAQ.isHidden = false
+            
         }
         else {
             FAQ.isHidden = true
         }
     }
     
-    @IBAction func xFAQButtonIsPressed(_ sender: Any) {
+    @IBAction func FAQXButtonIsPressed(_ sender: Any) {
         FAQ.isHidden = true
     }
     
