@@ -49,8 +49,29 @@ class TutorTableViewController: UITableViewController {
         cell.rating.rating = tutor.rating
         return cell
     }
+    var valueToPass:Tutor!
 
-    /*
+/*    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath){
+
+        let indexPath = tableView.indexPathForSelectedRow;
+        let currentCell = tableView.cellForRow(at: indexPath!)
+        let tutor = tutors[(indexPath?.row)!]
+        print("hello \(tutor.name) \n")
+        valueToPass = tutor//[(indexPath?.row)!]
+        performSegue(withIdentifier: "modalseg", sender: self)
+    }*/
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if(segue.identifier == "modalseg"){
+            var viewController = segue.destination as! tutormodal
+
+            let indexPath = tableView.indexPathForSelectedRow;
+            let currentCell = tableView.cellForRow(at: indexPath!)
+            let tutor = tutors[(indexPath?.row)!]
+            print("hello \(tutor.name) \n")
+            valueToPass = tutor//[(indexPath?.row)!]
+            viewController.passedValue = valueToPass
+        }
+    }    /*
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
 

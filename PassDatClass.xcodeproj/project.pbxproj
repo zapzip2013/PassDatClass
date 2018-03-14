@@ -18,6 +18,7 @@
 		6569B67B203FE0D200A9CC9B /* ratings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6569B67A203FE0D200A9CC9B /* ratings.swift */; };
 		6569B67E2040DEDB00A9CC9B /* TutorTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6569B67D2040DEDB00A9CC9B /* TutorTableViewController.swift */; };
 		6569B6802040DF8700A9CC9B /* TutorTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6569B67F2040DF8700A9CC9B /* TutorTableViewCell.swift */; };
+		6589619A20587B2200E45018 /* tutormodal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6589619920587B2200E45018 /* tutormodal.swift */; };
 		65898A95202BF9E600E753E5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65898A94202BF9E600E753E5 /* AppDelegate.swift */; };
 		65898A97202BF9E600E753E5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65898A96202BF9E600E753E5 /* ViewController.swift */; };
 		65898A9A202BF9E600E753E5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65898A98202BF9E600E753E5 /* Main.storyboard */; };
@@ -56,6 +57,7 @@
 		6569B67A203FE0D200A9CC9B /* ratings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ratings.swift; sourceTree = "<group>"; };
 		6569B67D2040DEDB00A9CC9B /* TutorTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorTableViewController.swift; sourceTree = "<group>"; };
 		6569B67F2040DF8700A9CC9B /* TutorTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorTableViewCell.swift; sourceTree = "<group>"; };
+		6589619920587B2200E45018 /* tutormodal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tutormodal.swift; sourceTree = "<group>"; };
 		65898A91202BF9E600E753E5 /* PassDatClass.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PassDatClass.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		65898A94202BF9E600E753E5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		65898A96202BF9E600E753E5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -141,6 +143,7 @@
 				6569B67D2040DEDB00A9CC9B /* TutorTableViewController.swift */,
 				6569B67F2040DF8700A9CC9B /* TutorTableViewCell.swift */,
 				65898A98202BF9E600E753E5 /* Main.storyboard */,
+				6589619920587B2200E45018 /* tutormodal.swift */,
 				6569B67A203FE0D200A9CC9B /* ratings.swift */,
 				65898A9B202BF9E600E753E5 /* Assets.xcassets */,
 				65898AA0202BF9E600E753E5 /* Info.plist */,
@@ -277,6 +280,7 @@
 			files = (
 				6569B67E2040DEDB00A9CC9B /* TutorTableViewController.swift in Sources */,
 				2367286F202D09EF00287175 /* Sorting.swift in Sources */,
+				6589619A20587B2200E45018 /* tutormodal.swift in Sources */,
 				65898A97202BF9E600E753E5 /* ViewController.swift in Sources */,
 				65898A95202BF9E600E753E5 /* AppDelegate.swift in Sources */,
 				6569B67B203FE0D200A9CC9B /* ratings.swift in Sources */,

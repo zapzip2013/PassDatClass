@@ -408,6 +408,7 @@ I was going to be a superhero.  That was the goal I used to calm myself down at 
                                     <outlet property="namelabel" destination="6Bl-7o-0wb" id="uDg-xj-vAz"/>
                                     <outlet property="profileimage" destination="K0V-kz-7Jw" id="VhV-PJ-LaK"/>
                                     <outlet property="rating" destination="g4i-QA-gbx" id="2XQ-QF-ezX"/>
+                                    <segue destination="uAe-jD-Lh2" kind="presentation" identifier="modalseg" id="Q5j-FX-TyJ"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -416,10 +417,58 @@ I was going to be a superhero.  That was the goal I used to calm myself down at 
                             <outlet property="delegate" destination="a61-BM-Efe" id="0Hz-fg-eiR"/>
                         </connections>
                     </tableView>
+                    <navigationItem key="navigationItem" id="fKw-l2-5rF"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gJj-wP-hWd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2781.5999999999999" y="462.8185907046477"/>
+            <point key="canvasLocation" x="3600.8000000000002" y="424.13793103448279"/>
+        </scene>
+        <!--Tutormodal-->
+        <scene sceneID="kgA-tF-qZm">
+            <objects>
+                <viewController modalTransitionStyle="crossDissolve" modalPresentationStyle="overCurrentContext" id="uAe-jD-Lh2" customClass="tutormodal" customModule="PassDatClass" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="b5b-gh-3qe">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Eu9-zF-x8e">
+                                <rect key="frame" x="67" y="194" width="240" height="240"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y87-IW-RRT">
+                                        <rect key="frame" x="8" y="8" width="91" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pce-lt-f7X">
+                                        <rect key="frame" x="24" y="184" width="46" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Button"/>
+                                        <connections>
+                                            <action selector="back:" destination="uAe-jD-Lh2" eventType="touchUpInside" id="Ghm-vg-xwE"/>
+                                        </connections>
+                                    </button>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eKy-JZ-h3w">
+                                        <rect key="frame" x="83" y="37" width="149" height="115"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="Rhk-YX-6w9"/>
+                    </view>
+                    <connections>
+                        <outlet property="name" destination="y87-IW-RRT" id="VAv-k2-1Pf"/>
+                        <outlet property="picture" destination="eKy-JZ-h3w" id="aNd-el-ja5"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Nqn-Jt-Pep" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4484" y="447.52623688155927"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="624-4y-vS3">
@@ -535,9 +584,6 @@ I was going to be a superhero.  That was the goal I used to calm myself down at 
                                 <rect key="frame" x="22" y="173" width="122" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Picture (Optional)"/>
-                                <connections>
-                                    <segue destination="0Y9-BN-Aui" kind="presentation" modalPresentationStyle="overCurrentContext" modalTransitionStyle="crossDissolve" id="B31-NR-bsd"/>
-                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -548,10 +594,10 @@ I was going to be a superhero.  That was the goal I used to calm myself down at 
             </objects>
             <point key="canvasLocation" x="2725.5999999999999" y="-410.64467766116945"/>
         </scene>
-        <!--View Controller-->
+        <!--Tutor Table View Controller-->
         <scene sceneID="NoL-WC-HYL">
             <objects>
-                <viewController id="0Y9-BN-Aui" sceneMemberID="viewController">
+                <viewController modalTransitionStyle="crossDissolve" modalPresentationStyle="overCurrentContext" id="0Y9-BN-Aui" customClass="TutorTableViewController" customModule="PassDatClass" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="z6P-Da-6D5">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -583,7 +629,7 @@ I was going to be a superhero.  That was the goal I used to calm myself down at 
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <state key="normal" title="Back"/>
                                         <connections>
-                                            <segue destination="rPe-Yp-YdZ" kind="presentation" id="c4j-h3-25Z"/>
+                                            <action selector="Button:" destination="0Y9-BN-Aui" eventType="touchUpInside" id="W3a-1S-La6"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0tu-Wz-qtV">
@@ -601,10 +647,13 @@ I was going to be a superhero.  That was the goal I used to calm myself down at 
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="sdo-Jk-Wat"/>
                     </view>
+                    <connections>
+                        <outlet property="Back" destination="zgH-Y1-bKZ" id="tTk-qp-wVh"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gFt-V9-43u" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3502" y="-1151"/>
+            <point key="canvasLocation" x="4639" y="-207"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="Hi5-uB-ClK">
@@ -656,9 +705,8 @@ I was going to be a superhero.  That was the goal I used to calm myself down at 
         <image name="hamburger menu" width="128" height="128"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="B31-NR-bsd"/>
-        <segue reference="yd9-ME-EZe"/>
-        <segue reference="HNt-EE-PmY"/>
-        <segue reference="I2j-O9-66D"/>
+        <segue reference="CsL-On-sIV"/>
+        <segue reference="7a5-OV-FKC"/>
+        <segue reference="LWc-Gj-ULn"/>
     </inferredMetricsTieBreakers>
 </document>
