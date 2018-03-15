@@ -38,7 +38,7 @@ public class Search {
         var ret = [Tutor]()
         let query = "SELECT * FROM tutors WHERE courses LIKE '%" + prefix + "" + String(number) + "%';"
         let resquery = SQLInteract.ExecuteSelect(query: query)
-        ret += parseResult(resquery)
+        ret += parseResult(resquery.0)
         let orderret = Sorted.sort(by: order, tutors: ret)
         return orderret
     }

@@ -18,12 +18,12 @@ class SortingTest: XCTestCase {
     
     override func setUp() {
         super.setUp()
-        listTutors += [Tutor(phone: 6342, email: "dsadsa", name: "EEB,AC", rating: 0.3, photo: UIImage(named: "Random"), verified: false, bio: "Random")]
-        listTutors += [Tutor(phone: 6342, email: "dsadsa", name: "BC,EC", rating: 0.12, verified: true, bio: "Random")]
-        listTutors += [Tutor(phone: 6342, email: "dsadsa", name: "EA,SDAWQ", rating: 0.0, verified: true, bio: "Random")]
-        listTutors += [Tutor(phone: 6342, email: "dsadsa", name: "FF,DSFGG", rating: 0.42, photo: UIImage(named: "Random"), verified: false, bio: "Random")]
-        listTutors += [Tutor(phone: 6342, email: "dsadsa", name: "QWE,DSAW", rating: -1.2, verified: false, bio: "Random")]
-        listTutors += [Tutor(phone: 6342, email: "dsadsa", name: "ZXC,AQ", rating: 2, verified: true, bio: "Random")]
+        listTutors += [Tutor(phone: 6342, email: "dsadsa", name: "EEB", lastname: "EC", rating: 0.3, numbervotes: 10, photo: UIImage(named: "Random"), price: 1.1, verified: false, bio: "Random")]
+        listTutors += [Tutor(phone: 6342, email: "dsadsa", name: "BC", lastname: "EC", rating: 0.12, numbervotes: 12, price: 2.0, verified: true, bio: "Random")]
+        listTutors += [Tutor(phone: 6342, email: "dsadsa", name: "EA,SDAWQ", lastname: "SDAWQ", rating: 0.0, numbervotes: 13, price: 30.0, verified: true, bio: "Random")]
+        listTutors += [Tutor(phone: 6342, email: "dsadsa", name: "FF", lastname: "DSFGG", rating: 0.42, numbervotes: 14, photo: UIImage(named: "Random"), price: 14.1, verified: false, bio: "Random")]
+        listTutors += [Tutor(phone: 6342, email: "dsadsa", name: "QWE,DSAW", lastname: "DSAW", rating: -1.2, numbervotes: 15, price: 0.2, verified: false, bio: "Random")]
+        listTutors += [Tutor(phone: 6342, email: "dsadsa", name: "ZXC,AQ", lastname: "AQ", rating: 2, numbervotes: 40, price: 44.1, verified: true, bio: "Random")]
         
         // Put setup code here. This method is called before the invocation of each test method in the class.
     }
