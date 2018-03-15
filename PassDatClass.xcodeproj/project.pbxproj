@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		235A8E04205ADDD4007F8DC8 /* SQLInteractTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 235A8E03205ADDD4007F8DC8 /* SQLInteractTest.swift */; };
 		2367286C202D09EF00287175 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23672866202D09EE00287175 /* User.swift */; };
 		2367286D202D09EF00287175 /* SQLInteract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23672867202D09EE00287175 /* SQLInteract.swift */; };
 		2367286E202D09EF00287175 /* Course.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23672868202D09EF00287175 /* Course.swift */; };
@@ -48,6 +49,7 @@
 
 /* Begin PBXFileReference section */
 		1C5A7DF82032649100C8C911 /* PassDatSQL.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = PassDatSQL.xcodeproj; path = Objects/PassDatSQL/PassDatSQL.xcodeproj; sourceTree = "<group>"; };
+		235A8E03205ADDD4007F8DC8 /* SQLInteractTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SQLInteractTest.swift; sourceTree = "<group>"; };
 		23672866202D09EE00287175 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		23672867202D09EE00287175 /* SQLInteract.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SQLInteract.swift; sourceTree = "<group>"; };
 		23672868202D09EF00287175 /* Course.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Course.swift; sourceTree = "<group>"; };
@@ -119,6 +121,7 @@
 		2367289320362CCC00287175 /* PassDatClassTests */ = {
 			isa = PBXGroup;
 			children = (
+				235A8E03205ADDD4007F8DC8 /* SQLInteractTest.swift */,
 				2367289C20362CE400287175 /* Sorting.swift */,
 				2367289420362CCC00287175 /* PassDatClassTests.swift */,
 				2367289620362CCC00287175 /* Info.plist */,
@@ -369,6 +372,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2367289D20362CE400287175 /* Sorting.swift in Sources */,
+				235A8E04205ADDD4007F8DC8 /* SQLInteractTest.swift in Sources */,
 				2367289520362CCC00287175 /* PassDatClassTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

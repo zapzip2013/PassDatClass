@@ -73,7 +73,7 @@ public class Tutor : User {
     class func LogIn(email: String, password: String) -> Bool {
         let query = "SELECT * FROM users WHERE email='" + email + "';"
         let resquery = SQLInteract.ExecuteSelect(query: query)
-        let DBpass = resquery.first!["password"] as! String
+        let DBpass = resquery.0.first!["password"] as! String
         let cryptpass = AddSaltPepper(pass: password)
         return cryptpass == DBpass
     }
@@ -81,7 +81,7 @@ public class Tutor : User {
     class func QueryAccount(email: String) -> Tutor {
         let query = "SELECT * FROM tutors WHERE email='" + email + "';"
         let resquery = SQLInteract.ExecuteSelect(query: query)
-        let tutor = Tutor.ParseResult(resquery.first!)
+        let tutor = Tutor.ParseResult(resquery.0.first!)
         return tutor
     }
     
