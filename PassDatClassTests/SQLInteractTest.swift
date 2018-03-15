@@ -23,17 +23,30 @@ class SQLInteractTest: XCTestCase {
     }
     
     func testSelect() {
-        let string = "SELECT * FROM Tutor;"
+        let string = "SELECT FirstName FROM Tutor;"
         let result = SQLInteract.ExecuteSelect(query: string)
         print (result.0[0]["FirstName"]!)        // This is an example of a functional test case.
         // Use XCTAssert and related functions to verify your tests produce the correct results.
+    }
+    
+    func testDownloadPhoto(){
+        let string = "SELECT Photo FROM Tutor WHERE FSUEmail='tallafoc@outlook.com';"
+        let result = SQLInteract.ExecuteSelect(query: string)
+        let decodedphoto = SQLInteract.base64ToImage(base64: result.0[0]["Photo"] as! String)
+        XCTAssert(result.1.0)
+    }
+    
+    func testUploadPhoto(){
+        let string = "UPDATE `Tutor` SET `Photo` = '" + SQLInteract.imageTobase64(image: #imageLiteral(resourceName: "download-1.jpg")) + "' WHERE `Tutor`.`FSUEmail` = 'tallafoc@outlook.com'"
+        let result = SQLInteract.ExecuteModification(query: string)
+        XCTAssert(result.0)
     }
     
     func testInsertDelete(){
         let string = "INSERT INTO `Tutor` (`FSUEmail`, `Phone`, `FirstName`, `LastName`, `Rating`, `Photo`, `Bio`, `FSUVerified`, `NumberVotes`, `PricePerHour`) VALUES ('prueba', '1999999999', 'Prueba', 'Prueba2', '2.2', NULL, 'Esto es una prueba', '1', '1232', '3.3')"
         let result = SQLInteract.ExecuteModification(query: string)
         print (result)
-        let string2 = "DELETE Tutor WHERE FSUEmail='prueba';"
+        let string2 = "DELETE FROM Tutor WHERE FSUEmail='prueba';"
         let result2 = SQLInteract.ExecuteModification(query: string2)
         print (result2)
     }
