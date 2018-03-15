@@ -36,6 +36,28 @@ public class SQLInteract{
     ]
     
     
+    
+    class func imageTobase64 (image: UIImage) -> String {
+        var base64String = ""
+        let  cim = CIImage(image: image)
+        if (cim != nil) {
+            let imageData = UIImageJPEGRepresentation(image, 1.0)! as NSData
+            base64String = imageData.base64EncodedString(options: .lineLength64Characters)
+        }
+        return base64String
+    }
+    
+    class func base64ToImage (base64: String) -> UIImage {
+        var img: UIImage = UIImage()
+        if (!base64.isEmpty) {
+            let decodedData = Data(base64Encoded: base64 , options: NSData.Base64DecodingOptions.ignoreUnknownCharacters)!
+            let decodedimage = UIImage(data: decodedData as Data, scale: 1.0)
+            img = (decodedimage as UIImage?)!
+        }
+        return img
+    }
+    
+    
     //MARK: Methods
     public class func ExecuteSelect(query: String) -> ([[String:Any]], StatusMsg){
         var ret = ResQuery()
