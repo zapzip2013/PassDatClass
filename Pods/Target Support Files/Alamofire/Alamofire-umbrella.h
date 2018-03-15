@@ -10,8 +10,7 @@
 #endif
 #endif
 
-#import "DRDatabase.h"
 
-FOUNDATION_EXPORT double DRDatabaseVersionNumber;
-FOUNDATION_EXPORT const unsigned char DRDatabaseVersionString[];
+FOUNDATION_EXPORT double AlamofireVersionNumber;
+FOUNDATION_EXPORT const unsigned char AlamofireVersionString[];
 
