@@ -110,17 +110,19 @@ public class Tutor : User {
                 return tutor
             }
         }
-        
+        else {
+            return nil
+        }
     }
     
     class func CreateAccount(tutor: Tutor) -> StatusMsg {
-        let query = "INSERT INTO Tutor (FSUEmail, FirstName, LastName, Phone, Rating, NumberVotes, PricePerHour, Bio) VALUES ('" + tutor.email + "','" + tutor.firstname + "','" + tutor.lastname + "'," + tutor.phone + "," + tutor.rating + "," + tutor.numbervotes + "," + tutor.priceperhour + ",'" + tutor.bio + "');"
+        let query = "INSERT INTO Tutor (FSUEmail, FirstName, LastName, Phone, Rating, NumberVotes, PricePerHour, Bio) VALUES ('\(tutor.email)','\(tutor.firstname)','\(tutor.lastname)',\(tutor.phone),\(tutor.rating),\(tutor.numbervotes),\(tutor.priceperhour),'\(tutor.bio)');"
         return SQLInteract.ExecuteModification(query: query)
     }
     
     class func ChangePhoto(tutor: Tutor) -> StatusMsg {
         if (tutor.photo == nil){
-            return Tutor.RemovePhoto(tutor)
+            return Tutor.RemovePhoto(tutor: tutor)
         }
         else{
             let query = "UPDATE Tutor SET Photo='" + SQLInteract.imageTobase64(image: tutor.photo!) + "' WHERE FSUEmail='" + tutor.email + "';"
@@ -136,7 +138,7 @@ public class Tutor : User {
     }
     
     class func EditAccount(tutor: Tutor) -> StatusMsg {
-        let query = "UPDATE Tutor SET FirstName='" + tutor.firstname + "', LastName='" + tutor.lastname + "', Phone=" + tutor.phone + ", Rating=" + tutor.rating + ", NumberVotes=" + tutor.numbervotes + ", PricePerHour=" + tutor.priceperhour + ", Bio='" + tutor.bio + "'  WHERE FSUEmail='" + tutor.email + "';"
+        let query = "UPDATE Tutor SET FirstName='\(tutor.firstname)', LastName='\(tutor.lastname)', Phone=\(tutor.phone), Rating=\(tutor.rating), NumberVotes=\(tutor.numbervotes), PricePerHour=\(tutor.priceperhour), Bio='\(tutor.bio)'  WHERE FSUEmail='\(tutor.email)';"
         return SQLInteract.ExecuteModification(query: query)
     }
     
