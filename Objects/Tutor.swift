@@ -6,6 +6,9 @@
 //  Copyright © 2018 PassDatClass. All rights reserved.
 //
 
+/* Implemented by Jose Carlos */
+
+
 import Foundation
 import UIKit
 
@@ -43,24 +46,24 @@ public class Tutor : User {
     
     //MARK: Methods
     class func ParseResult(_ row: RowQuery) -> Tutor {
-        let firstname = row["firstName"] as! String
-        let lastname = row["lastName"] as! String
-        let priceperhour = row["pricePerHour"] as! Float
-        let numbervotes = row["numbervotes"] as! Int
-        let phone = row["phoneNumber"] as! Int
-        let bio = row["bio"] as! String
-        let rating = row["rating"] as! Float
-        let fsuverified = row["fsuverified"] as! Bool
-        let email = row["email"] as! String
-        let photo = row["photo"] as? UIImage
+        let firstname = row["FirstName"] as! String
+        let lastname = row["LastName"] as! String
+        let priceperhour = row["PricePerHour"] as! Float
+        let numbervotes = row["NumberVotes"] as! Int
+        let phone = row["Phone"] as! Int
+        let bio = row["Bio"] as! String
+        let rating = row["Rating"] as! Float
+        let fsuverified = row["FSUVerified"] as! Bool
+        let email = row["FSUEmail"] as! String
+        let photo = SQLInteract.base64ToImage(base64: row["Photo"] as? String)
         let ret = Tutor(phone: phone, email: email, name: firstname, lastname: lastname, rating: rating, numbervotes: numbervotes, photo: photo, price: priceperhour, verified: fsuverified, bio: bio)
         return ret
     }
     
     class func encrypt(_ pass: String) -> String {
-        // TODO
         return pass
     }
+    
     
     class func AddSaltPepper(pass: String) -> String {
         let salt = "DDSADSA;"
@@ -70,35 +73,80 @@ public class Tutor : User {
         return cryptresult
     }
     
-    class func LogIn(email: String, password: String) -> Bool {
-        let query = "SELECT * FROM users WHERE email='" + email + "';"
+    class func LogIn(email: String, password: String) -> StatusMsg {
+        let query = "SELECT * FROM User WHERE FSUEmail='" + email + "';"
         let resquery = SQLInteract.ExecuteSelect(query: query)
-        let DBpass = resquery.0.first!["password"] as! String
-        let cryptpass = AddSaltPepper(pass: password)
-        return cryptpass == DBpass
+        let msg = resquery.1
+        if msg.status == false {
+            return msg
+        }
+        else if (resquery.0.isEmpty){
+            return (false, "There's no such username registered!")
+        }
+        else {
+            let DBpass = resquery.0.first!["Password"] as! String
+            let cryptpass = AddSaltPepper(pass: password)
+            if (cryptpass == DBpass){
+                return (true, "Correct Login")
+            }
+            else {
+                return (false, "Wrong password!")
+            }
+        }
+        
     }
     
-    class func QueryAccount(email: String) -> Tutor {
-        let query = "SELECT * FROM tutors WHERE email='" + email + "';"
+    class func QueryAccount(email: String) -> Tutor? {
+        let query = "SELECT * FROM Tutor WHERE email='" + email + "';"
         let resquery = SQLInteract.ExecuteSelect(query: query)
-        let tutor = Tutor.ParseResult(resquery.0.first!)
-        return tutor
+        let msg = resquery.1
+        if (msg.status) {
+            let row = resquery.0.first
+            if (row == nil){
+                return nil
+            }
+            else {
+                let tutor = Tutor.ParseResult(row!)
+                return tutor
+            }
+        }
+        
     }
     
-    class func EditAccount(tutor: Tutor) -> (Bool,String) {
-        //TODO
-        let query = "UPDATE tutors VALUES (..) WHERE email='" + tutor.email + "';"
+    class func CreateAccount(tutor: Tutor) -> StatusMsg {
+        let query = "INSERT INTO Tutor (FSUEmail, FirstName, LastName, Phone, Rating, NumberVotes, PricePerHour, Bio) VALUES ('" + tutor.email + "','" + tutor.firstname + "','" + tutor.lastname + "'," + tutor.phone + "," + tutor.rating + "," + tutor.numbervotes + "," + tutor.priceperhour + ",'" + tutor.bio + "');"
         return SQLInteract.ExecuteModification(query: query)
     }
     
-    class func DeleteAccount(tutor: Tutor) -> (Bool,String)  {
-        let query = "DELETE FROM tutors WHERE email='" + tutor.email + "';"
+    class func ChangePhoto(tutor: Tutor) -> StatusMsg {
+        if (tutor.photo == nil){
+            return Tutor.RemovePhoto(tutor)
+        }
+        else{
+            let query = "UPDATE Tutor SET Photo='" + SQLInteract.imageTobase64(image: tutor.photo!) + "' WHERE FSUEmail='" + tutor.email + "';"
+            return SQLInteract.ExecuteModification(query: query)
+        }
+        
+    }
+    
+    
+    class func RemovePhoto(tutor: Tutor) -> StatusMsg {
+        let query = "UPDATE Tutor SET Photo=NULL WHERE FSUEmail='" + tutor.email + "';"
         return SQLInteract.ExecuteModification(query: query)
     }
     
-    class func CreateAccount(tutor: Tutor) -> (Bool,String) {
-        let query = "INSERT INTO tutors VALUES (...);"
-        //TODO: TABLE USERS? DOUBT
+    class func EditAccount(tutor: Tutor) -> StatusMsg {
+        let query = "UPDATE Tutor SET FirstName='" + tutor.firstname + "', LastName='" + tutor.lastname + "', Phone=" + tutor.phone + ", Rating=" + tutor.rating + ", NumberVotes=" + tutor.numbervotes + ", PricePerHour=" + tutor.priceperhour + ", Bio='" + tutor.bio + "'  WHERE FSUEmail='" + tutor.email + "';"
+        return SQLInteract.ExecuteModification(query: query)
+    }
+    
+    class func DeleteAccount(tutor: Tutor) -> StatusMsg  {
+        let query = "DELETE FROM Tutor WHERE FSUEmail='" + tutor.email + "';"
+        return SQLInteract.ExecuteModification(query: query)
+    }
+    
+    class func SignIn(FSUEmail: String, Password: String) -> StatusMsg {
+        let query = "INSERT INTO User VALUES ('" + FSUEmail + "','" + Password + "');"
         return SQLInteract.ExecuteModification(query: query)
     }
     

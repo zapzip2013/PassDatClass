@@ -60,6 +60,7 @@
 		2367289420362CCC00287175 /* PassDatClassTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PassDatClassTests.swift; sourceTree = "<group>"; };
 		2367289620362CCC00287175 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2367289C20362CE400287175 /* Sorting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sorting.swift; sourceTree = "<group>"; };
+		23CEB53F205C3CC00058972A /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		23D00ABC204742BF00BCA2D6 /* 624878906.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 624878906.jpg; sourceTree = SOURCE_ROOT; };
 		23D00ABD204742BF00BCA2D6 /* wallpaper.wiki-Screen-Background-PC-Wallpapers-PIC-WPD006555.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "wallpaper.wiki-Screen-Background-PC-Wallpapers-PIC-WPD006555.jpg"; sourceTree = SOURCE_ROOT; };
 		23D00ABE204742BF00BCA2D6 /* download-1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "download-1.jpg"; sourceTree = SOURCE_ROOT; };
@@ -173,6 +174,7 @@
 		984036AC3A76E1CDAE2B8F70 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				23CEB53F205C3CC00058972A /* Security.framework */,
 				D199629CD0715ED23AE0B367 /* Pods_PassDatClass.framework */,
 			);
 			name = Frameworks;
