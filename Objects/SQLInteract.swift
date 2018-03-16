@@ -10,7 +10,7 @@
 
 public typealias ResQuery = [[String: Any]]
 public typealias RowQuery = [String:Any]
-public typealias StatusMsg = (Bool, String)
+public typealias StatusMsg = (status: Bool, msg: String)
 
 
 import Foundation
@@ -47,13 +47,20 @@ public class SQLInteract{
         return base64String
     }
     
-    class func base64ToImage (base64: String) -> UIImage {
+    class func base64ToImage (base64: String?) -> UIImage? {
         var img: UIImage = UIImage()
-        if (!base64.isEmpty) {
-            let decodedData = Data(base64Encoded: base64 , options: NSData.Base64DecodingOptions.ignoreUnknownCharacters)!
-            let decodedimage = UIImage(data: decodedData as Data, scale: 1.0)
-            img = (decodedimage as UIImage?)!
+        if base64 != nil{
+            let base = base64!
+            if (!base.isEmpty) {
+                let decodedData = Data(base64Encoded: base , options: NSData.Base64DecodingOptions.ignoreUnknownCharacters)!
+                let decodedimage = UIImage(data: decodedData as Data, scale: 1.0)
+                img = (decodedimage as UIImage?)!
+            }
         }
+        else{
+            return nil
+        }
+        
         return img
     }
     
