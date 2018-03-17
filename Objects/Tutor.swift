@@ -11,6 +11,7 @@
 
 import Foundation
 import UIKit
+import CryptoSwift
 
 public class Tutor : User {
     //MARK: Properties
@@ -48,20 +49,29 @@ public class Tutor : User {
     class func ParseResult(_ row: RowQuery) -> Tutor {
         let firstname = row["FirstName"] as! String
         let lastname = row["LastName"] as! String
-        let priceperhour = row["PricePerHour"] as! Float
-        let numbervotes = row["NumberVotes"] as! Int
-        let phone = row["Phone"] as! Int
+        let priceperhour = row["PricePerHour"] as! String
+        let numbervotes = row["NumberVotes"] as! String
+        let phone = row["Phone"] as! String
         let bio = row["Bio"] as! String
-        let rating = row["Rating"] as! Float
-        let fsuverified = row["FSUVerified"] as! Bool
+        let rating = row["Rating"] as! String
+        let fsuver = row["FSUVerified"] as! String
+        var fsuverified : Bool
+        if (fsuver == "1"){
+            fsuverified = true
+        }
+        else {
+            fsuverified = false
+        }
         let email = row["FSUEmail"] as! String
         let photo = SQLInteract.base64ToImage(base64: row["Photo"] as? String)
-        let ret = Tutor(phone: phone, email: email, name: firstname, lastname: lastname, rating: rating, numbervotes: numbervotes, photo: photo, price: priceperhour, verified: fsuverified, bio: bio)
+        let ret = Tutor(phone: Int(phone)!, email: email, name: firstname, lastname: lastname, rating: Float(rating)!, numbervotes: Int(numbervotes)!, photo: photo, price: Float(priceperhour)!, verified: fsuverified, bio: bio)
         return ret
     }
     
     class func encrypt(_ pass: String) -> String {
-        return pass
+        let bytes = pass.bytes
+        let hashed = bytes.sha256().toHexString()
+        return hashed
     }
     
     
@@ -97,7 +107,7 @@ public class Tutor : User {
     }
     
     class func QueryAccount(email: String) -> Tutor? {
-        let query = "SELECT * FROM Tutor WHERE email='" + email + "';"
+        let query = "SELECT * FROM Tutor WHERE FSUEmail='" + email + "';"
         let resquery = SQLInteract.ExecuteSelect(query: query)
         let msg = resquery.1
         if (msg.status) {
@@ -148,7 +158,12 @@ public class Tutor : User {
     }
     
     class func SignIn(FSUEmail: String, Password: String) -> StatusMsg {
-        let query = "INSERT INTO User VALUES ('" + FSUEmail + "','" + Password + "');"
+        let query = "INSERT INTO User VALUES ('" + FSUEmail + "','" + AddSaltPepper(pass: Password) + "');"
+        return SQLInteract.ExecuteModification(query: query)
+    }
+    
+    class func SignOut(tutor: Tutor) -> StatusMsg {
+        let query = "DELETE FROM User WHERE FSUEmail='" + tutor.email + "';"
         return SQLInteract.ExecuteModification(query: query)
     }
     
