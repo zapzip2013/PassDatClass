@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2353BB04205CAA7D00474354 /* TutorTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2353BB03205CAA7D00474354 /* TutorTest.swift */; };
 		235A8E04205ADDD4007F8DC8 /* SQLInteractTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 235A8E03205ADDD4007F8DC8 /* SQLInteractTest.swift */; };
 		2367286C202D09EF00287175 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23672866202D09EE00287175 /* User.swift */; };
 		2367286D202D09EF00287175 /* SQLInteract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23672867202D09EE00287175 /* SQLInteract.swift */; };
@@ -49,6 +50,7 @@
 
 /* Begin PBXFileReference section */
 		1C5A7DF82032649100C8C911 /* PassDatSQL.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = PassDatSQL.xcodeproj; path = Objects/PassDatSQL/PassDatSQL.xcodeproj; sourceTree = "<group>"; };
+		2353BB03205CAA7D00474354 /* TutorTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorTest.swift; sourceTree = "<group>"; };
 		235A8E03205ADDD4007F8DC8 /* SQLInteractTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SQLInteractTest.swift; sourceTree = "<group>"; };
 		23672866202D09EE00287175 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		23672867202D09EE00287175 /* SQLInteract.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SQLInteract.swift; sourceTree = "<group>"; };
@@ -122,6 +124,7 @@
 		2367289320362CCC00287175 /* PassDatClassTests */ = {
 			isa = PBXGroup;
 			children = (
+				2353BB03205CAA7D00474354 /* TutorTest.swift */,
 				235A8E03205ADDD4007F8DC8 /* SQLInteractTest.swift */,
 				2367289C20362CE400287175 /* Sorting.swift */,
 				2367289420362CCC00287175 /* PassDatClassTests.swift */,
@@ -355,11 +358,13 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-PassDatClass/Pods-PassDatClass-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/Alamofire-Synchronous/Alamofire_Synchronous.framework",
+				"${BUILT_PRODUCTS_DIR}/CryptoSwift/CryptoSwift.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire_Synchronous.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CryptoSwift.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -373,6 +378,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2353BB04205CAA7D00474354 /* TutorTest.swift in Sources */,
 				2367289D20362CE400287175 /* Sorting.swift in Sources */,
 				235A8E04205ADDD4007F8DC8 /* SQLInteractTest.swift in Sources */,
 				2367289520362CCC00287175 /* PassDatClassTests.swift in Sources */,
