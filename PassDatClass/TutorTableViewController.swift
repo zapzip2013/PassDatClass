@@ -30,6 +30,22 @@ class TutorTableViewController: UITableViewController {
         // #warning Incomplete implementation, return the number of sections
         return 1
     }
+    
+    var valueToPass:Tutor!
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if(segue.identifier == "modalseg"){
+            var viewController = segue.destination as! tutormodal
+            
+            let indexPath = tableView.indexPathForSelectedRow;
+            let currentCell = tableView.cellForRow(at: indexPath!)
+            let tutor = tutors[(indexPath?.row)!]
+            print("hello \(tutor.name) \n")
+            valueToPass = tutor//[(indexPath?.row)!]
+            viewController.passedValue = valueToPass
+        }
+    }
+    
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows

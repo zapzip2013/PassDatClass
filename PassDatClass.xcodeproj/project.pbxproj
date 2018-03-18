@@ -17,6 +17,7 @@
 		23672871202D09F000287175 /* Tutor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2367286B202D09EF00287175 /* Tutor.swift */; };
 		2367289520362CCC00287175 /* PassDatClassTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2367289420362CCC00287175 /* PassDatClassTests.swift */; };
 		2367289D20362CE400287175 /* Sorting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2367289C20362CE400287175 /* Sorting.swift */; };
+		237FFA83205F29200092CA92 /* tutormodal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 237FFA81205F29200092CA92 /* tutormodal.swift */; };
 		23D00AC0204742BF00BCA2D6 /* 624878906.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 23D00ABC204742BF00BCA2D6 /* 624878906.jpg */; };
 		23D00AC1204742BF00BCA2D6 /* wallpaper.wiki-Screen-Background-PC-Wallpapers-PIC-WPD006555.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 23D00ABD204742BF00BCA2D6 /* wallpaper.wiki-Screen-Background-PC-Wallpapers-PIC-WPD006555.jpg */; };
 		23D00AC2204742BF00BCA2D6 /* download-1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 23D00ABE204742BF00BCA2D6 /* download-1.jpg */; };
@@ -62,6 +63,7 @@
 		2367289420362CCC00287175 /* PassDatClassTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PassDatClassTests.swift; sourceTree = "<group>"; };
 		2367289620362CCC00287175 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2367289C20362CE400287175 /* Sorting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sorting.swift; sourceTree = "<group>"; };
+		237FFA81205F29200092CA92 /* tutormodal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = tutormodal.swift; sourceTree = "<group>"; };
 		23CEB53F205C3CC00058972A /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		23D00ABC204742BF00BCA2D6 /* 624878906.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 624878906.jpg; sourceTree = SOURCE_ROOT; };
 		23D00ABD204742BF00BCA2D6 /* wallpaper.wiki-Screen-Background-PC-Wallpapers-PIC-WPD006555.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "wallpaper.wiki-Screen-Background-PC-Wallpapers-PIC-WPD006555.jpg"; sourceTree = SOURCE_ROOT; };
@@ -167,6 +169,7 @@
 				6569B67D2040DEDB00A9CC9B /* TutorTableViewController.swift */,
 				6569B67F2040DF8700A9CC9B /* TutorTableViewCell.swift */,
 				65898A98202BF9E600E753E5 /* Main.storyboard */,
+				237FFA81205F29200092CA92 /* tutormodal.swift */,
 				6569B67A203FE0D200A9CC9B /* ratings.swift */,
 				65898A9B202BF9E600E753E5 /* Assets.xcassets */,
 				65898AA0202BF9E600E753E5 /* Info.plist */,
@@ -391,6 +394,7 @@
 			files = (
 				6569B67E2040DEDB00A9CC9B /* TutorTableViewController.swift in Sources */,
 				2367286F202D09EF00287175 /* Sorting.swift in Sources */,
+				237FFA83205F29200092CA92 /* tutormodal.swift in Sources */,
 				65898A97202BF9E600E753E5 /* ViewController.swift in Sources */,
 				65898A95202BF9E600E753E5 /* AppDelegate.swift in Sources */,
 				6569B67B203FE0D200A9CC9B /* ratings.swift in Sources */,
