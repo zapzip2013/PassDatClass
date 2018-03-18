@@ -23,27 +23,27 @@ class SQLInteractTest: XCTestCase {
     }
     
     func testSelect() {
-        let string = "SELECT FirstName FROM Tutor;"
+        let string = "SELECT firstName FROM Tutor;"
         let result = SQLInteract.ExecuteSelect(query: string)
-        print (result.0[0]["FirstName"]!)        // This is an example of a functional test case.
+        print (result.0[0]["firstName"]!)        // This is an example of a functional test case.
         // Use XCTAssert and related functions to verify your tests produce the correct results.
     }
     
     func testDownloadPhoto(){
-        let string = "SELECT Photo FROM Tutor WHERE FSUEmail='tallafoc@outlook.com';"
+        let string = "SELECT photo FROM Tutor WHERE FSUEmail='tallafoc@outlook.com';"
         let result = SQLInteract.ExecuteSelect(query: string)
-        let decodedphoto = SQLInteract.base64ToImage(base64: result.0[0]["Photo"] as! String)
+        let decodedphoto = SQLInteract.base64ToImage(base64: result.0[0]["photo"] as? String)
         XCTAssert(result.1.0)
     }
     
     func testUploadPhoto(){
-        let string = "UPDATE `Tutor` SET `Photo` = '" + SQLInteract.imageTobase64(image: #imageLiteral(resourceName: "download-1.jpg")) + "' WHERE `Tutor`.`FSUEmail` = 'tallafoc@outlook.com'"
+        let string = "UPDATE `Tutor` SET `photo` = '" + SQLInteract.imageTobase64(image: #imageLiteral(resourceName: "download-1.jpg")) + "' WHERE `Tutor`.`FSUEmail` = 'tallafoc@outlook.com'"
         let result = SQLInteract.ExecuteModification(query: string)
         XCTAssert(result.0)
     }
     
     func testInsertDelete(){
-        let string = "INSERT INTO `Tutor` (`FSUEmail`, `Phone`, `FirstName`, `LastName`, `Rating`, `Photo`, `Bio`, `FSUVerified`, `NumberVotes`, `PricePerHour`) VALUES ('prueba', '1999999999', 'Prueba', 'Prueba2', '2.2', NULL, 'Esto es una prueba', '1', '1232', '3.3')"
+        let string = "INSERT INTO `Tutor` (`FSUEmail`, `phoneNumber`, `firstName`, `lastName`, `rating`, `photo`, `bio`, `FSUVerified`, `numberVotes`, `pricePerHour`) VALUES ('prueba', '1999999999', 'Prueba', 'Prueba2', '2.2', NULL, 'Esto es una prueba', '1', '1232', '3.3')"
         let result = SQLInteract.ExecuteModification(query: string)
         print (result)
         let string2 = "DELETE FROM Tutor WHERE FSUEmail='prueba';"
@@ -54,7 +54,7 @@ class SQLInteractTest: XCTestCase {
     func testInsertFailurePass(){
         let pass = SQLInteract.parameters["p"]!
         SQLInteract.parameters["p"] = "random"
-        let string = "INSERT INTO `Tutor` (`FSUEmail`, `Phone`, `FirstName`, `LastName`, `Rating`, `Photo`, `Bio`, `FSUVerified`, `NumberVotes`, `PricePerHour`) VALUES ('prueba', '1999999999', 'Prueba', 'Prueba2', '2.2', NULL, 'Esto es una prueba', '1', '1232', '3.3')"
+        let string = "INSERT INTO `Tutor` (`FSUEmail`, `phoneNumber`, `firstName`, `lastName`, `rating`, `photo`, `bio`, `FSUVerified`, `numberVotes`, `pricePerHour`) VALUES ('prueba', '1999999999', 'Prueba', 'Prueba2', '2.2', NULL, 'Esto es una prueba', '1', '1232', '3.3')"
         let result = SQLInteract.ExecuteModification(query: string)
         print (result)
         SQLInteract.parameters["p"] = pass
@@ -63,7 +63,7 @@ class SQLInteractTest: XCTestCase {
     func testInsertFailureHost(){
         let php = SQLInteract.phpFile
         SQLInteract.phpFile = URL(string: "anotherHost")
-        let string = "INSERT INTO `Tutor` (`FSUEmail`, `Phone`, `FirstName`, `LastName`, `Rating`, `Photo`, `Bio`, `FSUVerified`, `NumberVotes`, `PricePerHour`) VALUES ('prueba', '1999999999', 'Prueba', 'Prueba2', '2.2', NULL, 'Esto es una prueba', '1', '1232', '3.3')"
+        let string = "INSERT INTO `Tutor` (`FSUEmail`, `phoneNumber`, `firstName`, `lastName`, `rating`, `photo`, `bio`, `FSUVerified`, `numberVotes`, `pricePerHour`) VALUES ('prueba', '1999999999', 'Prueba', 'Prueba2', '2.2', NULL, 'Esto es una prueba', '1', '1232', '3.3')"
         let result = SQLInteract.ExecuteModification(query: string)
         print (result)
         SQLInteract.phpFile = php

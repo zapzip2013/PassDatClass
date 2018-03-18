@@ -47,13 +47,13 @@ public class Tutor : User {
     
     //MARK: Methods
     class func ParseResult(_ row: RowQuery) -> Tutor {
-        let firstname = row["FirstName"] as! String
-        let lastname = row["LastName"] as! String
-        let priceperhour = row["PricePerHour"] as! String
-        let numbervotes = row["NumberVotes"] as! String
-        let phone = row["Phone"] as! String
-        let bio = row["Bio"] as! String
-        let rating = row["Rating"] as! String
+        let firstname = row["firstName"] as! String
+        let lastname = row["lastName"] as! String
+        let priceperhour = row["pricePerHour"] as! String
+        let numbervotes = row["numberVotes"] as! String
+        let phone = row["phoneNumber"] as! String
+        let bio = row["bio"] as! String
+        let rating = row["rating"] as! String
         let fsuver = row["FSUVerified"] as! String
         var fsuverified : Bool
         if (fsuver == "1"){
@@ -63,7 +63,7 @@ public class Tutor : User {
             fsuverified = false
         }
         let email = row["FSUEmail"] as! String
-        let photo = SQLInteract.base64ToImage(base64: row["Photo"] as? String)
+        let photo = SQLInteract.base64ToImage(base64: row["photo"] as? String)
         let ret = Tutor(phone: Int(phone)!, email: email, name: firstname, lastname: lastname, rating: Float(rating)!, numbervotes: Int(numbervotes)!, photo: photo, price: Float(priceperhour)!, verified: fsuverified, bio: bio)
         return ret
     }
@@ -126,7 +126,7 @@ public class Tutor : User {
     }
     
     class func CreateAccount(tutor: Tutor) -> StatusMsg {
-        let query = "INSERT INTO Tutor (FSUEmail, FirstName, LastName, Phone, Rating, NumberVotes, PricePerHour, Bio) VALUES ('\(tutor.email)','\(tutor.firstname)','\(tutor.lastname)',\(tutor.phone),\(tutor.rating),\(tutor.numbervotes),\(tutor.priceperhour),'\(tutor.bio)');"
+        let query = "INSERT INTO Tutor (FSUEmail, firstName, lastName, phoneNumber, rating, numberVotes, pricePerHour, bio) VALUES ('\(tutor.email)','\(tutor.firstname)','\(tutor.lastname)',\(tutor.phone),\(tutor.rating),\(tutor.numbervotes),\(tutor.priceperhour),'\(tutor.bio)');"
         return SQLInteract.ExecuteModification(query: query)
     }
     
@@ -135,7 +135,7 @@ public class Tutor : User {
             return Tutor.RemovePhoto(tutor: tutor)
         }
         else{
-            let query = "UPDATE Tutor SET Photo='" + SQLInteract.imageTobase64(image: tutor.photo!) + "' WHERE FSUEmail='" + tutor.email + "';"
+            let query = "UPDATE Tutor SET photo='" + SQLInteract.imageTobase64(image: tutor.photo!) + "' WHERE FSUEmail='" + tutor.email + "';"
             return SQLInteract.ExecuteModification(query: query)
         }
         
@@ -143,12 +143,12 @@ public class Tutor : User {
     
     
     class func RemovePhoto(tutor: Tutor) -> StatusMsg {
-        let query = "UPDATE Tutor SET Photo=NULL WHERE FSUEmail='" + tutor.email + "';"
+        let query = "UPDATE Tutor SET photo=NULL WHERE FSUEmail='" + tutor.email + "';"
         return SQLInteract.ExecuteModification(query: query)
     }
     
     class func EditAccount(tutor: Tutor) -> StatusMsg {
-        let query = "UPDATE Tutor SET FirstName='\(tutor.firstname)', LastName='\(tutor.lastname)', Phone=\(tutor.phone), Rating=\(tutor.rating), NumberVotes=\(tutor.numbervotes), PricePerHour=\(tutor.priceperhour), Bio='\(tutor.bio)'  WHERE FSUEmail='\(tutor.email)';"
+        let query = "UPDATE Tutor SET firstName='\(tutor.firstname)', lastName='\(tutor.lastname)', phoneNumber=\(tutor.phone), rating=\(tutor.rating), numberVotes=\(tutor.numbervotes), pricePerHour=\(tutor.priceperhour), bio='\(tutor.bio)'  WHERE FSUEmail='\(tutor.email)';"
         return SQLInteract.ExecuteModification(query: query)
     }
     
