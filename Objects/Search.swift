@@ -5,6 +5,7 @@
 //  Created by Jose Carlos on 2/8/18.
 //  Copyright © 2018 PassDatClass. All rights reserved.
 //
+/* Implemented by Jose Carlos & Jordan Mussman */
 
 import Foundation
 
@@ -29,7 +30,6 @@ public class Search {
         for row in res {
             ret += [Tutor.ParseResult(row)]
         }
-        
         return ret
     }
     
@@ -42,7 +42,5 @@ public class Search {
         let orderret = Sorted.sort(by: order, tutors: ret)
         return orderret
     }
-    
-    
-    
-}
+
+} /* End Search class */
