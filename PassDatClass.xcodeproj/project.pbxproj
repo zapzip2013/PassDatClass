@@ -11,7 +11,6 @@
 		235A8E04205ADDD4007F8DC8 /* SQLInteractTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 235A8E03205ADDD4007F8DC8 /* SQLInteractTest.swift */; };
 		2367286C202D09EF00287175 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23672866202D09EE00287175 /* User.swift */; };
 		2367286D202D09EF00287175 /* SQLInteract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23672867202D09EE00287175 /* SQLInteract.swift */; };
-		2367286E202D09EF00287175 /* Course.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23672868202D09EF00287175 /* Course.swift */; };
 		2367286F202D09EF00287175 /* Sorting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23672869202D09EF00287175 /* Sorting.swift */; };
 		23672870202D09F000287175 /* Search.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2367286A202D09EF00287175 /* Search.swift */; };
 		23672871202D09F000287175 /* Tutor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2367286B202D09EF00287175 /* Tutor.swift */; };
@@ -55,7 +54,6 @@
 		235A8E03205ADDD4007F8DC8 /* SQLInteractTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SQLInteractTest.swift; sourceTree = "<group>"; };
 		23672866202D09EE00287175 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		23672867202D09EE00287175 /* SQLInteract.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SQLInteract.swift; sourceTree = "<group>"; };
-		23672868202D09EF00287175 /* Course.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Course.swift; sourceTree = "<group>"; };
 		23672869202D09EF00287175 /* Sorting.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Sorting.swift; sourceTree = "<group>"; };
 		2367286A202D09EF00287175 /* Search.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Search.swift; sourceTree = "<group>"; };
 		2367286B202D09EF00287175 /* Tutor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tutor.swift; sourceTree = "<group>"; };
@@ -113,7 +111,6 @@
 		23672865202D09C900287175 /* Objects */ = {
 			isa = PBXGroup;
 			children = (
-				23672868202D09EF00287175 /* Course.swift */,
 				2367286A202D09EF00287175 /* Search.swift */,
 				23672869202D09EF00287175 /* Sorting.swift */,
 				23672867202D09EE00287175 /* SQLInteract.swift */,
@@ -398,7 +395,6 @@
 				65898A97202BF9E600E753E5 /* ViewController.swift in Sources */,
 				65898A95202BF9E600E753E5 /* AppDelegate.swift in Sources */,
 				6569B67B203FE0D200A9CC9B /* ratings.swift in Sources */,
-				2367286E202D09EF00287175 /* Course.swift in Sources */,
 				23672871202D09F000287175 /* Tutor.swift in Sources */,
 				2367286D202D09EF00287175 /* SQLInteract.swift in Sources */,
 				2367286C202D09EF00287175 /* User.swift in Sources */,
