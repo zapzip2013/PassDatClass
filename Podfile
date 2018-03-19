@@ -1,3 +1,4 @@
+# AKA Dependancy file using cocapod and then pod install *.
 use_frameworks!
 
 target 'PassDatClass' do

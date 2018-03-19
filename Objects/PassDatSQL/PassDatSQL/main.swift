@@ -7,7 +7,6 @@
 //
 /*implemented by Jordan and Brad*/
 import Foundation
-import PGSQLKit
 
 var connectionString: String
 connectionString = "host=" + "localhost"

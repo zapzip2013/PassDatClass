@@ -5,7 +5,7 @@
 //  Created by Jose Carlos Torres Quiles on 3/6/18.
 //  Copyright © 2018 Daniel Gibney. All rights reserved.
 //
-/* Implemented by Jose Carlos */
+/* Implemented by Jose Carlos & Jordan Mussman */
 
 import XCTest
 @testable import PassDatClass
@@ -28,20 +28,23 @@ class SQLInteractTest: XCTestCase {
         print (result.0[0]["firstName"]!)        // This is an example of a functional test case.
         // Use XCTAssert and related functions to verify your tests produce the correct results.
     }
-    
+
+/* Get photo test */
     func testDownloadPhoto(){
         let string = "SELECT photo FROM Tutor WHERE FSUEmail='tallafoc@outlook.com';"
         let result = SQLInteract.ExecuteSelect(query: string)
-        let decodedphoto = SQLInteract.base64ToImage(base64: result.0[0]["photo"] as? String)
+        let _ = SQLInteract.base64ToImage(base64: result.0[0]["photo"] as? String)
         XCTAssert(result.1.0)
     }
     
+/* Insert photo test */
     func testUploadPhoto(){
         let string = "UPDATE `Tutor` SET `photo` = '" + SQLInteract.imageTobase64(image: #imageLiteral(resourceName: "download-1.jpg")) + "' WHERE `Tutor`.`FSUEmail` = 'tallafoc@outlook.com'"
         let result = SQLInteract.ExecuteModification(query: string)
         XCTAssert(result.0)
     }
-    
+ 
+/* Insert and then delete a hardcoded user */
     func testInsertDelete(){
         let string = "INSERT INTO `Tutor` (`FSUEmail`, `phoneNumber`, `firstName`, `lastName`, `rating`, `photo`, `bio`, `FSUVerified`, `numberVotes`, `pricePerHour`) VALUES ('prueba', '1999999999', 'Prueba', 'Prueba2', '2.2', NULL, 'Esto es una prueba', '1', '1232', '3.3')"
         let result = SQLInteract.ExecuteModification(query: string)
@@ -51,6 +54,7 @@ class SQLInteractTest: XCTestCase {
         print (result2)
     }
     
+/* Purposeful insert php pass file failure test */
     func testInsertFailurePass(){
         let pass = SQLInteract.parameters["p"]!
         SQLInteract.parameters["p"] = "random"
@@ -60,6 +64,7 @@ class SQLInteractTest: XCTestCase {
         SQLInteract.parameters["p"] = pass
     }
     
+/* Purposeful insert php host file failure test */
     func testInsertFailureHost(){
         let php = SQLInteract.phpFile
         SQLInteract.phpFile = URL(string: "anotherHost")
