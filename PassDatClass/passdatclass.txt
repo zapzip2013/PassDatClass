@@ -1,0 +1,521 @@
+commit d4b76a347a75abed8377ad9a3e42d3c5059b1254
+Author: Jose Carlos <jctq1@alu.ua.es>
+Date:   Mon Mar 19 19:01:06 2018 -0400
+
+    - Removed reference to old projects
+
+commit a56ee9e6a122400f7337216e38c67dbdbf80be50
+Author: Jose Carlos Torres Quiles <tallafoc@joses-macbook-pro.local>
+Date:   Mon Mar 19 18:36:10 2018 -0400
+
+    - Removed Course.swift from the target files
+
+commit 9f505ddcc8e430ea16b4a79be0ba6a2259eb5c22
+Author: Unlikely_Hacker <jlm13v@my.fsu.edu>
+Date:   Mon Mar 19 12:42:16 2018 -0400
+
+    Editted user class for profile implimentation
+
+commit aa7a745ca0483bd16a1e20aa151c6d748730b87e
+Author: Bradley <bhc14@my.fsu.edu>
+Date:   Mon Mar 19 10:31:02 2018 -0400
+
+    Test Commit-Bradley
+
+commit c247ed50c899e8997405d1cd2725ec6bd96594fc
+Author: Jose Carlos Torres Quiles <tallafoc@wc-dhcp144d114.student-secure.wireless.fsu.edu>
+Date:   Sun Mar 18 19:56:10 2018 -0400
+
+    - Search changed just for showing all the test table
+
+commit 0336802488f354a4f006159259b2df1199f9d3dc
+Author: Jose Carlos Torres Quiles <tallafoc@wc-dhcp144d114.student-secure.wireless.fsu.edu>
+Date:   Sun Mar 18 19:22:35 2018 -0400
+
+    - Manual merge made by Danny from "Tyree&Danny" branch.
+
+commit 5d8b7c8c0f8669b0e1634175111f6aedf07c344b
+Author: Jose Carlos Torres Quiles <tallafoc@wc-dhcp144d114.student-secure.wireless.fsu.edu>
+Date:   Sun Mar 18 18:24:35 2018 -0400
+
+    - Corrected to Jordan Standards
+
+commit 39f874e0bf0acb974d005e7be6ff5de2931e56ae
+Author: Jose Carlos Torres Quiles <tallafoc@wc-dhcp144d114.student-secure.wireless.fsu.edu>
+Date:   Sun Mar 18 17:52:03 2018 -0400
+
+    - CryptoSwift file needed for compilation
+
+commit 9d0da7423eefef420dc136b824ded481bfc6dade
+Author: Jose Carlos Torres Quiles <tallafoc@joses-macbook-pro.local>
+Date:   Fri Mar 16 22:53:52 2018 -0400
+
+    - Added CryptoSwift Framework to encrypt the passwords
+    - Implemented completely Tutor to allow casting, editing photos, deleting them, editing profiles
+    - Implemented signin and login
+    - Several tests to check the features added
+
+commit 3a5182e821f86d9394fd5fd125e1c3be878a0bc3
+Author: Jose Carlos Torres Quiles <tallafoc@joses-macbook-pro.local>
+Date:   Fri Mar 16 19:02:19 2018 -0400
+
+    - The previous commit doesn't compile due to string concatenation
+
+commit 4e881dea004b7f1525f4c048064652db3747d558
+Author: Jose Carlos Torres Quiles <tallafoc@joses-macbook-pro.local>
+Date:   Fri Mar 16 15:52:54 2018 -0400
+
+    - Added methods to Upload/Delete Photos to DB
+    - Implemented Tutor to Interact with the DB
+
+commit dd80c0237566d7e1c856efaacf0f361c68ca6aa0
+Author: Jose Carlos Torres Quiles <tallafoc@joses-macbook-pro.local>
+Date:   Thu Mar 15 16:31:12 2018 -0400
+
+    - Added PHP which works on the Server-side
+    - Upload and download fixed and added tests for that
+
+commit 4916c85f58bf4c42e36f23b5c635ce872c4573df
+Author: Jose Carlos Torres Quiles <tallafoc@joses-macbook-pro.local>
+Date:   Thu Mar 15 13:08:52 2018 -0400
+
+    - Added functionality: Able to perform CRUD methods from the database located on jcquiles.com (with HTTPS support)
+    - BUG: If Photo field is not null, it fails
+
+commit 0360d5348949579b9808f5661d44e28e024e10c2
+Author: Jose Carlos Torres Quiles <tallafoc@joses-macbook-pro.local>
+Date:   Thu Mar 15 12:52:28 2018 -0400
+
+    - Removed DRDatabase due to errors on compilation, asynchronous methodologies and outdated mechanics
+    - Added Alamofire and Alamofire_Synchronous to solve that
+
+commit dd8d40cebe4f1a853458c6433becdcab7ce1f6bf
+Merge: 436d061 a176bdd
+Author: Jose Carlos <tallafoc@Joses-Mac.local>
+Date:   Thu Mar 1 12:38:36 2018 -0800
+
+    Merge branch 'Alex&JC' of https://github.com/zapzip2013/PassDatClass into Alex&JC
+
+commit 436d06118156c3fb12ed26afd14ffe5af298d151
+Author: Jose Carlos <tallafoc@Joses-Mac.local>
+Date:   Thu Mar 1 12:38:33 2018 -0800
+
+    If I see this damn UserState again ILL KILL YOU ALL
+
+commit a176bdd41d0e99c5b14d2a02037a6944d4199cc1
+Author: José Carlos <jctq1@alu.ua.es>
+Date:   Thu Mar 1 15:35:17 2018 -0500
+
+    Changed design Tutor
+
+commit 5bcbf6e6eaf574c77b9e35f6ee4832cc8dd1b88c
+Author: Jose Carlos <tallafoc@Joses-Mac.local>
+Date:   Thu Mar 1 12:31:08 2018 -0800
+
+    - Added final design for tutor
+    - Added methods to login and passwords
+    - Maybe Course and User is no longer needed?
+
+commit 33aa06ac80cb63548d4648f03c4f0f018a8613fa
+Author: Jose Carlos <tallafoc@Joses-Mac.local>
+Date:   Mon Feb 26 11:02:43 2018 -0800
+
+    - Merge with Tyree&Danny completed
+    - Added references to images
+
+commit 6976afe35a5d653ff393dae7abeade5dc51d8013
+Merge: ce58b5b 0296719
+Author: Jose Carlos <tallafoc@Joses-Mac.local>
+Date:   Mon Feb 26 10:49:28 2018 -0800
+
+    Merge completed
+
+commit ce58b5b813c99d06fd5d63e180aa8b349876cada
+Author: Bradley C <36078621+bradleyc5@users.noreply.github.com>
+Date:   Mon Feb 26 12:55:44 2018 -0500
+
+    Images from my Commit
+
+commit 0aab8428f8e8357fcada55832c95f97aafff3a52
+Author: Bradley <bhc14@my.fsu.edu>
+Date:   Mon Feb 26 11:51:42 2018 -0500
+
+    Pictures moved to Assets folder
+
+commit 77c7997a3ad3a7baaa5d0e2ce7c08cddbd1e8735
+Merge: 71b9098 aa23343
+Author: Bradley <bhc14@my.fsu.edu>
+Date:   Sun Feb 25 16:41:18 2018 -0500
+
+    Merge branch 'master' of https://github.com/zapzip2013/PassDatClass
+
+commit 71b90989c371141d72b2f8bed03fee9f15dca231
+Author: Bradley <bhc14@my.fsu.edu>
+Date:   Sun Feb 25 16:37:24 2018 -0500
+
+    Merge branch 'Jordan&Brad'
+
+commit aa2334301966988450d66ea32f601afda6deb6c5
+Author: Jordan Mussman <mussman.jordan@gmail.com>
+Date:   Sun Feb 25 16:37:14 2018 -0500
+
+    Delete deleteme.txt
+    
+    please delete me. Just needed an initial commit to start our branch
+
+commit 886ef454164ce5a9030c7b56cee0f960865a9172
+Author: Jordan Mussman <mussman.jordan@gmail.com>
+Date:   Sun Feb 25 16:35:59 2018 -0500
+
+    Delete Screen Shot 2018-02-18 at 3.42.42 PM.png
+    
+    Not needed per project requirements and professor's approval
+
+commit 47304acdc70687840ea56ec5498e4759f91874e8
+Author: Jordan Mussman <mussman.jordan@gmail.com>
+Date:   Sun Feb 25 16:35:48 2018 -0500
+
+    Delete Screen Shot 2018-02-18 at 3.42.23 PM.png
+    
+    Not needed per project requirements and professor's approval
+
+commit e23f2fe0c618fd67a2c2066062b55f5995a59114
+Merge: 7dc1e26 c2396fa
+Author: Bradley <bhc14@my.fsu.edu>
+Date:   Sun Feb 25 16:31:04 2018 -0500
+
+    Merge remote-tracking branch 'origin/master'
+
+commit c2396fa7ab2bbcacebb684e3d3057f484e553b89
+Merge: 41f5903 8fb8325
+Author: Jose Carlos <tallafoc@Joses-Mac.local>
+Date:   Sun Feb 25 13:04:43 2018 -0800
+
+    Merge branch 'master' into Alex&JC
+
+commit 029671905317fac01814906ac9e84d38d3abdd9d
+Author: Tyree Lewis <tl14@my.fsu.edu>
+Date:   Sun Feb 25 11:16:24 2018 -0500
+
+    Should include the Table View and all new commits
+    
+    Included the Table View and new commits to the Tyree/Danny Branch
+
+commit 2c30b2ebff40b199cf93196c9fde5f68d3b6087c
+Author: Tyree Lewis <tl14@my.fsu.edu>
+Date:   Sun Feb 25 10:06:22 2018 -0500
+
+    No changes testing new branch
+    
+    No changes, I just needed to make sure the new branch will work
+
+commit 41f5903e659f4239ad2baf926604aaeb76ed1831
+Author: Jose Carlos <tallafoc@Joses-Mac.local>
+Date:   Sat Feb 24 20:25:25 2018 -0800
+
+    - Change API to DRDatabase from GitHub under MIT License
+    - Implemented SQLInteract to use the API with fields to connect to the UbuntuBox
+    - Implemented Tutor to satisfy CRUD methods
+    - Implemented Search to return Tutor array
+
+commit 47fc50417ba23cb4b624f3389db83eb38067cb56
+Author: Dpgibney <30529517+Dpgibney@users.noreply.github.com>
+Date:   Fri Feb 23 19:57:16 2018 -0500
+
+    merged master and Danny Tyree branch
+
+commit 7dc1e262786e12e26b52d30e1e98a8d797ac7e28
+Author: Bradley <bhc14@my.fsu.edu>
+Date:   Mon Feb 19 15:32:06 2018 -0500
+
+    Random Commit
+
+commit fa9fe3da62a1fb681b2df1f9ece3343f3c7f7b29
+Author: Bradley <bhc14@my.fsu.edu>
+Date:   Mon Feb 19 15:31:20 2018 -0500
+
+    Random Commit
+
+commit 8fb8325e2880e41ddba9496763b4e0341d31b488
+Author: Tyree Lewis <tl14@my.fsu.edu>
+Date:   Sun Feb 18 18:04:44 2018 -0500
+
+    UITest1-Tyree
+    
+    Added UITest1-Tyree
+
+commit adfe8bc4313ff7628610ee0424f614f4f603fb9a
+Author: Bradley <bhc14@my.fsu.edu>
+Date:   Sun Feb 18 17:17:41 2018 -0500
+
+    Merge Conflict Resolution with Danny & Tyree
+
+commit e974c2a80436f7a3b6ceb8a82bcc9326a353a4c8
+Author: Bradley <bhc14@my.fsu.edu>
+Date:   Sun Feb 18 17:09:05 2018 -0500
+
+    Merge J&B and D&T
+
+commit 3c8825b6fec2a8899fcb1283eebdf02418c6be66
+Merge: febbb10 0c9161c
+Author: Unlikely_Hacker <jlm13v@my.fsu.edu>
+Date:   Sun Feb 18 16:35:10 2018 -0500
+
+    Merge remote-tracking branch 'origin/Jordan&Brad'
+
+commit 0c9161c9323591a77c475a237935a10eed44caa0
+Author: Bradley <bhc14@my.fsu.edu>
+Date:   Sun Feb 18 16:31:03 2018 -0500
+
+    MakeFile comments added
+
+commit febbb104eb2127a3517dd947d4015b2172e1ad13
+Author: Unlikely_Hacker <jlm13v@my.fsu.edu>
+Date:   Sun Feb 18 16:29:27 2018 -0500
+
+    - Merge Alex Branch resolving conflicts
+
+commit 9fe971b48bb62f5172e18b72e3421f1753294bfa
+Author: Bradley <bhc14@my.fsu.edu>
+Date:   Sun Feb 18 16:28:00 2018 -0500
+
+    UI Test 1- Brad
+
+commit f913bc1fe00eae76ce4d339ae2f213d223f47d10
+Merge: 917116c c798066
+Author: Unlikely_Hacker <jlm13v@my.fsu.edu>
+Date:   Sun Feb 18 16:21:44 2018 -0500
+
+    Merge remote-tracking branch 'origin/master'
+
+commit c798066ea717609e4c5f015bf228ae05b91fc596
+Merge: 503513b fd8db36
+Author: Alex Holmstock <zapzip2013@wc-dhcp213d193.student-secure.wireless.fsu.edu>
+Date:   Sun Feb 18 16:18:16 2018 -0500
+
+    Merge remote-tracking branch 'origin/master'
+
+commit 503513bdf3fcf4cc43ac499ceffcfd66b455d7e7
+Author: Alex Holmstock <zapzip2013@wc-dhcp213d193.student-secure.wireless.fsu.edu>
+Date:   Sun Feb 18 16:18:11 2018 -0500
+
+    Compiled most recent build
+
+commit a019f4a766957e0b1b68659f4faea5627403e0c3
+Author: Alex Holmstock <zapzip2013@wc-dhcp213d193.student-secure.wireless.fsu.edu>
+Date:   Sun Feb 18 16:17:47 2018 -0500
+
+    Compiled last current build
+
+commit 917116cd7cbb4cc928303c497386aef41b8e889c
+Author: Unlikely_Hacker <jlm13v@my.fsu.edu>
+Date:   Sun Feb 18 16:15:32 2018 -0500
+
+    - Added implementation commentary
+
+commit 000a8ed7c42fb7d82fa430036e59e464d63f3229
+Author: Bradley <bhc14@my.fsu.edu>
+Date:   Sun Feb 18 16:14:20 2018 -0500
+
+    add Implementation comments and MakeFile comments
+
+commit 1995080e01e30a03e8fdd55ba51aeec1b2fa9154
+Author: Alex Holmstock <zapzip2013@wc-dhcp213d193.student-secure.wireless.fsu.edu>
+Date:   Sun Feb 18 16:12:21 2018 -0500
+
+    added Hamburger menu and FAQ
+
+commit 3557928bc9187bfd23cb3a3b71d7775df8f7d3d9
+Merge: 015daf9 fd8db36
+Author: Bradley <bhc14@my.fsu.edu>
+Date:   Sun Feb 18 16:09:32 2018 -0500
+
+    Merge remote-tracking branch 'origin/master' into Jordan&Brad
+
+commit fd8db364d5cf7517124729e76f2a8d4356fffe3a
+Author: Dpgibney <30529517+Dpgibney@users.noreply.github.com>
+Date:   Sun Feb 18 16:06:13 2018 -0500
+
+    Delete README.txt
+
+commit de56cba6fba4b3c12cd541a79d9488cd37f7243c
+Author: Dpgibney <30529517+Dpgibney@users.noreply.github.com>
+Date:   Sun Feb 18 16:06:01 2018 -0500
+
+    Create README.md
+    
+    Made it README.md instead of README.txt
+
+commit 015daf9cb8826c559a095daf7b4a5a03d68824c0
+Author: Bradley <bhc14@my.fsu.edu>
+Date:   Sun Feb 18 15:57:22 2018 -0500
+
+    Changed Red Button Icons; changed hamburger menu icon; added app icon for several app sizes
+
+commit 55f410edeab4d4fb4b493af49e336faf5feb6ed1
+Author: Jordan Mussman <mussman.jordan@gmail.com>
+Date:   Sun Feb 18 15:53:06 2018 -0500
+
+    Full Backlog 2.18
+    
+    Backlog for all implementations
+
+commit bff49dbf00ec69865cef77753f1a2f28c6ff1aae
+Author: Bradley <bhc14@my.fsu.edu>
+Date:   Sun Feb 18 15:50:39 2018 -0500
+
+    Hamburger Menu + Buttons + App Icon
+
+commit b190ab68bb3cd2cc605229cb3ed6fbee612ce961
+Author: Jordan Mussman <mussman.jordan@gmail.com>
+Date:   Sun Feb 18 15:47:54 2018 -0500
+
+    Sprint Backlog 2.18.Part2
+    
+    Added sprint backlog part 2
+
+commit 38721bb0262ab550e5a132cc958ab340d527f95a
+Author: Jordan Mussman <mussman.jordan@gmail.com>
+Date:   Sun Feb 18 15:47:22 2018 -0500
+
+    Sprint Backlog 2.18.part1
+
+commit 3e15017847e67ec539f6f0aa9d3e9f3c1b01b5d8
+Author: Jose Carlos <tallafoc@Joses-Mac.local>
+Date:   Thu Feb 15 15:19:42 2018 -0800
+
+    - Created tests
+    - Fixed methods to adequate to tests
+    - Changed properties to public
+
+commit 703bf8a8463db7b388b7942d342e76ae2c98f0a2
+Author: LanceMSX <35846162+LanceMSX@users.noreply.github.com>
+Date:   Mon Feb 12 21:45:53 2018 -0500
+
+    Add files via upload
+    
+    Modified the positions of the Create a Profile Screen and the Course/Subject Screen for consistency with Milestone 3.
+
+commit e619b311c7658d358f8b77408ea7257db44d772a
+Author: Bradley Close <bradley@wc-dhcp85d222.student-secure.wireless.fsu.edu>
+Date:   Mon Feb 12 19:46:27 2018 -0500
+
+    PostgreSQL Trial 2
+
+commit 17851ece2c56dfae04268959483c8e3472d05178
+Merge: f19a876 91c149d
+Author: Bradley Close <bradley@wc-dhcp85d222.student-secure.wireless.fsu.edu>
+Date:   Mon Feb 12 19:42:48 2018 -0500
+
+    Merge remote-tracking branch 'origin/Jordan&Brad'
+
+commit 91c149dec76e2245339524b7c9521f0d8852035d
+Author: Bradley C <36078621+bradleyc5@users.noreply.github.com>
+Date:   Mon Feb 12 19:42:27 2018 -0500
+
+    PostgreSQL + Swift Trial Connection
+
+commit f19a876c76c6f6bfa67bb24c5abce7ddd746f83f
+Author: Bradley Close <bradley@wc-dhcp85d222.student-secure.wireless.fsu.edu>
+Date:   Mon Feb 12 19:34:14 2018 -0500
+
+    PostgreSQL + Swift
+
+commit 0c817bd082d2740eb98460f44029896dbcea640c
+Merge: 7637fbf 987f44c
+Author: Bradley Close <bradley@wc-dhcp85d222.student-secure.wireless.fsu.edu>
+Date:   Mon Feb 12 19:32:32 2018 -0500
+
+    Merge remote-tracking branch 'origin/Jordan&Brad'
+
+commit 7637fbfbd9399b452d623cc14eafcbc66b2f9d3d
+Author: Bradley Close <bradley@wc-dhcp85d222.student-secure.wireless.fsu.edu>
+Date:   Mon Feb 12 19:32:14 2018 -0500
+
+    PostgreSQL + Swift Take 2
+
+commit 987f44c35cb74c7a1afc867ec19e06e9c40d5db0
+Author: Unlikely_Hacker <jlm13v@my.fsu.edu>
+Date:   Mon Feb 12 19:31:10 2018 -0500
+
+    init checkout
+
+commit 99323967cf22f1ac2edcbcd6a59607bccc79b024
+Author: Bradley Close <bradley@wc-dhcp85d222.student-secure.wireless.fsu.edu>
+Date:   Mon Feb 12 19:18:40 2018 -0500
+
+    PostgreSQL + Swift Take 1
+
+commit 54de7e91df0ea494035d6842ca9a3eaff8a02706
+Author: Jose Carlos <tallafoc@Joses-Mac.local>
+Date:   Mon Feb 12 10:41:54 2018 -0800
+
+    - Add code for filtering only verified profiles
+
+commit 5bc704f39f33b54277a241ee2bb73fc868fe844a
+Author: Jose Carlos <tallafoc@Joses-Mac.local>
+Date:   Mon Feb 12 10:36:12 2018 -0800
+
+    - Added slider/"checkbox" to add fsu verified filter in UI
+
+commit 902aff65f1eb91081f429b9d26b40b5a8048897c
+Author: Jose Carlos <tallafoc@Joses-Mac.local>
+Date:   Mon Feb 12 10:35:18 2018 -0800
+
+    - Added sorting implementation
+    - Due to the lack of "last added" value on Tutor object, it was changed to inverse alphabetical
+
+commit cf5b55382b6f5b0af7b442999f141af6e52847a7
+Author: Jordan Mussman <mussman.jordan@gmail.com>
+Date:   Sun Feb 11 16:19:33 2018 -0500
+
+    Create MakeFile
+
+commit a93468351196d02160c5f28a8e718f0090f2db58
+Merge: 7e7128e b84b29c
+Author: Daniel Gibney <daniel@Daniels-Mac.local>
+Date:   Thu Feb 8 22:28:51 2018 -0500
+
+    Merge remote-tracking branch 'origin/master'
+
+commit 7e7128e92eb34197fc58d8a01e6701ec41122821
+Author: Daniel Gibney <daniel@daniels-mac.local>
+Date:   Thu Feb 8 22:18:45 2018 -0500
+
+    Improved layout and added to need help screen
+
+commit b84b29cd42574f93d54e89911aaa9bad54a3539d
+Author: José Carlos <jctq1@alu.ua.es>
+Date:   Thu Feb 8 15:01:02 2018 -0800
+
+    Add first approach class diagram
+
+commit 3e0dc4a8ba56c56ee7ed964afa19d06a43b729f7
+Author: Jose Carlos <tallafoc@Joses-Mac.local>
+Date:   Thu Feb 8 14:45:02 2018 -0800
+
+    Añadidas clases contenedor
+
+commit 587e3a3803125db853412c0f3a71c61c174184ee
+Author: Daniel Gibney <daniel@Daniels-Mac.local>
+Date:   Wed Feb 7 23:43:52 2018 -0500
+
+    first commit
+
+commit 3e55ed076442dc6216d020dfa8b1212a97760a59
+Author: Alexander Holmstock <32246284+zapzip2013@users.noreply.github.com>
+Date:   Fri Feb 2 09:47:30 2018 -0500
+
+    Delete README.txt~
+
+commit d466c6421948ef94693e14be5011172adff6bc4d
+Author: Alex Holmstock <zapzip2013@wc-dhcp109d104.student-secure.wireless.fsu.edu>
+Date:   Sat Jan 27 14:18:52 2018 -0500
+
+    a text file
+
+commit 2ed2da44ce4b34e954906218abd48c818eb0fb66
+Author: Alex Holmstock <zapzip2013@wc-dhcp109d104.student-secure.wireless.fsu.edu>
+Date:   Sat Jan 27 14:17:27 2018 -0500
+
+    A text file

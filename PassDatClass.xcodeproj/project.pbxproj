@@ -17,6 +17,9 @@
 		2367289520362CCC00287175 /* PassDatClassTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2367289420362CCC00287175 /* PassDatClassTests.swift */; };
 		2367289D20362CE400287175 /* Sorting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2367289C20362CE400287175 /* Sorting.swift */; };
 		237FFA83205F29200092CA92 /* tutormodal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 237FFA81205F29200092CA92 /* tutormodal.swift */; };
+		238CE9F52062CAD2006858E8 /* Close_delete_remove_exit_cross_x_button_error.png in Resources */ = {isa = PBXBuildFile; fileRef = 238CE9F42062CAD2006858E8 /* Close_delete_remove_exit_cross_x_button_error.png */; };
+		238CE9F72062CADD006858E8 /* SearchpageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 238CE9F62062CADD006858E8 /* SearchpageViewController.swift */; };
+		238CE9F92062CAE1006858E8 /* staticrating.swift in Sources */ = {isa = PBXBuildFile; fileRef = 238CE9F82062CAE1006858E8 /* staticrating.swift */; };
 		23D00AC0204742BF00BCA2D6 /* 624878906.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 23D00ABC204742BF00BCA2D6 /* 624878906.jpg */; };
 		23D00AC1204742BF00BCA2D6 /* wallpaper.wiki-Screen-Background-PC-Wallpapers-PIC-WPD006555.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 23D00ABD204742BF00BCA2D6 /* wallpaper.wiki-Screen-Background-PC-Wallpapers-PIC-WPD006555.jpg */; };
 		23D00AC2204742BF00BCA2D6 /* download-1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 23D00ABE204742BF00BCA2D6 /* download-1.jpg */; };
@@ -24,6 +27,7 @@
 		6569B67B203FE0D200A9CC9B /* ratings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6569B67A203FE0D200A9CC9B /* ratings.swift */; };
 		6569B67E2040DEDB00A9CC9B /* TutorTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6569B67D2040DEDB00A9CC9B /* TutorTableViewController.swift */; };
 		6569B6802040DF8700A9CC9B /* TutorTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6569B67F2040DF8700A9CC9B /* TutorTableViewCell.swift */; };
+		657355D42062D5F1005A9E6A /* FAQview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 657355D32062D5F1005A9E6A /* FAQview.swift */; };
 		65898A95202BF9E600E753E5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65898A94202BF9E600E753E5 /* AppDelegate.swift */; };
 		65898A97202BF9E600E753E5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65898A96202BF9E600E753E5 /* ViewController.swift */; };
 		65898A9A202BF9E600E753E5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65898A98202BF9E600E753E5 /* Main.storyboard */; };
@@ -54,6 +58,9 @@
 		2367289620362CCC00287175 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2367289C20362CE400287175 /* Sorting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sorting.swift; sourceTree = "<group>"; };
 		237FFA81205F29200092CA92 /* tutormodal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = tutormodal.swift; sourceTree = "<group>"; };
+		238CE9F42062CAD2006858E8 /* Close_delete_remove_exit_cross_x_button_error.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Close_delete_remove_exit_cross_x_button_error.png; sourceTree = "<group>"; };
+		238CE9F62062CADD006858E8 /* SearchpageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchpageViewController.swift; sourceTree = "<group>"; };
+		238CE9F82062CAE1006858E8 /* staticrating.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = staticrating.swift; sourceTree = "<group>"; };
 		23CEB53F205C3CC00058972A /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		23D00ABC204742BF00BCA2D6 /* 624878906.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 624878906.jpg; sourceTree = SOURCE_ROOT; };
 		23D00ABD204742BF00BCA2D6 /* wallpaper.wiki-Screen-Background-PC-Wallpapers-PIC-WPD006555.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "wallpaper.wiki-Screen-Background-PC-Wallpapers-PIC-WPD006555.jpg"; sourceTree = SOURCE_ROOT; };
@@ -64,6 +71,7 @@
 		6569B67A203FE0D200A9CC9B /* ratings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ratings.swift; sourceTree = "<group>"; };
 		6569B67D2040DEDB00A9CC9B /* TutorTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorTableViewController.swift; sourceTree = "<group>"; };
 		6569B67F2040DF8700A9CC9B /* TutorTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorTableViewCell.swift; sourceTree = "<group>"; };
+		657355D32062D5F1005A9E6A /* FAQview.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FAQview.swift; path = "../../PassDatClass 2/PassDatClass/FAQview.swift"; sourceTree = "<group>"; };
 		65898A91202BF9E600E753E5 /* PassDatClass.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PassDatClass.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		65898A94202BF9E600E753E5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		65898A96202BF9E600E753E5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -142,10 +150,14 @@
 			children = (
 				23D00ABC204742BF00BCA2D6 /* 624878906.jpg */,
 				23D00ABE204742BF00BCA2D6 /* download-1.jpg */,
+				238CE9F42062CAD2006858E8 /* Close_delete_remove_exit_cross_x_button_error.png */,
 				23D00ABF204742BF00BCA2D6 /* images.jpg */,
 				23D00ABD204742BF00BCA2D6 /* wallpaper.wiki-Screen-Background-PC-Wallpapers-PIC-WPD006555.jpg */,
 				65898A94202BF9E600E753E5 /* AppDelegate.swift */,
 				65898A96202BF9E600E753E5 /* ViewController.swift */,
+				238CE9F62062CADD006858E8 /* SearchpageViewController.swift */,
+				657355D32062D5F1005A9E6A /* FAQview.swift */,
+				238CE9F82062CAE1006858E8 /* staticrating.swift */,
 				6569B67D2040DEDB00A9CC9B /* TutorTableViewController.swift */,
 				6569B67F2040DF8700A9CC9B /* TutorTableViewCell.swift */,
 				65898A98202BF9E600E753E5 /* Main.storyboard */,
@@ -276,6 +288,7 @@
 				23D00AC1204742BF00BCA2D6 /* wallpaper.wiki-Screen-Background-PC-Wallpapers-PIC-WPD006555.jpg in Resources */,
 				65898A9A202BF9E600E753E5 /* Main.storyboard in Resources */,
 				23D00AC2204742BF00BCA2D6 /* download-1.jpg in Resources */,
+				238CE9F52062CAD2006858E8 /* Close_delete_remove_exit_cross_x_button_error.png in Resources */,
 				23D00AC3204742BF00BCA2D6 /* images.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -359,10 +372,13 @@
 				6569B67E2040DEDB00A9CC9B /* TutorTableViewController.swift in Sources */,
 				2367286F202D09EF00287175 /* Sorting.swift in Sources */,
 				237FFA83205F29200092CA92 /* tutormodal.swift in Sources */,
+				657355D42062D5F1005A9E6A /* FAQview.swift in Sources */,
 				65898A97202BF9E600E753E5 /* ViewController.swift in Sources */,
 				65898A95202BF9E600E753E5 /* AppDelegate.swift in Sources */,
 				6569B67B203FE0D200A9CC9B /* ratings.swift in Sources */,
 				23672871202D09F000287175 /* Tutor.swift in Sources */,
+				238CE9F72062CADD006858E8 /* SearchpageViewController.swift in Sources */,
+				238CE9F92062CAE1006858E8 /* staticrating.swift in Sources */,
 				2367286D202D09EF00287175 /* SQLInteract.swift in Sources */,
 				2367286C202D09EF00287175 /* User.swift in Sources */,
 				6569B6802040DF8700A9CC9B /* TutorTableViewCell.swift in Sources */,

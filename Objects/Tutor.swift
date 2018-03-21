@@ -49,9 +49,9 @@ public class Tutor : User {
     class func ParseResult(_ row: RowQuery) -> Tutor {
         let firstname = row["firstName"] as! String
         let lastname = row["lastName"] as! String
-        let priceperhour = row["pricePerHour"] as! String
+        let priceperhour = "0.0"//row["pricePerHour"] as! String
         let numbervotes = row["numberVotes"] as! String
-        let phone = row["phoneNumber"] as! String
+        let phone = "10291212"//row["phoneNumber"] as! String
         let bio = row["bio"] as! String
         let rating = row["rating"] as! String
         let fsuver = row["FSUVerified"] as! String
@@ -63,8 +63,8 @@ public class Tutor : User {
             fsuverified = false
         }
         let email = row["FSUEmail"] as! String
-        let photo = SQLInteract.base64ToImage(base64: row["photo"] as? String)  /* Encode to base64 */
-        let ret = Tutor(phone: Int(phone)!, email: email, name: firstname, lastname: lastname, rating: Float(rating)!, numbervotes: Int(numbervotes)!, photo: photo, price: Float(priceperhour)!, verified: fsuverified, bio: bio) /* Init tutor object with current call's DB data, then return that */
+        //let photo = SQLInteract.base64ToImage(base64: row["photo"] as? String) /* Encode to base64 */
+        let ret = Tutor(phone: Int(phone)!, email: email, name: firstname, lastname: lastname, rating: Float(rating)!, numbervotes: Int(numbervotes)!, price: Float(priceperhour)!, verified: fsuverified, bio: bio) /* Init tutor object with current call's DB data, then return that */ //TODO fix photo possibly being nil
         return ret
     }
     

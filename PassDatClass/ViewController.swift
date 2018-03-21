@@ -12,31 +12,8 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    @IBOutlet weak var HamburgerMenu: UIView!
-    @IBOutlet weak var FAQ: UIScrollView!
-    
-    @IBAction func hamburgerButtonIsPressed(_ sender: Any) {
-        if (HamburgerMenu.isHidden){
-            HamburgerMenu.isHidden = false
-        }
-        else {
-            HamburgerMenu.isHidden = true
-        }
-    }
-    
-    @IBAction func faqButtonIsPressed(_ sender: Any) {
-        if (FAQ.isHidden){
-            FAQ.isHidden = false
-        }
-        else {
-            FAQ.isHidden = true
-        }
-    }
-    
-    @IBAction func xFAQButtonIsPressed(_ sender: Any) {
-        FAQ.isHidden = true
-    }
-    
+
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
