@@ -15,8 +15,6 @@ class tutormodal: UIViewController {
         name.text = passedValue.firstname
         lastname.text = passedValue.lastname
         picture.image = passedValue.photo
-        
-        
     }
     var passedValue:Tutor!
 
@@ -45,6 +43,5 @@ class tutormodal: UIViewController {
         }
         
     }
-    
-    
+
 }
