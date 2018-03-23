@@ -13,6 +13,7 @@ import Foundation
 import UIKit
 import CryptoSwift
 
+
 public class Tutor : User {
     //MARK: Properties
     public var phone : Int
@@ -28,6 +29,12 @@ public class Tutor : User {
     public var name : String {  /* Swift allows easy get methods */
         get{
             return lastname + "," + firstname
+        }
+    }
+    
+    public var listcourses : [String.SubSequence]{
+        get{
+            return bio.split(separator: ",")
         }
     }
     
@@ -110,8 +117,20 @@ public class Tutor : User {
         let query = "UPDATE Tutor SET photo=NULL WHERE FSUEmail='" + tutor.email + "';"
         return SQLInteract.ExecuteModification(query: query)
     }
+    
+    /* Add a course to a Tutor */
+    func AddCourse(course: String) {
+        self.bio.append(",\(course)")
+    }
+    
+    /* Remove a course from a Tutor */
+    func RemoveCourse(course: String) {
+        let list = self.listcourses
+        let mutatedlist = list.filter{$0 != course}
+        self.bio = mutatedlist.joined(separator: ",")
+    }
   
-/* Modifies a tutor's information from the db */
+/* Extends all the changes made to a Tutor to the DB */
     class func EditAccount(tutor: Tutor) -> StatusMsg {
         let query = "UPDATE Tutor SET firstName='\(tutor.firstname)', lastName='\(tutor.lastname)', phoneNumber=\(tutor.phone), rating=\(tutor.rating), numberVotes=\(tutor.numbervotes), pricePerHour=\(tutor.priceperhour), bio='\(tutor.bio)'  WHERE FSUEmail='\(tutor.email)';"
         return SQLInteract.ExecuteModification(query: query)

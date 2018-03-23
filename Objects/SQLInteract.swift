@@ -73,6 +73,9 @@ public class SQLInteract{
         var status : StatusMsg
         
         parameters["e"] = query
+        if (!checkQuery(query)){
+            return (ret, (false, "Entered data not valid"))
+        }
         let response = Alamofire.request(phpFile, method: .post, parameters: parameters).responseJSON()
         
         if let responserror = response.error {
@@ -97,5 +100,16 @@ public class SQLInteract{
         let resquery = ExecuteSelect(query: query)
         return (resquery.1)
     }
+    
+    class func checkQuery(_ query : String) -> Bool {
+        let arr = ["drop","modify"]
+        
+        for x in arr{
+            if query.lowercased().range(of: x) != nil{
+                return false
+            }
+        }
+        return true
+    } /* End of checkQuery() */
 }
 

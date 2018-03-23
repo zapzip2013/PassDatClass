@@ -54,7 +54,7 @@ class TutorTest: XCTestCase {
 /* Hardcoded modification of an account from db test */
     func testModifyProfile(){
         let tutor = Tutor.QueryAccount(email: "tallafoc@outlook.com")
-        tutor?.bio = "This is Modified"
+        tutor?.firstname = "This is Modified"
         let result = Tutor.EditAccount(tutor: tutor!)
         XCTAssert(result.status)
     }
@@ -70,6 +70,22 @@ class TutorTest: XCTestCase {
     func testLogIn() {
         let result = Tutor.LogIn(email: "tallafoc@outlook.com", password: "carlos13")
         XCTAssert(result.status)
+    }
+    
+    /* Check added course */
+    func testAddCourse(){
+        var query = Tutor.QueryAccount(email: "tallafoc@outlook.com")
+        query?.AddCourse(course: "BLA1234")
+        XCTAssert(query?.bio.range(of: "BLA1234") != nil)
+    }
+    
+    /* Chack remove course */
+    func testRemoveCourse(){
+        var query = Tutor.QueryAccount(email: "tallafoc@outlook.com")
+        query?.RemoveCourse(course: "CCC1111")
+        XCTAssert(query?.bio.range(of: "CCC1111") == nil)
+        query?.RemoveCourse(course: "ABC1234")
+        
     }
     
 /* Apple's measure function to time the execution */
