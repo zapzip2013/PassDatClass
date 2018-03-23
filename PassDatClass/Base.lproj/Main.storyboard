@@ -20,10 +20,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="624878906.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="WVT-8w-v2N">
-                                <rect key="frame" x="-9" y="-9" width="468" height="906"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rZ8-NR-cqC">
                                 <rect key="frame" x="84" y="120" width="207" height="207"/>
                                 <constraints>
@@ -197,10 +193,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="624878906.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="xPO-o6-Odk">
-                                <rect key="frame" x="-11" y="0.0" width="509" height="808"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TtW-q5-mVI">
                                 <rect key="frame" x="16" y="64" width="46" height="30"/>
                                 <state key="normal" title="Back"/>
@@ -219,6 +211,9 @@
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <segue destination="zd3-Mn-4et" kind="show" id="Z3i-pi-LAX"/>
+                                </connections>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Course number" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0dm-bD-b0O">
                                 <rect key="frame" x="191" y="117" width="168" height="30"/>
@@ -376,7 +371,7 @@
         <!--Menu View Controller-->
         <scene sceneID="7ST-Wm-zAj">
             <objects>
-                <viewController id="qfq-PE-9zf" customClass="MenuViewController" customModule="FirebaseApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="qfq-PE-9zf" customClass="MenuViewController" customModule="PassDatClass" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="cwg-us-4Ze"/>
                         <viewControllerLayoutGuide type="bottom" id="uoj-XN-NuX"/>
@@ -385,7 +380,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gSo-eS-0RU" customClass="RoundedWhiteButton" customModule="FirebaseApp" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gSo-eS-0RU" customClass="RoundedWhiteButton" customModule="PassDatClass" customModuleProvider="target">
                                 <rect key="frame" x="24" y="499" width="327" height="64"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <constraints>
@@ -401,7 +396,7 @@
                                     </segue>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vvl-jB-jkQ" customClass="RoundedWhiteButton" customModule="FirebaseApp" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vvl-jB-jkQ" customClass="RoundedWhiteButton" customModule="PassDatClass" customModuleProvider="target">
                                 <rect key="frame" x="24" y="579" width="327" height="64"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <constraints>
@@ -412,9 +407,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="JU7-RC-apv" kind="show" animates="NO" id="8L1-aj-BKc">
-                                        <nil key="action"/>
-                                    </segue>
+                                    <segue destination="JU7-RC-apv" kind="show" id="b9d-Eu-RM9"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -447,7 +440,7 @@
         <!--Login View Controller-->
         <scene sceneID="r83-dD-RML">
             <objects>
-                <viewController automaticallyAdjustsScrollViewInsets="NO" id="VJf-Ih-wHp" customClass="LoginViewController" customModule="FirebaseApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="VJf-Ih-wHp" customClass="LoginViewController" customModule="PassDatClass" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="bRf-zo-B97"/>
                         <viewControllerLayoutGuide type="bottom" id="hH1-jg-XWN"/>
@@ -591,8 +584,7 @@
         <!--Sign Up View Controller-->
         <scene sceneID="khs-fY-2Ph">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="ZzX-hr-1Il" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <viewController automaticallyAdjustsScrollViewInsets="NO" id="JU7-RC-apv" customClass="SignUpViewController" customModule="FirebaseApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="JU7-RC-apv" customClass="SignUpViewController" customModule="PassDatClass" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="nIx-Js-xKr"/>
                         <viewControllerLayoutGuide type="bottom" id="VZg-tS-Il7"/>
@@ -687,9 +679,6 @@
                                                         <state key="normal" title="Tap to Change">
                                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </state>
-                                                        <connections>
-                                                            <segue destination="qvy-kM-Yug" kind="presentation" id="yyU-RR-MDi"/>
-                                                        </connections>
                                                     </button>
                                                 </subviews>
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -753,9 +742,6 @@
                                 </constraints>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <state key="normal" image="backArrow"/>
-                                <connections>
-                                    <action selector="handleDismissButton:" destination="JU7-RC-apv" eventType="touchUpInside" id="uex-69-A32"/>
-                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="calibratedWhite"/>
@@ -772,22 +758,15 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="RJN-Cy-fZO"/>
                     </view>
-                    <connections>
-                        <outlet property="dismissButton" destination="7OK-sd-FYt" id="L0n-sZ-B2t"/>
-                        <outlet property="emailField" destination="SCX-oH-dCe" id="b2A-yD-JsR"/>
-                        <outlet property="passwordField" destination="WPo-ub-Pzv" id="FgW-fV-rWW"/>
-                        <outlet property="profileImageView" destination="b7Z-Pg-RnK" id="e3x-fp-U5I"/>
-                        <outlet property="tapToChangeProfileButton" destination="Kf7-U6-fKO" id="HZH-2b-qN2"/>
-                        <outlet property="usernameField" destination="5FW-pd-PAw" id="R51-GC-8Hl"/>
-                    </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZzX-hr-1Il" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2297" y="904"/>
         </scene>
         <!--Home View Controller-->
         <scene sceneID="Bnn-05-9fO">
             <objects>
-                <viewController id="fPb-fQ-d7g" customClass="HomeViewController" customModule="FirebaseApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="fPb-fQ-d7g" customClass="HomeViewController" customModule="PassDatClass" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Fdi-UA-d1h"/>
                         <viewControllerLayoutGuide type="bottom" id="YQ9-6Y-jLr"/>
@@ -825,7 +804,6 @@
         <!--Navigation Controller-->
         <scene sceneID="LcT-Fq-Em5">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="h0s-vn-nSo" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="s9d-Wd-S0X" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="FQX-0X-fI3">
@@ -837,6 +815,7 @@
                         <segue destination="fPb-fQ-d7g" kind="relationship" relationship="rootViewController" id="dcL-0N-rrV"/>
                     </connections>
                 </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="h0s-vn-nSo" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3217" y="376"/>
         </scene>
@@ -890,7 +869,6 @@
     </scenes>
     <resources>
         <image name="12152-large-red-circle" width="256" height="256"/>
-        <image name="624878906.jpg" width="612" height="408"/>
         <image name="backArrow" width="16" height="16"/>
         <image name="hamburger menu" width="128" height="128"/>
         <image name="userIcon" width="50" height="50"/>
