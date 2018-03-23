@@ -74,6 +74,29 @@ class SQLInteractTest: XCTestCase {
         SQLInteract.phpFile = php
     }
     
+    /* Check function to run without error */
+    func testcheckQuery(){
+        let query = "COP4530, COP4531, FUK8008"
+        if SQLInteract.checkQuery(query){
+            XCTAssert(true, "checkQuery() worked")
+        }
+        else{
+            XCTAssert(false, "Test failed")
+        }
+    } /* End of testcheckQuery() */
+    
+    
+    /* Purposeful check of mallicious query entry failure test */
+    func testcheckQueryFAIL(){
+        let query = "COP4530, \\MOdifYCOP4531, FUK8008"
+        if SQLInteract.checkQuery(query){
+            XCTAssert(false, "checkQuery() worked")
+        }
+        else{
+            XCTAssert(true, "Test failed")
+        }
+    } /* End of testcheckQueryFAIL() */
+    
     func testPerformanceExample() {
         // This is an example of a performance test case.
         self.measure {
