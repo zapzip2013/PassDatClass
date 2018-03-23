@@ -34,6 +34,17 @@ class SignUpViewController:UIViewController, UITextFieldDelegate {
         continueButton.center = CGPoint(x: view.center.x, y: view.frame.height - continueButton.frame.height - 24)
         continueButton.highlightedColor = UIColor(white: 1.0, alpha: 1.0)
         continueButton.defaultColor = UIColor.white
+       // continueButton.addTarget(self, action: #selector(handleSignIn), for: .touchUpInside)
+        continueButton.alpha = 0.5
+        view.addSubview(continueButton)
+       // setContinueButton(enabled: false)
+        
+        activityView = UIActivityIndicatorView(activityIndicatorStyle: .gray)
+        activityView.color = secondaryColor
+        activityView.frame = CGRect(x: 0, y: 0, width: 50.0, height: 50.0)
+        activityView.center = continueButton.center
+        
+        view.addSubview(activityView)
        // continueButton.addTarget(self, action: #selector(handleSignUp), for: .touchUpInside)
     }
 }
