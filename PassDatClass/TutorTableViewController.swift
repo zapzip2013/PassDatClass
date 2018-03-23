@@ -14,6 +14,7 @@ class TutorTableViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        view.addVerticalGradientLayer(topColor: primaryColor, bottomColor: secondaryColor)
         //loads sample tutors
         loadsampletutors()
         
