@@ -11,12 +11,12 @@
 		1C27E1C72062BA9500D1FA7C /* HelperExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C27E1C62062BA9500D1FA7C /* HelperExtensions.swift */; };
 		1C27E1CD2062BA9E00D1FA7C /* RoundedWhiteButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C27E1C82062BA9D00D1FA7C /* RoundedWhiteButton.swift */; };
 		1C27E1CE2062BA9E00D1FA7C /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C27E1C92062BA9D00D1FA7C /* MenuViewController.swift */; };
-		1C27E1CF2062BA9E00D1FA7C /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C27E1CA2062BA9D00D1FA7C /* SignUpViewController.swift */; };
 		1C27E1D02062BA9E00D1FA7C /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C27E1CB2062BA9D00D1FA7C /* HomeViewController.swift */; };
 		1C27E1D12062BA9E00D1FA7C /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C27E1CC2062BA9D00D1FA7C /* LoginViewController.swift */; };
 		1C27E1D42062BD1F00D1FA7C /* ImageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C27E1D32062BD1E00D1FA7C /* ImageService.swift */; };
 		1C27E1D62062BD4700D1FA7C /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C27E1D52062BD4700D1FA7C /* UserService.swift */; };
 		1C27E1D82062BDEF00D1FA7C /* UserProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C27E1D72062BDEF00D1FA7C /* UserProfile.swift */; };
+		1C27E1DA2062CAE600D1FA7C /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C27E1D92062CAE600D1FA7C /* SignUpViewController.swift */; };
 		2353BB04205CAA7D00474354 /* TutorTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2353BB03205CAA7D00474354 /* TutorTest.swift */; };
 		235A8E04205ADDD4007F8DC8 /* SQLInteractTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 235A8E03205ADDD4007F8DC8 /* SQLInteractTest.swift */; };
 		2367286C202D09EF00287175 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23672866202D09EE00287175 /* User.swift */; };
@@ -56,12 +56,12 @@
 		1C27E1C62062BA9500D1FA7C /* HelperExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HelperExtensions.swift; path = "../../../../Downloads/SwiftFirebaseTutorials-master/FirebaseApp-1-Email-Authentication-End/FirebaseApp/HelperExtensions.swift"; sourceTree = "<group>"; };
 		1C27E1C82062BA9D00D1FA7C /* RoundedWhiteButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RoundedWhiteButton.swift; path = "../../../../Downloads/SwiftFirebaseTutorials-master/FirebaseApp-1-Email-Authentication-End/FirebaseApp/RoundedWhiteButton.swift"; sourceTree = "<group>"; };
 		1C27E1C92062BA9D00D1FA7C /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MenuViewController.swift; path = "../../../../Downloads/SwiftFirebaseTutorials-master/FirebaseApp-1-Email-Authentication-End/FirebaseApp/MenuViewController.swift"; sourceTree = "<group>"; };
-		1C27E1CA2062BA9D00D1FA7C /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SignUpViewController.swift; path = "../../../../Downloads/SwiftFirebaseTutorials-master/FirebaseApp-1-Email-Authentication-End/FirebaseApp/SignUpViewController.swift"; sourceTree = "<group>"; };
 		1C27E1CB2062BA9D00D1FA7C /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HomeViewController.swift; path = "../../../../Downloads/SwiftFirebaseTutorials-master/FirebaseApp-1-Email-Authentication-End/FirebaseApp/HomeViewController.swift"; sourceTree = "<group>"; };
 		1C27E1CC2062BA9D00D1FA7C /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoginViewController.swift; path = "../../../../Downloads/SwiftFirebaseTutorials-master/FirebaseApp-1-Email-Authentication-End/FirebaseApp/LoginViewController.swift"; sourceTree = "<group>"; };
 		1C27E1D32062BD1E00D1FA7C /* ImageService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ImageService.swift; path = "../../../../Downloads/SwiftFirebaseTutorials-master/FirebaseApp-6-Downloading-Images-End/FirebaseApp/Services/ImageService.swift"; sourceTree = "<group>"; };
 		1C27E1D52062BD4700D1FA7C /* UserService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UserService.swift; path = "../../../../Downloads/SwiftFirebaseTutorials-master/FirebaseApp-6-Downloading-Images-End/FirebaseApp/Services/UserService.swift"; sourceTree = "<group>"; };
 		1C27E1D72062BDEF00D1FA7C /* UserProfile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UserProfile.swift; path = "../../../../Downloads/SwiftFirebaseTutorials-master/FirebaseApp-6-Downloading-Images-End/FirebaseApp/Models/UserProfile.swift"; sourceTree = "<group>"; };
+		1C27E1D92062CAE600D1FA7C /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SignUpViewController.swift; path = /Users/bradley/Documents/GitHub/PassDatClass/PassDatClass/SignUpViewController.swift; sourceTree = "<absolute>"; };
 		2353BB03205CAA7D00474354 /* TutorTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorTest.swift; sourceTree = "<group>"; };
 		235A8E03205ADDD4007F8DC8 /* SQLInteractTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SQLInteractTest.swift; sourceTree = "<group>"; };
 		23672866202D09EE00287175 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
@@ -165,12 +165,12 @@
 				23D00ABF204742BF00BCA2D6 /* images.jpg */,
 				23D00ABD204742BF00BCA2D6 /* wallpaper.wiki-Screen-Background-PC-Wallpapers-PIC-WPD006555.jpg */,
 				1C27E1D52062BD4700D1FA7C /* UserService.swift */,
+				1C27E1D92062CAE600D1FA7C /* SignUpViewController.swift */,
 				1C27E1D72062BDEF00D1FA7C /* UserProfile.swift */,
 				1C27E1C92062BA9D00D1FA7C /* MenuViewController.swift */,
 				1C27E1D32062BD1E00D1FA7C /* ImageService.swift */,
 				1C27E1C82062BA9D00D1FA7C /* RoundedWhiteButton.swift */,
 				1C27E1CC2062BA9D00D1FA7C /* LoginViewController.swift */,
-				1C27E1CA2062BA9D00D1FA7C /* SignUpViewController.swift */,
 				1C27E1CB2062BA9D00D1FA7C /* HomeViewController.swift */,
 				65898A94202BF9E600E753E5 /* AppDelegate.swift */,
 				65898A96202BF9E600E753E5 /* ViewController.swift */,
@@ -400,8 +400,8 @@
 				1C27E1C72062BA9500D1FA7C /* HelperExtensions.swift in Sources */,
 				6569B67B203FE0D200A9CC9B /* ratings.swift in Sources */,
 				23672871202D09F000287175 /* Tutor.swift in Sources */,
-				1C27E1CF2062BA9E00D1FA7C /* SignUpViewController.swift in Sources */,
 				2367286D202D09EF00287175 /* SQLInteract.swift in Sources */,
+				1C27E1DA2062CAE600D1FA7C /* SignUpViewController.swift in Sources */,
 				2367286C202D09EF00287175 /* User.swift in Sources */,
 				1C27E1D62062BD4700D1FA7C /* UserService.swift in Sources */,
 				6569B6802040DF8700A9CC9B /* TutorTableViewCell.swift in Sources */,
