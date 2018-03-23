@@ -11,7 +11,8 @@ import UIKit
 
 
 class ViewController: UIViewController {
-
+    
+    
     @IBOutlet weak var HamburgerMenu: UIView!
     @IBOutlet weak var FAQ: UIScrollView!
     
@@ -40,6 +41,8 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        view.addVerticalGradientLayer(topColor: primaryColor, bottomColor: secondaryColor)
+    
         // Do any additional setup after loading the view, typically from a nib.
     }
 

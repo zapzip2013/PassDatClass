@@ -12,6 +12,7 @@ class tutormodal: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        view.addVerticalGradientLayer(topColor: primaryColor, bottomColor: secondaryColor)
         name.text = passedValue.name
         picture.image = passedValue.photo
     }
