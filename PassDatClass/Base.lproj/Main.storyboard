@@ -719,11 +719,34 @@
                                                     <constraint firstItem="LYM-Nu-xej" firstAttribute="top" secondItem="Bwe-dV-C7m" secondAttribute="bottom" constant="14" id="zX3-l5-YOQ"/>
                                                 </constraints>
                                             </view>
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="aAf-N2-sK8">
+                                                <rect key="frame" x="48" y="431" width="279" height="22"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="emailAddress" returnKeyType="next" textContentType="email"/>
+                                            </textField>
+                                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="CKG-NG-EHv">
+                                                <rect key="frame" x="48" y="457" width="279" height="1"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="1" id="zXG-ER-PXs"/>
+                                                </constraints>
+                                            </view>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="CLASS" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ld0-jh-YTw">
+                                                <rect key="frame" x="48" y="402" width="77.5" height="17"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
                                         </subviews>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         <constraints>
+                                            <constraint firstItem="CKG-NG-EHv" firstAttribute="centerX" secondItem="aAf-N2-sK8" secondAttribute="centerX" id="3aP-Uj-OCd"/>
+                                            <constraint firstItem="CKG-NG-EHv" firstAttribute="width" secondItem="aAf-N2-sK8" secondAttribute="width" id="OGK-Po-mEc"/>
                                             <constraint firstItem="ijd-O8-w7h" firstAttribute="leading" secondItem="p6B-9s-bAR" secondAttribute="leading" constant="36" id="X2v-q5-pyh"/>
                                             <constraint firstItem="ijd-O8-w7h" firstAttribute="top" secondItem="p6B-9s-bAR" secondAttribute="top" constant="44" id="eHv-sQ-NeZ"/>
+                                            <constraint firstItem="CKG-NG-EHv" firstAttribute="top" secondItem="aAf-N2-sK8" secondAttribute="bottom" constant="4" id="nk2-39-u63"/>
                                             <constraint firstAttribute="trailing" secondItem="ijd-O8-w7h" secondAttribute="trailing" constant="36" id="rtH-KS-jvW"/>
                                         </constraints>
                                     </view>
