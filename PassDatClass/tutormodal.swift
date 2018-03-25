@@ -14,14 +14,38 @@ class tutormodal: UIViewController {
         super.viewDidLoad()
         view.addVerticalGradientLayer(topColor: primaryColor, bottomColor: secondaryColor)
         name.text = passedValue.name
-        picture.image = passedValue.photo
+        if (passedValue.photo != nil){
+            picture.image = passedValue.photo
+        }
+        
     }
     var passedValue:Tutor!
 
+    
     @IBAction func back(_ sender: Any) {
         dismiss(animated: true, completion: nil)
     }
     @IBOutlet weak var name: UILabel!
     @IBOutlet weak var picture: UIImageView!
     
+    @IBAction func Email(_ sender: Any) {
+        let email = passedValue.email
+        if let url = URL(string: "mailto:\(email)") {
+            UIApplication.shared.open(url)
+        }
+    }
+    
+    @IBAction func calling(_ sender: Any) {
+        let phone = passedValue.phone
+        if let url = URL(string: "tel://\(phone)"), UIApplication.shared.canOpenURL(url) {
+            if #available(iOS 10, *) {
+                UIApplication.shared.open(url)
+            } else {
+                UIApplication.shared.openURL(url)
+            }
+        }
+        
+    }
+    
 }
+

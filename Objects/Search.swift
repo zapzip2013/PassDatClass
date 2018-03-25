@@ -36,11 +36,13 @@ public class Search {
     //MARK: Methods
     func ExecuteQuery() -> [Tutor] {
         var ret = [Tutor]()
-        let query = "SELECT * FROM Tutor;"
+        var course = self.prefix + String(self.number)
+        let query = "SELECT * FROM tutor WHERE tutor.bio LIKE '%\(course)%';"//" = '\(course)';"
+        //let query = "UPDATE Tutor SET firstName='\(tutor.firstname)', lastName='\(tutor.lastname)', phoneNumber=\(tutor.phone), rating=\(tutor.rating), numberVotes=\(tutor.numbervotes), pricePerHour=\(tutor.priceperhour), bio='\(tutor.bio)'  WHERE FSUEmail='\(tutor.email)';"
         let resquery = SQLInteract.ExecuteSelect(query: query)
         ret += parseResult(resquery.0)
         let orderret = Sorted.sort(by: order, tutors: ret)
         return orderret
     }
-
+    
 } /* End Search class */
