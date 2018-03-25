@@ -14,6 +14,7 @@ class ViewController: UIViewController {
 
     @IBOutlet weak var HamburgerMenu: UIView!
     @IBOutlet weak var FAQ: UIScrollView!
+    @IBOutlet weak var xButtonView: UIView!
     
     @IBAction func hamburgerButtonIsPressed(_ sender: Any) {
         if (HamburgerMenu.isHidden){
@@ -27,15 +28,17 @@ class ViewController: UIViewController {
     @IBAction func faqButtonIsPressed(_ sender: Any) {
         if (FAQ.isHidden){
             FAQ.isHidden = false
-            
+            xButtonView.isHidden = false
         }
         else {
             FAQ.isHidden = true
+            xButtonView.isHidden = true
         }
     }
     
     @IBAction func FAQXButtonIsPressed(_ sender: Any) {
         FAQ.isHidden = true
+        xButtonView.isHidden = true
     }
     
     

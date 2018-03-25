@@ -15,7 +15,7 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="PassDatClass" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController restorationIdentifier="StartView" id="BYZ-38-t0r" customClass="ViewController" customModule="PassDatClass" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -177,7 +177,7 @@
                                     <action selector="hamburgerButtonIsPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Akg-v7-qna"/>
                                 </connections>
                             </button>
-                            <textView hidden="YES" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" editable="NO" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="u0i-2b-izV">
+                            <textView hidden="YES" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="u0i-2b-izV">
                                 <rect key="frame" x="16" y="152" width="343" height="349"/>
                                 <color key="backgroundColor" red="1" green="0.82405999313678135" blue="0.78552076648813862" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
@@ -273,14 +273,38 @@ Courses must be entered with three letters to represent the subject code and the
                                 </attributedString>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
+                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dRm-Sp-3Mq">
+                                <rect key="frame" x="317" y="152" width="42" height="29"/>
+                                <subviews>
+                                    <button contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gp8-Pl-viE">
+                                        <rect key="frame" x="6" y="-1" width="30" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="tintColor" red="0.85514491580310881" green="0.25701501704133795" blue="0.22027595821565907" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="X">
+                                            <color key="titleColor" red="0.85514491580310881" green="0.24837423863210767" blue="0.20041291250611612" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="FAQXButtonIsPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yt4-Cc-bK8"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="29" id="NKM-Ev-MMp"/>
+                                    <constraint firstAttribute="width" constant="42" id="QuL-H4-maK"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="u0i-2b-izV" firstAttribute="centerX" secondItem="rZ8-NR-cqC" secondAttribute="centerX" id="0eh-75-U9v"/>
                             <constraint firstItem="gds-sF-jrS" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="AjQ-cg-5Of"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Fsw-R0-aj3" secondAttribute="trailing" constant="84" id="BqR-h2-rh2"/>
+                            <constraint firstItem="dRm-Sp-3Mq" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="132" id="DPb-Eh-FWy"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Fsw-R0-aj3" secondAttribute="bottom" constant="84" id="HfD-fk-9X9"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="dRm-Sp-3Mq" secondAttribute="trailing" constant="16" id="KCQ-jS-ISY"/>
                             <constraint firstItem="gds-sF-jrS" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="NeA-uM-wt3"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="u0i-2b-izV" secondAttribute="trailing" constant="16" id="PBH-6c-4Pm"/>
                             <constraint firstItem="rZ8-NR-cqC" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="84" id="RwW-JE-28X"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="rZ8-NR-cqC" secondAttribute="trailing" constant="84" id="WXv-Km-s1C"/>
                             <constraint firstItem="rZ8-NR-cqC" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="56" id="cDp-5v-vI8"/>
@@ -288,7 +312,7 @@ Courses must be entered with three letters to represent the subject code and the
                             <constraint firstItem="Fsw-R0-aj3" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="84" id="gX8-lz-fIC"/>
                             <constraint firstItem="u0i-2b-izV" firstAttribute="centerX" secondItem="w0j-dy-p96" secondAttribute="centerX" id="isg-TW-0x3"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="gds-sF-jrS" secondAttribute="trailing" constant="143" id="qrT-NT-Cdi"/>
-                            <constraint firstItem="u0i-2b-izV" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="65" id="sd4-rq-Hwz"/>
+                            <constraint firstItem="u0i-2b-izV" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="132" id="sd4-rq-Hwz"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -296,6 +320,7 @@ Courses must be entered with three letters to represent the subject code and the
                     <connections>
                         <outlet property="FAQ" destination="u0i-2b-izV" id="AE7-ML-pSd"/>
                         <outlet property="HamburgerMenu" destination="gds-sF-jrS" id="lOw-Yg-xHO"/>
+                        <outlet property="xButtonView" destination="dRm-Sp-3Mq" id="Fg0-K7-sEA"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -305,7 +330,7 @@ Courses must be entered with three letters to represent the subject code and the
         <!--Title-->
         <scene sceneID="tlH-hO-WNF">
             <objects>
-                <viewController id="eMx-dP-Upw" sceneMemberID="viewController">
+                <viewController restorationIdentifier="NavController" id="eMx-dP-Upw" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="2wY-f8-46V" customClass="UIButton" colorLabel="IBBuiltInLabel-Blue">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -357,7 +382,7 @@ Courses must be entered with three letters to represent the subject code and the
         <!--Form-->
         <scene sceneID="5Vc-pn-ndp">
             <objects>
-                <viewController title="Form" id="ibP-Oe-dsh" sceneMemberID="viewController">
+                <viewController restorationIdentifier="LoginView" title="Form" id="ibP-Oe-dsh" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="b3t-w9-gzk">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -422,7 +447,7 @@ Courses must be entered with three letters to represent the subject code and the
         <!--View Controller-->
         <scene sceneID="f9p-XZ-yb1">
             <objects>
-                <viewController id="vha-tz-VSK" sceneMemberID="viewController">
+                <viewController restorationIdentifier="TutorAccountView" id="vha-tz-VSK" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="yXU-nL-J4h">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -498,7 +523,7 @@ Courses must be entered with three letters to represent the subject code and the
         <!--View Controller-->
         <scene sceneID="oYx-l5-FBi">
             <objects>
-                <viewController id="5r6-2j-apj" sceneMemberID="viewController">
+                <viewController restorationIdentifier="AccountCreatedView" id="5r6-2j-apj" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Ikw-hh-Ffg">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -546,7 +571,7 @@ Courses must be entered with three letters to represent the subject code and the
         <!--View Controller-->
         <scene sceneID="624-4y-vS3">
             <objects>
-                <viewController id="Cl3-xR-Of4" sceneMemberID="viewController">
+                <viewController restorationIdentifier="SelectCourseView" id="Cl3-xR-Of4" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ZJk-Fj-KQH">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -636,7 +661,7 @@ Courses must be entered with three letters to represent the subject code and the
         <!--View Controller-->
         <scene sceneID="cFI-zL-0oq">
             <objects>
-                <viewController id="rPe-Yp-YdZ" sceneMemberID="viewController">
+                <viewController restorationIdentifier="ClassListView" id="rPe-Yp-YdZ" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="jA8-wi-4ff">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -689,7 +714,7 @@ Courses must be entered with three letters to represent the subject code and the
         <!--View Controller-->
         <scene sceneID="NoL-WC-HYL">
             <objects>
-                <viewController id="0Y9-BN-Aui" sceneMemberID="viewController">
+                <viewController restorationIdentifier="YourTutorView" id="0Y9-BN-Aui" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="z6P-Da-6D5">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -760,7 +785,7 @@ Courses must be entered with three letters to represent the subject code and the
         <!--View Controller-->
         <scene sceneID="Hi5-uB-ClK">
             <objects>
-                <viewController id="ahf-MP-SqH" sceneMemberID="viewController">
+                <viewController restorationIdentifier="StarRatingView" id="ahf-MP-SqH" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ZSt-gO-qwG">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -825,9 +850,9 @@ Courses must be entered with three letters to represent the subject code and the
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="B31-NR-bsd"/>
-        <segue reference="c4j-h3-25Z"/>
-        <segue reference="7a5-OV-FKC"/>
+        <segue reference="yd9-ME-EZe"/>
+        <segue reference="5qA-yM-U38"/>
         <segue reference="LWc-Gj-ULn"/>
-        <segue reference="12s-Oe-5qt"/>
+        <segue reference="SfV-cU-4kw"/>
     </inferredMetricsTieBreakers>
 </document>
