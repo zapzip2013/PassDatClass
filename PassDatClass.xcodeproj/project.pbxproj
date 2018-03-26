@@ -8,11 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		1C27E1C52062B97300D1FA7C /* InitialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C27E1C42062B97300D1FA7C /* InitialViewController.swift */; };
+		230B1C9B206937F8008326E1 /* TutorTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 230B1C9A206937F8008326E1 /* TutorTableViewController.swift */; };
 		23284BFB20683EFF00576E01 /* Close_delete_remove_exit_cross_x_button_error.png in Resources */ = {isa = PBXBuildFile; fileRef = 23284BFA20683EFE00576E01 /* Close_delete_remove_exit_cross_x_button_error.png */; };
 		23284BFD20683F0600576E01 /* FAQview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23284BFC20683F0600576E01 /* FAQview.swift */; };
 		23284BFF20683F1100576E01 /* staticrating.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23284BFE20683F1100576E01 /* staticrating.swift */; };
 		23284C0120683F2000576E01 /* SearchpageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23284C0020683F2000576E01 /* SearchpageViewController.swift */; };
-		23284C0320683F2A00576E01 /* TutorTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23284C0220683F2900576E01 /* TutorTableViewController.swift */; };
 		2353BB04205CAA7D00474354 /* TutorTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2353BB03205CAA7D00474354 /* TutorTest.swift */; };
 		235A8E04205ADDD4007F8DC8 /* SQLInteractTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 235A8E03205ADDD4007F8DC8 /* SQLInteractTest.swift */; };
 		2367286C202D09EF00287175 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23672866202D09EE00287175 /* User.swift */; };
@@ -56,11 +56,11 @@
 
 /* Begin PBXFileReference section */
 		1C27E1C42062B97300D1FA7C /* InitialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialViewController.swift; sourceTree = "<group>"; };
+		230B1C9A206937F8008326E1 /* TutorTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TutorTableViewController.swift; sourceTree = "<group>"; };
 		23284BFA20683EFE00576E01 /* Close_delete_remove_exit_cross_x_button_error.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Close_delete_remove_exit_cross_x_button_error.png; sourceTree = "<group>"; };
 		23284BFC20683F0600576E01 /* FAQview.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FAQview.swift; sourceTree = "<group>"; };
 		23284BFE20683F1100576E01 /* staticrating.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = staticrating.swift; sourceTree = "<group>"; };
 		23284C0020683F2000576E01 /* SearchpageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchpageViewController.swift; sourceTree = "<group>"; };
-		23284C0220683F2900576E01 /* TutorTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TutorTableViewController.swift; path = ../../PassDatClass_2/PassDatClass/TutorTableViewController.swift; sourceTree = "<group>"; };
 		2353BB03205CAA7D00474354 /* TutorTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorTest.swift; sourceTree = "<group>"; };
 		235A8E03205ADDD4007F8DC8 /* SQLInteractTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SQLInteractTest.swift; sourceTree = "<group>"; };
 		23672866202D09EE00287175 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
@@ -176,6 +176,7 @@
 				2383BEA720655295009B5408 /* SignUpViewController.swift */,
 				2383BEAB206552A3009B5408 /* MenuViewController.swift */,
 				2383BEAD206552AD009B5408 /* ImageService.swift */,
+				230B1C9A206937F8008326E1 /* TutorTableViewController.swift */,
 				2383BEAF206552B5009B5408 /* RoundedWhiteButton.swift */,
 				2383BEB1206552BD009B5408 /* LoginViewController.swift */,
 				2383BEB3206552C7009B5408 /* HomeViewController.swift */,
@@ -186,7 +187,6 @@
 				6569B67F2040DF8700A9CC9B /* TutorTableViewCell.swift */,
 				65898A98202BF9E600E753E5 /* Main.storyboard */,
 				23284C0020683F2000576E01 /* SearchpageViewController.swift */,
-				23284C0220683F2900576E01 /* TutorTableViewController.swift */,
 				23284BFE20683F1100576E01 /* staticrating.swift */,
 				237FFA81205F29200092CA92 /* tutormodal.swift */,
 				6569B67A203FE0D200A9CC9B /* ratings.swift */,
@@ -397,11 +397,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				2383BEA820655295009B5408 /* SignUpViewController.swift in Sources */,
+				230B1C9B206937F8008326E1 /* TutorTableViewController.swift in Sources */,
 				2383BEB6206552D1009B5408 /* HelperExtensions.swift in Sources */,
 				23284BFF20683F1100576E01 /* staticrating.swift in Sources */,
 				2383BEB0206552B5009B5408 /* RoundedWhiteButton.swift in Sources */,
 				2367286F202D09EF00287175 /* Sorting.swift in Sources */,
-				23284C0320683F2A00576E01 /* TutorTableViewController.swift in Sources */,
 				237FFA83205F29200092CA92 /* tutormodal.swift in Sources */,
 				1C27E1C52062B97300D1FA7C /* InitialViewController.swift in Sources */,
 				2383BEB4206552C7009B5408 /* HomeViewController.swift in Sources */,
