@@ -743,12 +743,20 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <navigationBar contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8id-Fu-HTC">
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8id-Fu-HTC">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                                 <items>
-                                    <navigationItem title="Title" id="T9m-kc-DvQ">
-                                        <barButtonItem key="leftBarButtonItem" title="Item" id="79n-EF-WEi"/>
-                                        <barButtonItem key="rightBarButtonItem" title="Item" id="x7O-BS-MSo"/>
+                                    <navigationItem title="Tutors" id="T9m-kc-DvQ">
+                                        <barButtonItem key="leftBarButtonItem" title="Back" id="79n-EF-WEi">
+                                            <connections>
+                                                <segue destination="kdA-B9-Ifp" kind="show" id="IEz-UV-YeM"/>
+                                            </connections>
+                                        </barButtonItem>
+                                        <barButtonItem key="rightBarButtonItem" title="Sort" id="x7O-BS-MSo">
+                                            <connections>
+                                                <action selector="showSort:" destination="oTp-vU-Azo" id="n3J-Lm-PTb"/>
+                                            </connections>
+                                        </barButtonItem>
                                     </navigationItem>
                                 </items>
                             </navigationBar>
@@ -770,11 +778,67 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dBf-WN-zjV">
+                                <rect key="frame" x="67" y="0.0" width="240" height="256"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uMB-kA-1Id">
+                                        <rect key="frame" x="65" y="218" width="110" height="30"/>
+                                        <state key="normal" title="First With Photo"/>
+                                        <connections>
+                                            <action selector="photoSort:" destination="oTp-vU-Azo" eventType="touchUpInside" id="sbi-il-DGr"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Qg-k9-aWL">
+                                        <rect key="frame" x="83" y="28" width="74" height="30"/>
+                                        <state key="normal" title="First Name"/>
+                                        <connections>
+                                            <action selector="firsNameSort:" destination="oTp-vU-Azo" eventType="touchUpInside" id="Hy9-fW-2AB"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qAH-qu-Q5K">
+                                        <rect key="frame" x="57" y="113" width="127" height="30"/>
+                                        <state key="normal" title="Inverse Last Name"/>
+                                        <connections>
+                                            <action selector="inverseLastNameSort:" destination="oTp-vU-Azo" eventType="touchUpInside" id="NVN-yX-sig"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5fS-aM-LZq">
+                                        <rect key="frame" x="83" y="66" width="74" height="30"/>
+                                        <state key="normal" title="Last Name"/>
+                                        <connections>
+                                            <action selector="lastNameSort:" destination="oTp-vU-Azo" eventType="touchUpInside" id="TGl-Bt-lPC"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M4V-65-9QX">
+                                        <rect key="frame" x="98" y="163" width="44" height="30"/>
+                                        <state key="normal" title="Rating"/>
+                                        <connections>
+                                            <action selector="ratingSort:" destination="oTp-vU-Azo" eventType="touchUpInside" id="Brh-HS-vPB"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="qAH-qu-Q5K" firstAttribute="centerY" secondItem="dBf-WN-zjV" secondAttribute="centerY" id="6Yl-8F-zE2"/>
+                                    <constraint firstItem="1Qg-k9-aWL" firstAttribute="leading" secondItem="5fS-aM-LZq" secondAttribute="leading" id="9WK-BW-0D7"/>
+                                    <constraint firstItem="1Qg-k9-aWL" firstAttribute="top" secondItem="dBf-WN-zjV" secondAttribute="topMargin" id="D10-AB-BAS"/>
+                                    <constraint firstItem="M4V-65-9QX" firstAttribute="leading" secondItem="uMB-kA-1Id" secondAttribute="leading" constant="33" id="LAb-nb-HsP"/>
+                                    <constraint firstAttribute="bottom" secondItem="M4V-65-9QX" secondAttribute="bottom" constant="63" id="ONa-Uo-rZ0"/>
+                                    <constraint firstItem="5fS-aM-LZq" firstAttribute="top" secondItem="1Qg-k9-aWL" secondAttribute="bottom" constant="8" symbolic="YES" id="TdF-Bq-nRO"/>
+                                    <constraint firstItem="uMB-kA-1Id" firstAttribute="top" secondItem="M4V-65-9QX" secondAttribute="bottom" constant="25" id="UC1-Os-fKH"/>
+                                    <constraint firstItem="M4V-65-9QX" firstAttribute="centerX" secondItem="dBf-WN-zjV" secondAttribute="centerX" id="hJm-My-wA0"/>
+                                    <constraint firstItem="1Qg-k9-aWL" firstAttribute="centerX" secondItem="M4V-65-9QX" secondAttribute="centerX" id="lII-LL-9NU"/>
+                                    <constraint firstItem="1Qg-k9-aWL" firstAttribute="centerX" secondItem="qAH-qu-Q5K" secondAttribute="centerX" id="wzr-gI-K9x"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="Bnp-43-aST" firstAttribute="trailing" secondItem="mHc-fz-BXy" secondAttribute="trailing" constant="65" id="19H-hU-Ari"/>
                             <constraint firstItem="XET-Gl-Ubr" firstAttribute="leading" secondItem="Bnp-43-aST" secondAttribute="leading" constant="47" id="2d7-bC-ZLG"/>
+                            <constraint firstItem="8id-Fu-HTC" firstAttribute="leading" secondItem="VfP-yH-vU8" secondAttribute="leading" id="2vX-gN-o9g"/>
+                            <constraint firstItem="dBf-WN-zjV" firstAttribute="centerX" secondItem="8id-Fu-HTC" secondAttribute="centerX" id="8kc-h9-ueb"/>
+                            <constraint firstItem="dBf-WN-zjV" firstAttribute="leading" secondItem="Bnp-43-aST" secondAttribute="leading" constant="67" id="AE6-JI-pck"/>
                             <constraint firstItem="XET-Gl-Ubr" firstAttribute="top" secondItem="8id-Fu-HTC" secondAttribute="bottom" constant="15" id="F6e-7j-AOc"/>
                             <constraint firstItem="8VR-aa-5WS" firstAttribute="trailing" secondItem="VfP-yH-vU8" secondAttribute="trailingMargin" id="FCV-7y-YeR"/>
                             <constraint firstItem="8VR-aa-5WS" firstAttribute="top" secondItem="XET-Gl-Ubr" secondAttribute="bottom" constant="8" symbolic="YES" id="UQj-ac-d4O"/>
@@ -782,6 +846,8 @@
                             <constraint firstItem="8VR-aa-5WS" firstAttribute="leading" secondItem="VfP-yH-vU8" secondAttribute="leadingMargin" id="glZ-Xo-0Fh"/>
                             <constraint firstItem="8VR-aa-5WS" firstAttribute="centerX" secondItem="8id-Fu-HTC" secondAttribute="centerX" id="j5N-7L-0Nd"/>
                             <constraint firstItem="XET-Gl-Ubr" firstAttribute="baseline" secondItem="mHc-fz-BXy" secondAttribute="baseline" id="pB0-aS-ThX"/>
+                            <constraint firstItem="dBf-WN-zjV" firstAttribute="top" secondItem="8id-Fu-HTC" secondAttribute="top" id="sKj-aR-ue1"/>
+                            <constraint firstItem="Bnp-43-aST" firstAttribute="bottom" secondItem="dBf-WN-zjV" secondAttribute="bottom" constant="411" id="wMk-Jy-TNW"/>
                             <constraint firstItem="XET-Gl-Ubr" firstAttribute="top" secondItem="VfP-yH-vU8" secondAttribute="top" constant="59" id="zS4-18-HCj"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Bnp-43-aST"/>
@@ -789,11 +855,12 @@
                     <connections>
                         <outlet property="name" destination="XET-Gl-Ubr" id="iTT-Xt-mw9"/>
                         <outlet property="num" destination="mHc-fz-BXy" id="Od9-d6-oKK"/>
+                        <outlet property="sortView" destination="dBf-WN-zjV" id="Hv9-YT-njl"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7P0-hw-XdO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3025" y="-518"/>
+            <point key="canvasLocation" x="3024.8000000000002" y="-518.59070464767615"/>
         </scene>
         <!--Tutor Table View Controller-->
         <scene sceneID="gOx-ht-Tzc">
@@ -917,6 +984,7 @@
         <image name="userIcon" width="50" height="50"/>
     </resources>
     <inferredMetricsTieBreakers>
+        <segue reference="IEz-UV-YeM"/>
         <segue reference="Gay-q4-IJ2"/>
     </inferredMetricsTieBreakers>
 </document>

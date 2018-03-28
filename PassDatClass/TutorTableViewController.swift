@@ -8,12 +8,15 @@
 
 import UIKit
 
+var referencetable : TutorTableViewController? = nil
+
 class TutorTableViewController: UITableViewController {
 
     var tutors = [Tutor]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        referencetable = self
         //loads sample tutors
         passedclassname = searchname
         passedclassnum = searchnum
@@ -149,6 +152,11 @@ class TutorTableViewController: UITableViewController {
             testlabel.isHidden = false
         }
         
+    }
+    
+    func changeOrder(sort : Sorting) {
+        tutors = Sorted.sort(by: sort, tutors: tutors)
+        self.tableView.reloadData()
     }
     
 }
