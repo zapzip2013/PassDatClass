@@ -17,7 +17,7 @@ public class Search {
     var order: Sorting
     
     //MARK: Initializers
-    init(prefix: String, number: Int, ver: Bool, order: Sorting = .alph){
+    init(prefix: String, number: Int, ver: Bool, order: Sorting = .lastnamealph){
         self.prefix = prefix
         self.number = number
         self.fsuverifiedfilter = ver

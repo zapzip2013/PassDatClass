@@ -14,6 +14,52 @@ class TutorViewController: UIViewController {
     var passedclassname:String!
     @IBOutlet weak var name: UILabel!
     @IBOutlet weak var num: UILabel!
+    @IBOutlet weak var sortView: UIView!
+    
+    
+    func changeSort(sort: Sorting) { referencetable?.changeOrder(sort: sort)
+        sortView.isHidden = true
+    }
+    
+    @IBAction func firsNameSort(_ sender: Any) {
+        changeSort(sort: .alph)
+    }
+    
+    @IBAction func inverseLastNameSort(_ sender: Any) {
+       changeSort(sort: .inversealph)
+    }
+    
+    @IBAction func lastNameSort(_ sender: Any) {
+        changeSort(sort: .alph)
+    }
+    
+    @IBAction func ratingSort(_ sender: Any) {
+        changeSort(sort: .rating)
+    }
+    
+    @IBAction func photoSort(_ sender: Any) {
+        changeSort(sort: .firstwithphoto)
+    }
+    
+    
+    
+    
+    
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        var touch: UITouch? = touches.first
+        //location is relative to the current view
+        // do something with the touched point
+        if touch?.view != sortView {
+            sortView.isHidden = true
+        }
+    }
+    
+    
+    
+    @IBAction func showSort(_ sender: Any) {
+        sortView.isHidden = false
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
