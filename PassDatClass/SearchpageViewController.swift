@@ -15,8 +15,7 @@ class SearchpageViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.view.backgroundColor = UIColor(patternImage: UIImage(named: "624878906.jpg")!)
-        // Do any additional setup after loading the view.
+                view.addVerticalGradientLayer(topColor: primaryColor, bottomColor: secondaryColor)        // Do any additional setup after loading the view.
     }
 
     override func didReceiveMemoryWarning() {
@@ -39,7 +38,7 @@ class SearchpageViewController: UIViewController {
     
     var valueToPass:String!
     override func shouldPerformSegue(withIdentifier identifier: String, sender: Any?) -> Bool {
-        //if(identifier == "searchresultseque"){
+        if(identifier == "searchresultseque"){
         let num = course_num.text
         let char = course_chars.text
         if(num?.count != 4){
@@ -57,13 +56,21 @@ class SearchpageViewController: UIViewController {
                 return false
             }
         }
-        //}
+        }
         return true
     }
-    
-
+    @IBOutlet weak var errorview: UILabel!
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        var touch: UITouch? = touches.first
+        //location is relative to the current view
+        // do something with the touched point
+        if touch?.view != errorview {
+            errorview.isHidden = true
+            hid.isHidden = true
+        }
+    }
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        //if(segue.identifier == "searchresultseque"){
+        if(segue.identifier == "searchresultseque"){
             var viewController = segue.destination as! TutorViewController
           
         searchnum = course_num.text!
@@ -76,7 +83,7 @@ class SearchpageViewController: UIViewController {
         controller.passedclassname = num
         controller.passedclassnum = char*/
             
-        //}
+        }
     }
     /*
     // MARK: - Navigation

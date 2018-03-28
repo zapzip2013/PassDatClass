@@ -24,7 +24,7 @@ public class Sorted{
             switch(by){
             case .lastnamealph:
                 return $0.name < $1.name
-            case .rating:
+            case .rating:	
                 return $0.rating < $1.rating
             case .inversealph:
                 let name0 = $0.name.split(separator: ",")[1]
