@@ -15,6 +15,8 @@ class TutorTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         //loads sample tutors
+        passedclassname = searchname
+        passedclassnum = searchnum
         loadsampletutors()
         let bckimg = UIImageView(image: UIImage(named: "624878906.jpg")!)
         bckimg.contentMode = .scaleAspectFill
@@ -23,8 +25,8 @@ class TutorTableViewController: UITableViewController {
     }
 
 
-    var passedclassnum:String!
-    var passedclassname:String!
+    public var passedclassnum:String!
+    public var passedclassname:String!
     
     @IBOutlet weak var testlabel: UILabel!
     
