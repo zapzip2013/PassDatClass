@@ -17,16 +17,12 @@ class TutorTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         referencetable = self
+        tableView.backgroundColor = UIColor.clear
         //loads sample tutors
         passedclassname = searchname
         passedclassnum = searchnum
-        loadsampletutors()
-        let bckimg = UIImageView(image: UIImage(named: "624878906.jpg")!)
-        bckimg.contentMode = .scaleAspectFill
-        self.tableView.backgroundView = bckimg
-        
+        loadsampletutors()	
     }
-
 
     public var passedclassnum:String!
     public var passedclassname:String!
@@ -80,7 +76,7 @@ class TutorTableViewController: UITableViewController {
         }
         cell.profileimage.image = tutor.photo
         cell.rating.rating = Int(tutor.rating)
-        cell.backgroundColor = UIColor(white: 1, alpha: 0.5)
+    cell.contentView.backgroundColor = UIColor.clear
         return cell
     }
     /*

@@ -65,7 +65,7 @@ class TutorViewController: UIViewController {
         super.viewDidLoad()
         name.text = passedclassnum
         num.text = passedclassname
-
+        view.addVerticalGradientLayer(topColor: primaryColor, bottomColor: secondaryColor)
         // Do any additional setup after loading the view.
     }
 
