@@ -30,7 +30,7 @@ class TutorViewController: UIViewController {
     }
     
     @IBAction func lastNameSort(_ sender: Any) {
-        changeSort(sort: .alph)
+        changeSort(sort: .lastnamealph)
     }
     
     @IBAction func ratingSort(_ sender: Any) {
