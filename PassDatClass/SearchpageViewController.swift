@@ -8,6 +8,9 @@
 
 import UIKit
 
+var searchnum : String = ""
+var searchname : String = ""
+
 class SearchpageViewController: UIViewController {
 
     override func viewDidLoad() {
@@ -36,7 +39,7 @@ class SearchpageViewController: UIViewController {
     
     var valueToPass:String!
     override func shouldPerformSegue(withIdentifier identifier: String, sender: Any?) -> Bool {
-        if(identifier == "searchresultseque"){
+        //if(identifier == "searchresultseque"){
         let num = course_num.text
         let char = course_chars.text
         if(num?.count != 4){
@@ -54,22 +57,26 @@ class SearchpageViewController: UIViewController {
                 return false
             }
         }
-        }
+        //}
         return true
     }
     
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if(segue.identifier == "searchresultseque"){
-            var viewController = segue.destination as! TutorTableViewController
-            
-            let num = course_num.text
-            let char = course_chars.text
+        //if(segue.identifier == "searchresultseque"){
+            var viewController = segue.destination as! TutorViewController
+          
+        searchnum = course_num.text!
+        searchname = course_chars.text!
             //TODO: Check that user has int instead of string since string will cause failure
-            viewController.passedclassnum = num
-            viewController.passedclassname = char
+            viewController.passedclassnum = searchnum
+            viewController.passedclassname = searchname
+        
+        /*let controller: TutorTableViewController = storyboard!.instantiateViewController(withIdentifier: "tabletutor") as! TutorTableViewController
+        controller.passedclassname = num
+        controller.passedclassnum = char*/
             
-        }
+        //}
     }
     /*
     // MARK: - Navigation

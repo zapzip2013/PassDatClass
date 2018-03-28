@@ -31,6 +31,7 @@
 		2383BEB2206552BD009B5408 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2383BEB1206552BD009B5408 /* LoginViewController.swift */; };
 		2383BEB4206552C7009B5408 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2383BEB3206552C7009B5408 /* HomeViewController.swift */; };
 		2383BEB6206552D1009B5408 /* HelperExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2383BEB5206552D1009B5408 /* HelperExtensions.swift */; };
+		23C8BB47206BFEA6005D492D /* TutorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23C8BB46206BFEA6005D492D /* TutorViewController.swift */; };
 		23D00AC0204742BF00BCA2D6 /* 624878906.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 23D00ABC204742BF00BCA2D6 /* 624878906.jpg */; };
 		23D00AC1204742BF00BCA2D6 /* wallpaper.wiki-Screen-Background-PC-Wallpapers-PIC-WPD006555.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 23D00ABD204742BF00BCA2D6 /* wallpaper.wiki-Screen-Background-PC-Wallpapers-PIC-WPD006555.jpg */; };
 		23D00AC2204742BF00BCA2D6 /* download-1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 23D00ABE204742BF00BCA2D6 /* download-1.jpg */; };
@@ -81,6 +82,7 @@
 		2383BEB1206552BD009B5408 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		2383BEB3206552C7009B5408 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		2383BEB5206552D1009B5408 /* HelperExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HelperExtensions.swift; sourceTree = "<group>"; };
+		23C8BB46206BFEA6005D492D /* TutorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorViewController.swift; sourceTree = "<group>"; };
 		23CEB53F205C3CC00058972A /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		23D00ABC204742BF00BCA2D6 /* 624878906.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 624878906.jpg; sourceTree = SOURCE_ROOT; };
 		23D00ABD204742BF00BCA2D6 /* wallpaper.wiki-Screen-Background-PC-Wallpapers-PIC-WPD006555.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "wallpaper.wiki-Screen-Background-PC-Wallpapers-PIC-WPD006555.jpg"; sourceTree = SOURCE_ROOT; };
@@ -192,6 +194,7 @@
 				6569B67A203FE0D200A9CC9B /* ratings.swift */,
 				65898A9B202BF9E600E753E5 /* Assets.xcassets */,
 				65898AA0202BF9E600E753E5 /* Info.plist */,
+				23C8BB46206BFEA6005D492D /* TutorViewController.swift */,
 			);
 			path = PassDatClass;
 			sourceTree = "<group>";
@@ -397,6 +400,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2383BEA820655295009B5408 /* SignUpViewController.swift in Sources */,
+				23C8BB47206BFEA6005D492D /* TutorViewController.swift in Sources */,
 				230B1C9B206937F8008326E1 /* TutorTableViewController.swift in Sources */,
 				2383BEB6206552D1009B5408 /* HelperExtensions.swift in Sources */,
 				23284BFF20683F1100576E01 /* staticrating.swift in Sources */,
