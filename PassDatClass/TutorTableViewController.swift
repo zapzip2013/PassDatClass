@@ -16,9 +16,8 @@ class TutorTableViewController: UITableViewController {
         super.viewDidLoad()
         //loads sample tutors
         loadsampletutors()
-        let bckimg = UIImageView(image: UIImage(named: "624878906.jpg")!)
-        bckimg.contentMode = .scaleAspectFill
-        self.tableView.backgroundView = bckimg
+        
+        
         
     }
 
