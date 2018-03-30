@@ -67,7 +67,7 @@ class TutorTableViewController: UITableViewController {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath) as? TutorTableViewCell else {
             fatalError("the dequeued cell is not an instance of tutorTableViewCell")
         }
-        let nophoto = UIImage(named: "download-1.jpg")
+        let nophoto = UIImage(named: "userIcon")
         let tutor = tutors[indexPath.row]
         // Configure the cell...
         cell.namelabel.text = tutor.name
