@@ -17,7 +17,7 @@ class tutormodal: UIViewController {
         if (passedValue.photo != nil){
             picture.image = passedValue.photo
         }
-        
+
     }
     var passedValue:Tutor!
 
