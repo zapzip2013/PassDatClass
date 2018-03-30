@@ -980,6 +980,7 @@
                     <connections>
                         <outlet property="name" destination="W8c-QF-OOr" id="0cl-1c-OQ8"/>
                         <outlet property="picture" destination="qHp-mn-IOb" id="kcf-AZ-fCE"/>
+                        <outlet property="tutormodalpop" destination="VQ4-vn-EtX" id="fgc-ey-krq"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lAX-7T-6Hh" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -993,8 +994,9 @@
         <image name="userIcon" width="50" height="50"/>
     </resources>
     <inferredMetricsTieBreakers>
+        <segue reference="QAp-JL-0Fm"/>
         <segue reference="IEz-UV-YeM"/>
-        <segue reference="Gay-q4-IJ2"/>
+        <segue reference="KIe-EE-Qak"/>
         <segue reference="ELa-jf-AEp"/>
     </inferredMetricsTieBreakers>
 </document>
