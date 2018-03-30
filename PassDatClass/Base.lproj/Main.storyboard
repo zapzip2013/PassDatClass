@@ -1319,6 +1319,9 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1qO-az-53c">
                                 <rect key="frame" x="16" y="21" width="46" height="30"/>
                                 <state key="normal" title="Back"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="presentation" id="bh1-80-13t"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xGq-XE-tYi">
                                 <rect key="frame" x="130" y="111" width="114" height="30"/>
@@ -1585,6 +1588,6 @@
     <inferredMetricsTieBreakers>
         <segue reference="xcX-P7-QGH"/>
         <segue reference="Gay-q4-IJ2"/>
-        <segue reference="BSY-8h-HNf"/>
+        <segue reference="bh1-80-13t"/>
     </inferredMetricsTieBreakers>
 </document>
