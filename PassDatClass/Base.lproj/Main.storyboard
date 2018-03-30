@@ -68,6 +68,14 @@
                                     <segue destination="qfq-PE-9zf" kind="showDetail" id="vCg-ME-euF"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Aej-f0-bsS">
+                                <rect key="frame" x="16" y="29" width="66" height="82"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="hamburger menu"/>
+                                <connections>
+                                    <segue destination="BFl-qU-eQc" kind="presentation" id="7LU-Fk-Wii"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -568,6 +576,499 @@
             </objects>
             <point key="canvasLocation" x="3217" y="376"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="N24-2b-lg8">
+            <objects>
+                <viewController id="wcO-wF-aLr" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="zPN-Zg-0GS">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="ECd-Gn-dqc">
+                                <rect key="frame" x="16" y="270" width="343" height="202"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <string key="text">A.  "I Want To Help!" is the option for tutors to register for a course at their University they would like to tutor for. Tutors can add a price for how much they charge for hourly tutoring.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" text="Q. What is &quot;I Want To Help!&quot;?" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="ect-YD-rd3">
+                                <rect key="frame" x="16" y="206" width="343" height="56"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AIP-NK-NfA">
+                                <rect key="frame" x="16" y="36" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Back"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="presentation" id="a7J-p4-kbq"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="kQK-V4-spj"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="djk-yo-vtX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2450.4000000000001" y="-2079.3103448275865"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="yCi-JI-jRX">
+            <objects>
+                <viewController id="oFK-n8-7er" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Veq-nw-X4K">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="Q. What has access to my info?" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="jZZ-cA-6PL">
+                                <rect key="frame" x="16" y="177" width="343" height="47"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="47" id="7y0-D2-tP5"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="hoQ-zX-PZo">
+                                <rect key="frame" x="16" y="232" width="343" height="202"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <string key="text">A. Nobody! Users of the app will send you the email through a form on the PassDatClass app. You'll only give them your contact information if you decide to tutor them.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ylQ-rw-qE5">
+                                <rect key="frame" x="16" y="34" width="46" height="38"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Back"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="presentation" id="BSY-8h-HNf"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="hoQ-zX-PZo" firstAttribute="trailing" secondItem="Veq-nw-X4K" secondAttribute="trailingMargin" id="2QZ-mj-Onz"/>
+                            <constraint firstItem="jZZ-cA-6PL" firstAttribute="leading" secondItem="hoQ-zX-PZo" secondAttribute="leading" id="DvX-rn-ncg"/>
+                            <constraint firstItem="jZZ-cA-6PL" firstAttribute="trailing" secondItem="hoQ-zX-PZo" secondAttribute="trailing" id="L75-CX-YJK"/>
+                            <constraint firstItem="hoQ-zX-PZo" firstAttribute="leading" secondItem="Veq-nw-X4K" secondAttribute="leadingMargin" id="P9Y-F8-fgU"/>
+                            <constraint firstItem="ghf-Ru-bdL" firstAttribute="bottom" secondItem="hoQ-zX-PZo" secondAttribute="bottom" constant="233" id="UP3-83-qcg"/>
+                            <constraint firstItem="hoQ-zX-PZo" firstAttribute="top" secondItem="jZZ-cA-6PL" secondAttribute="bottom" constant="8" symbolic="YES" id="cmt-eH-Inc"/>
+                            <constraint firstItem="hoQ-zX-PZo" firstAttribute="centerY" secondItem="Veq-nw-X4K" secondAttribute="centerY" id="qB6-nq-gUx"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="ghf-Ru-bdL"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Qb3-N3-QkV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2474.4000000000001" y="-1266.1169415292354"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="t9b-K0-2AL">
+            <objects>
+                <viewController id="I06-JN-0eb" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="CB1-Bq-yi6">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="A. &quot;Help Me!&quot; is the option for students to search for a course they would like to have tutoring help in." textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="v9V-fQ-KY7">
+                                <rect key="frame" x="16" y="270" width="343" height="202"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="Q. What is &quot;Help Me!&quot;?" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Mot-Vt-H0N">
+                                <rect key="frame" x="16" y="209" width="343" height="53"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="53" id="57G-8N-LJu"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Njp-Cg-pwg">
+                                <rect key="frame" x="16" y="46" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Back"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="presentation" id="f6u-ut-gcK"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Mot-Vt-H0N" firstAttribute="trailing" secondItem="CB1-Bq-yi6" secondAttribute="trailingMargin" id="A9e-2t-Jct"/>
+                            <constraint firstItem="Mot-Vt-H0N" firstAttribute="leading" secondItem="v9V-fQ-KY7" secondAttribute="leading" id="Ndp-6p-1dw"/>
+                            <constraint firstItem="Mot-Vt-H0N" firstAttribute="top" secondItem="CB1-Bq-yi6" secondAttribute="top" constant="209" id="asT-o6-Sz8"/>
+                            <constraint firstItem="AQF-k8-Aio" firstAttribute="bottom" secondItem="v9V-fQ-KY7" secondAttribute="bottom" constant="195" id="d9e-1b-AC5"/>
+                            <constraint firstItem="Mot-Vt-H0N" firstAttribute="trailing" secondItem="v9V-fQ-KY7" secondAttribute="trailing" id="dnb-N9-fzg"/>
+                            <constraint firstItem="Mot-Vt-H0N" firstAttribute="leading" secondItem="CB1-Bq-yi6" secondAttribute="leadingMargin" id="gdK-zM-Hzi"/>
+                            <constraint firstItem="v9V-fQ-KY7" firstAttribute="top" secondItem="Mot-Vt-H0N" secondAttribute="bottom" constant="8" symbolic="YES" id="xHY-EN-IL6"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="AQF-k8-Aio"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Vkx-cB-TvK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2463.1999999999998" y="-2871.8140929535234"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="xqg-3d-cgu">
+            <objects>
+                <viewController id="vpe-kx-w5I" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="6Jb-HO-0Ok">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="XP4-pA-aYp">
+                                <rect key="frame" x="16" y="270" width="343" height="202"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <string key="text">A. PassDatClass is an app that allows students to easily find tutors at their University based on the classes they need help in. Tutors can register for multiple courses they would like to tutor.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" misplaced="YES" text="Q. What is PassDatClass?" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Ub0-wS-bM1">
+                                <rect key="frame" x="16" y="207" width="343" height="55"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="68" id="yJn-ax-nyx"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g7y-M5-7wA">
+                                <rect key="frame" x="16" y="32" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Back"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="presentation" id="yaW-ex-C3W"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Ub0-wS-bM1" firstAttribute="trailing" secondItem="6Jb-HO-0Ok" secondAttribute="trailingMargin" id="9bO-bA-R65"/>
+                            <constraint firstItem="XP4-pA-aYp" firstAttribute="leading" secondItem="Ub0-wS-bM1" secondAttribute="leading" id="KOs-Zo-MQ6"/>
+                            <constraint firstItem="Ub0-wS-bM1" firstAttribute="top" secondItem="6Jb-HO-0Ok" secondAttribute="top" constant="195" id="Kdh-jG-awn"/>
+                            <constraint firstItem="XP4-pA-aYp" firstAttribute="top" secondItem="Ub0-wS-bM1" secondAttribute="bottom" constant="7" id="NFX-1Z-fcI"/>
+                            <constraint firstItem="aJ7-wN-XAG" firstAttribute="bottom" secondItem="XP4-pA-aYp" secondAttribute="bottom" constant="195" id="OqI-lM-sjZ"/>
+                            <constraint firstItem="XP4-pA-aYp" firstAttribute="trailing" secondItem="Ub0-wS-bM1" secondAttribute="trailing" id="dGo-eQ-DHm"/>
+                            <constraint firstItem="Ub0-wS-bM1" firstAttribute="leading" secondItem="6Jb-HO-0Ok" secondAttribute="leadingMargin" id="iH7-4F-faB"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="aJ7-wN-XAG"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hxd-IT-dLV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2463.1999999999998" y="-3670.6146926536735"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="vmY-rA-e79">
+            <objects>
+                <viewController id="WrR-Pv-LIQ" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="oWv-Pk-0xo">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="Q. How to search for a course?" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="wOk-cQ-MbU">
+                                <rect key="frame" x="16" y="200" width="343" height="51"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="51" id="N8E-nN-a6J"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="0ia-K3-4bc">
+                                <rect key="frame" x="16" y="259" width="343" height="202"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <string key="text">A.  To search for a course, simply type in the search bar three letters to represent the subject code and then 4 letters to represent the specific course.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ivc-KG-b7v">
+                                <rect key="frame" x="16" y="34" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Back"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="presentation" id="Q3o-s2-8bd"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="0ia-K3-4bc" firstAttribute="top" secondItem="wOk-cQ-MbU" secondAttribute="bottom" constant="8" symbolic="YES" id="7wo-Bp-246"/>
+                            <constraint firstItem="wOk-cQ-MbU" firstAttribute="top" secondItem="oWv-Pk-0xo" secondAttribute="top" constant="200" id="DXG-Bp-gp1"/>
+                            <constraint firstItem="taL-5N-bwv" firstAttribute="bottom" secondItem="0ia-K3-4bc" secondAttribute="bottom" constant="206" id="MEt-Os-z1p"/>
+                            <constraint firstItem="0ia-K3-4bc" firstAttribute="leading" secondItem="wOk-cQ-MbU" secondAttribute="leading" id="Tga-mp-y2W"/>
+                            <constraint firstItem="0ia-K3-4bc" firstAttribute="trailing" secondItem="wOk-cQ-MbU" secondAttribute="trailing" id="kvV-HK-5Vf"/>
+                            <constraint firstItem="wOk-cQ-MbU" firstAttribute="trailing" secondItem="oWv-Pk-0xo" secondAttribute="trailingMargin" id="mbT-ud-YDj"/>
+                            <constraint firstItem="wOk-cQ-MbU" firstAttribute="leading" secondItem="oWv-Pk-0xo" secondAttribute="leadingMargin" id="rk6-hc-hfH"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="taL-5N-bwv"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AMn-OJ-JlG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1362" y="-3671"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="w25-R4-H2l">
+            <objects>
+                <viewController id="dcD-dH-Rz4" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ALM-Ey-OIB">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="Q. How to create a profile?" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="30Y-Yy-BC8">
+                                <rect key="frame" x="16" y="203" width="343" height="51"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="51" id="cJe-r7-X6e"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="A. Simple press &quot;I Want to Help!&quot; and Tutors can add any courses they would like to tutor." textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="e88-Mb-bCP">
+                                <rect key="frame" x="16" y="262" width="343" height="202"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="202" id="yws-VA-ugR"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aP0-KW-dgo">
+                                <rect key="frame" x="16" y="34" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Back"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="presentation" id="QDo-7Q-nb1"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="iiT-LU-0PP" firstAttribute="bottom" secondItem="e88-Mb-bCP" secondAttribute="bottom" constant="203" id="5d7-NC-Klh"/>
+                            <constraint firstItem="30Y-Yy-BC8" firstAttribute="leading" secondItem="e88-Mb-bCP" secondAttribute="leading" id="60T-JW-gXM"/>
+                            <constraint firstItem="e88-Mb-bCP" firstAttribute="leading" secondItem="ALM-Ey-OIB" secondAttribute="leadingMargin" id="LKa-oO-O3e"/>
+                            <constraint firstItem="e88-Mb-bCP" firstAttribute="trailing" secondItem="ALM-Ey-OIB" secondAttribute="trailingMargin" id="MLy-bc-Fch"/>
+                            <constraint firstItem="e88-Mb-bCP" firstAttribute="top" secondItem="30Y-Yy-BC8" secondAttribute="bottom" constant="8" symbolic="YES" id="Ocq-RA-jLp"/>
+                            <constraint firstItem="30Y-Yy-BC8" firstAttribute="trailing" secondItem="e88-Mb-bCP" secondAttribute="trailing" id="iOO-D7-nP4"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="iiT-LU-0PP"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lw9-NG-hBx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-359" y="-3663"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="I8G-t3-Tej">
+            <objects>
+                <viewController id="pTS-87-PiF" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="tfs-CS-OdS">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="Q. Incorrect course name error?" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="fTR-u4-II4">
+                                <rect key="frame" x="16" y="213" width="343" height="57"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="57" id="Qqi-Dm-sYN"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="54y-NR-2cH">
+                                <rect key="frame" x="16" y="278" width="343" height="202"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <string key="text">A. Courses must be entered with three letters to represent the subject code and then 4 letters to represent the specifc course. An example would be: COP 3330.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H9e-7y-LHc">
+                                <rect key="frame" x="16" y="46" width="46" height="28"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Back"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="presentation" id="a9z-Sf-djV"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="54y-NR-2cH" firstAttribute="top" secondItem="fTR-u4-II4" secondAttribute="bottom" constant="8" symbolic="YES" id="3EY-fI-i6V"/>
+                            <constraint firstItem="fTR-u4-II4" firstAttribute="leading" secondItem="tfs-CS-OdS" secondAttribute="leadingMargin" id="9rB-5i-Zhi"/>
+                            <constraint firstItem="fTR-u4-II4" firstAttribute="trailing" secondItem="tfs-CS-OdS" secondAttribute="trailingMargin" id="DI7-aD-foA"/>
+                            <constraint firstItem="WnR-WB-OwL" firstAttribute="bottom" secondItem="54y-NR-2cH" secondAttribute="bottom" constant="187" id="EIj-aZ-42p"/>
+                            <constraint firstItem="fTR-u4-II4" firstAttribute="top" secondItem="tfs-CS-OdS" secondAttribute="top" constant="213" id="QEQ-vM-nN5"/>
+                            <constraint firstItem="fTR-u4-II4" firstAttribute="trailing" secondItem="54y-NR-2cH" secondAttribute="trailing" id="fGI-Bq-Ual"/>
+                            <constraint firstItem="fTR-u4-II4" firstAttribute="leading" secondItem="54y-NR-2cH" secondAttribute="leading" id="kDh-Uo-eXG"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="WnR-WB-OwL"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Py4-Yg-yez" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1386.4000000000001" y="-2872.7136431784111"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="5xp-Xa-qKP">
+            <objects>
+                <viewController id="ob9-Tu-hlO" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Y9w-pR-L1f">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="Q. How to login as a Tutor?" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="6iT-vo-0Ds">
+                                <rect key="frame" x="16" y="203" width="343" height="51"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="51" id="1VH-fC-JCs"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="6FL-er-wJs">
+                                <rect key="frame" x="16" y="262" width="343" height="202"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <string key="text">A. To login, tutors must have a username and password. On the first use of "I Want to Help!" tutors can set their own username and password.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="awT-dg-0k9">
+                                <rect key="frame" x="16" y="46" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Back"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="presentation" id="Eh5-5A-aax"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="6FL-er-wJs" firstAttribute="top" secondItem="6iT-vo-0Ds" secondAttribute="bottom" constant="8" symbolic="YES" id="24t-tU-VeF"/>
+                            <constraint firstItem="6iT-vo-0Ds" firstAttribute="leading" secondItem="Y9w-pR-L1f" secondAttribute="leadingMargin" id="2J2-yZ-z9r"/>
+                            <constraint firstItem="6FL-er-wJs" firstAttribute="leading" secondItem="6iT-vo-0Ds" secondAttribute="leading" id="6xE-ZG-Udg"/>
+                            <constraint firstItem="6iT-vo-0Ds" firstAttribute="trailing" secondItem="Y9w-pR-L1f" secondAttribute="trailingMargin" id="RdT-qu-mPW"/>
+                            <constraint firstItem="6FL-er-wJs" firstAttribute="trailing" secondItem="6iT-vo-0Ds" secondAttribute="trailing" id="cmm-Zw-T1v"/>
+                            <constraint firstItem="CJo-2j-NZb" firstAttribute="bottom" secondItem="6FL-er-wJs" secondAttribute="bottom" constant="203" id="gy0-WR-aMD"/>
+                            <constraint firstItem="6iT-vo-0Ds" firstAttribute="top" secondItem="Y9w-pR-L1f" secondAttribute="top" constant="203" id="tJq-um-Pyx"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="CJo-2j-NZb"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dJS-n6-t5G" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-359.19999999999999" y="-2872.7136431784111"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="r8y-xw-p3t">
+            <objects>
+                <viewController id="Poh-Yq-RSE" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="jFV-dW-cUC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="9HU-MR-GcZ">
+                                <rect key="frame" x="16" y="213" width="343" height="332"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="332" id="da6-pC-Xjy"/>
+                                </constraints>
+                                <string key="text">A.  When a student clicks the "Help Me!" button, they will be prompted to input the class that they need help with. We will show them a list of tutors that help with that class, which they can sort by various metrics, and if they choose you, they can send you an email from within the app that shows that they're interested. From there, all you have to do is get into contact with them.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="Q. How will students find me?" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Rfb-5o-5mQ">
+                                <rect key="frame" x="16" y="151" width="343" height="54"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="54" id="0om-7e-b6X"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7pe-mX-2JT">
+                                <rect key="frame" x="16" y="44" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Back"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="presentation" id="o6C-5Q-Ebf"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Rfb-5o-5mQ" firstAttribute="trailing" secondItem="9HU-MR-GcZ" secondAttribute="trailing" id="APZ-XS-JDM"/>
+                            <constraint firstItem="Rfb-5o-5mQ" firstAttribute="leading" secondItem="9HU-MR-GcZ" secondAttribute="leading" id="BMv-F0-VgI"/>
+                            <constraint firstItem="9HU-MR-GcZ" firstAttribute="top" secondItem="Rfb-5o-5mQ" secondAttribute="bottom" constant="8" symbolic="YES" id="bwG-Cq-XYM"/>
+                            <constraint firstItem="J3y-cH-wxI" firstAttribute="bottom" secondItem="9HU-MR-GcZ" secondAttribute="bottom" constant="122" id="p8r-rV-b8U"/>
+                            <constraint firstItem="9HU-MR-GcZ" firstAttribute="leading" secondItem="jFV-dW-cUC" secondAttribute="leadingMargin" id="pA6-Vs-day"/>
+                            <constraint firstItem="9HU-MR-GcZ" firstAttribute="trailing" secondItem="jFV-dW-cUC" secondAttribute="trailingMargin" id="ulp-X8-ttF"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="J3y-cH-wxI"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VhL-NE-mWc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1362.4000000000001" y="-2072.1139430284861"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="dJO-QW-EDK">
+            <objects>
+                <viewController id="ZFj-ga-kiO" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Umg-bJ-L7w">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="A. Of course! Tutors can tutor as many classes as they would like to tutor." textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="aM7-qw-Zyf">
+                                <rect key="frame" x="16" y="265" width="343" height="202"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="202" id="P36-3o-a30"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="Q. Can I tutor multiple classes?" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="CrL-EB-8OG">
+                                <rect key="frame" x="16" y="205" width="343" height="52"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="52" id="s1q-Hp-3Qq"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4sn-q2-tNE">
+                                <rect key="frame" x="16" y="38" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Back"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="presentation" id="TnT-JY-7IZ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="aM7-qw-Zyf" firstAttribute="top" secondItem="CrL-EB-8OG" secondAttribute="bottom" constant="8" symbolic="YES" id="419-Od-94s"/>
+                            <constraint firstItem="aM7-qw-Zyf" firstAttribute="trailing" secondItem="Umg-bJ-L7w" secondAttribute="trailingMargin" id="SH2-dJ-2u0"/>
+                            <constraint firstItem="CrL-EB-8OG" firstAttribute="trailing" secondItem="aM7-qw-Zyf" secondAttribute="trailing" id="dlR-zv-04j"/>
+                            <constraint firstItem="heG-pl-GsB" firstAttribute="bottom" secondItem="aM7-qw-Zyf" secondAttribute="bottom" constant="200" id="h9A-XX-jqT"/>
+                            <constraint firstItem="CrL-EB-8OG" firstAttribute="leading" secondItem="aM7-qw-Zyf" secondAttribute="leading" id="pbC-yF-pAJ"/>
+                            <constraint firstItem="aM7-qw-Zyf" firstAttribute="leading" secondItem="Umg-bJ-L7w" secondAttribute="leadingMargin" id="uMO-ln-4qO"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="heG-pl-GsB"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ELR-EA-EiS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-359.19999999999999" y="-2065.8170914542729"/>
+        </scene>
         <!--Qview-->
         <scene sceneID="4Im-Wx-6oP">
             <objects>
@@ -590,22 +1091,190 @@
                                             <action selector="exit:" destination="BFl-qU-eQc" eventType="touchUpInside" id="ySQ-Rc-Z8i"/>
                                         </connections>
                                     </button>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iq2-8M-YCn">
-                                        <rect key="frame" x="0.0" y="28" width="172" height="75"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="75" id="Red-H7-P5j"/>
-                                        </constraints>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Frequenty Asked Questions" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="rAw-pi-zbh">
+                                        <rect key="frame" x="11" y="57" width="211" height="33"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="1." textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="ld0-M5-2UE">
+                                        <rect key="frame" x="7" y="124" width="22" height="33"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="1." textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="44n-4f-t9f">
+                                        <rect key="frame" x="2" y="277" width="28" height="31"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ULp-5f-BiV">
+                                        <rect key="frame" x="11" y="278" width="222" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="How to search for a course?"/>
+                                        <connections>
+                                            <segue destination="WrR-Pv-LIQ" kind="presentation" id="5KH-eW-59z"/>
+                                        </connections>
+                                    </button>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Students" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="RW7-eL-qvN">
+                                        <rect key="frame" x="0.0" y="255" width="89" height="33"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Tutors" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="7K2-Jy-4H9">
+                                        <rect key="frame" x="0.0" y="335" width="60" height="33"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Basics" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="D2V-0R-rMu">
+                                        <rect key="frame" x="7" y="98" width="64" height="34"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gYP-1L-o35">
+                                        <rect key="frame" x="26" y="387" width="167" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="How to login as a Tutor?"/>
+                                        <connections>
+                                            <segue destination="ob9-Tu-hlO" kind="presentation" id="xPr-mh-3zv"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="niM-ht-4hg">
+                                        <rect key="frame" x="34" y="152" width="170" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="What is &quot;Help Me!&quot;?"/>
+                                        <connections>
+                                            <segue destination="I06-JN-0eb" kind="presentation" id="Z8d-sz-vdA"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I3c-bW-MPI">
+                                        <rect key="frame" x="25" y="181" width="195" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="What is &quot;I Want To Help!&quot;?"/>
+                                        <connections>
+                                            <segue destination="wcO-wF-aLr" kind="presentation" id="vlv-vW-M6G"/>
+                                        </connections>
+                                    </button>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="2." textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="4Fq-SK-XME">
+                                        <rect key="frame" x="7" y="151" width="28" height="31"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="3." textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="fUv-Ep-qm8">
+                                        <rect key="frame" x="7" y="181" width="23" height="31"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="2." textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="suG-Qd-hhJ">
+                                        <rect key="frame" x="0.0" y="386" width="28" height="33"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="1." textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="eLH-sX-S2e">
+                                        <rect key="frame" x="0.0" y="361" width="22" height="33"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XkG-6Q-bgB">
+                                        <rect key="frame" x="23" y="362" width="170" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="How to create a profile?"/>
+                                        <connections>
+                                            <segue destination="dcD-dH-Rz4" kind="presentation" id="fCl-Yx-Bdu"/>
+                                        </connections>
+                                    </button>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="3." textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="dh5-dQ-8Cb">
+                                        <rect key="frame" x="0.0" y="413" width="28" height="33"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fd6-6t-f0P">
+                                        <rect key="frame" x="27" y="414" width="193" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Can I tutor multiple classes?"/>
+                                        <connections>
+                                            <segue destination="ZFj-ga-kiO" kind="presentation" id="GxE-ZH-YcT"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r5w-Q1-TDH">
+                                        <rect key="frame" x="27" y="438" width="184" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="How will students find me?"/>
+                                        <connections>
+                                            <segue destination="Poh-Yq-RSE" kind="presentation" id="BPK-xc-IT4"/>
+                                        </connections>
+                                    </button>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="4." textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Iqq-3w-GRc">
+                                        <rect key="frame" x="0.0" y="438" width="28" height="33"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="4." textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="oSg-xU-Bhk">
+                                        <rect key="frame" x="7" y="207" width="28" height="33"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Odn-An-qHa">
+                                        <rect key="frame" x="27" y="304" width="200" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Incorrect course name error?"/>
+                                        <connections>
+                                            <segue destination="pTS-87-PiF" kind="presentation" id="s2q-Ee-bJM"/>
+                                        </connections>
+                                    </button>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="2." textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="K7G-on-JSE">
+                                        <rect key="frame" x="2" y="303" width="26" height="33"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TvA-5I-jRL">
+                                        <rect key="frame" x="20" y="124" width="184" height="32"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                        <state key="normal" title="What is PassDatClass?"/>
+                                        <connections>
+                                            <segue destination="vpe-kx-w5I" kind="presentation" id="be9-Yu-5Ph"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mvi-xH-gJm">
+                                        <rect key="frame" x="34" y="207" width="191" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Who has access to my info?"/>
+                                        <connections>
+                                            <segue destination="oFK-n8-7er" kind="presentation" id="Gvl-7i-JLr"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="trailing" secondItem="W6i-db-Yuc" secondAttribute="trailing" id="BiT-eU-29D"/>
-                                    <constraint firstItem="iq2-8M-YCn" firstAttribute="leading" secondItem="QbC-IJ-WzZ" secondAttribute="leading" id="EQQ-9p-U7B"/>
-                                    <constraint firstItem="iq2-8M-YCn" firstAttribute="top" secondItem="QbC-IJ-WzZ" secondAttribute="top" constant="28" id="NiL-N7-c4a"/>
-                                    <constraint firstAttribute="trailing" secondItem="iq2-8M-YCn" secondAttribute="trailing" constant="62" id="R2Z-T7-gNh"/>
                                     <constraint firstItem="W6i-db-Yuc" firstAttribute="top" secondItem="QbC-IJ-WzZ" secondAttribute="top" id="hGb-Wp-Cwj"/>
                                 </constraints>
                             </view>
@@ -622,7 +1291,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7pI-gO-FqS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="809" y="-1338"/>
+            <point key="canvasLocation" x="808.79999999999995" y="-1338.08095952024"/>
         </scene>
         <!--Searchpage View Controller-->
         <scene sceneID="tj7-Ww-LdZ">
@@ -875,6 +1544,34 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lAX-7T-6Hh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <view contentMode="scaleToFill" id="nJ3-wK-Y6l">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    <subviews>
+                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="d7Q-Wo-8G4">
+                            <rect key="frame" x="16" y="120" width="343" height="202"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <string key="text">A. PassDatClass is an app that allows students to easily find tutors at their University based on the classes they need help in. Tutors can register for multiple courses they would like to tutor.</string>
+                            <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                            <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                        </textView>
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tg4-AJ-E3Z">
+                            <rect key="frame" x="10" y="10" width="46" height="30"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <state key="normal" title="Back"/>
+                        </button>
+                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Q. What is PassDatClass?" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="uI5-Ep-b8Z">
+                            <rect key="frame" x="16" y="44" width="343" height="68"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                            <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                        </textView>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <viewLayoutGuide key="safeArea" id="ecm-fH-iSX"/>
+                </view>
             </objects>
             <point key="canvasLocation" x="4326" y="-516"/>
         </scene>
@@ -882,10 +1579,12 @@
     <resources>
         <image name="Close_delete_remove_exit_cross_x_button_error.png" width="512" height="512"/>
         <image name="backArrow" width="25" height="25"/>
+        <image name="hamburger menu" width="128" height="128"/>
         <image name="userIcon" width="50" height="50"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="xcX-P7-QGH"/>
         <segue reference="Gay-q4-IJ2"/>
+        <segue reference="BSY-8h-HNf"/>
     </inferredMetricsTieBreakers>
 </document>
