@@ -15,7 +15,7 @@ class TutorTest: XCTestCase {
     
     override func setUp() {
         super.setUp()
-        Tutor.tablename = "Tutor"
+        Tutor.tablename = "tutorBool"
     }
     
     override func tearDown() {
@@ -54,7 +54,7 @@ class TutorTest: XCTestCase {
     
     func testRequestPhoto() {
         let tutor = Tutor.QueryAccount(email: "tallafoc@outlook.com")
-        let photo = SQLInteract.donwloadPhoto(tutor: tutor!)
+        let photo = SQLInteract.donwloadPhoto(email: tutor!.email)
         XCTAssert(photo != #imageLiteral(resourceName: "images.jpg"))
     }
  

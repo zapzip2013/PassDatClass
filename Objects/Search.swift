@@ -37,7 +37,7 @@ public class Search {
     func ExecuteQuery() -> [Tutor] {
         var ret = [Tutor]()
         var course = self.prefix + String(self.number)
-        let query = "SELECT * FROM tutor WHERE tutor.bio LIKE '%\(course)%';"//" = '\(course)';"
+        let query = "SELECT * FROM tutorBool WHERE bio LIKE '%\(course)%';"//" = '\(course)';"
         //let query = "UPDATE Tutor SET firstName='\(tutor.firstname)', lastName='\(tutor.lastname)', phoneNumber=\(tutor.phone), rating=\(tutor.rating), numberVotes=\(tutor.numbervotes), pricePerHour=\(tutor.priceperhour), bio='\(tutor.bio)'  WHERE FSUEmail='\(tutor.email)';"
         let resquery = SQLInteract.ExecuteSelect(query: query)
         ret += parseResult(resquery.0)

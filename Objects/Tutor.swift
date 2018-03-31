@@ -16,7 +16,7 @@ import CryptoSwift
 
 
 public class Tutor : User {
-    internal static var tablename = "tutor"
+    internal static var tablename = "tutorBool"
     //MARK: Properties
     public var phone : Int
     public var email: String
@@ -64,6 +64,7 @@ public class Tutor : User {
         let bio = row["bio"] as! String
         let rating = row["rating"] as! String
         let fsuver = row["FSUVerified"] as! String
+        let isPhoto = row["photo"] as! String
         var fsuverified : Bool
         if (fsuver == "1"){ /* Set true/1 for FSUVerification, else false/0 */
             fsuverified = true
@@ -72,7 +73,10 @@ public class Tutor : User {
             fsuverified = false
         }
         let email = row["FSUEmail"] as! String
-        let photo = SQLInteract.base64ToImage(base64: row["photo"] as? String)  /* Encode to base64 */
+        var photo : UIImage? = nil
+        if (isPhoto == "1"){
+            photo = SQLInteract.donwloadPhoto(email: email)
+        }
         let ret = Tutor(phone: Int(phone)!, email: email, name: firstname, lastname: lastname, rating: Float(rating)!, numbervotes: Int(numbervotes)!, photo: photo, price: Float(priceperhour)!, verified: fsuverified, bio: bio) /* Init tutor object with current call's DB data, then return that */
         return ret
     }
@@ -110,14 +114,14 @@ public class Tutor : User {
         }
         else{
             SQLInteract.uploadPhoto(tutor: tutor)
-            let query = "UPDATE \(tablename) SET photo='" + SQLInteract.imageTobase64(image: tutor.photo!) + "' WHERE FSUEmail='" + tutor.email + "';"
+            let query = "UPDATE \(tablename) SET photo=1 WHERE FSUEmail='" + tutor.email + "';"
             return SQLInteract.ExecuteModification(query: query)
         }
     }
     
  /* Helper function for ChangePhoto() */
     class func RemovePhoto(tutor: Tutor) -> StatusMsg {
-        let query = "UPDATE \(tablename) SET photo=NULL WHERE FSUEmail='" + tutor.email + "';"
+        let query = "UPDATE \(tablename) SET photo=0 WHERE FSUEmail='" + tutor.email + "';"
         return SQLInteract.ExecuteModification(query: query)
     }
     

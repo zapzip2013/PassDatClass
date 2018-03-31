@@ -90,9 +90,9 @@ public class SQLInteract{
         
     }
     
-    public class func donwloadPhoto(tutor: Tutor) -> UIImage {
-        let email = tutor.email + ".jpg"
-        let photoresult = Alamofire.download(downloadURL+email).responseData()
+    public class func donwloadPhoto(email: String) -> UIImage {
+        let emailjpg = email + ".jpg"
+        let photoresult = Alamofire.download(downloadURL+emailjpg).responseData()
         if let photo = photoresult.value {
             return UIImage(data: photo)!
         }
