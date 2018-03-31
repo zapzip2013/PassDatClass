@@ -73,9 +73,9 @@ public class SQLInteract{
         var status : StatusMsg
         
         parameters["e"] = query
-        if (!checkQuery(query)){
+        /*if (!checkQuery(query)){
             return (ret, (false, "Entered data not valid"))
-        }
+        }*/
         let response = Alamofire.request(phpFile, method: .post, parameters: parameters).responseJSON()
         
         if let responserror = response.error {
