@@ -15,6 +15,7 @@ class TutorTest: XCTestCase {
     
     override func setUp() {
         super.setUp()
+        Tutor.tablename = "Tutor"
     }
     
     override func tearDown() {
