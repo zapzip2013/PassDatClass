@@ -89,7 +89,7 @@ class SignUpViewController:UIViewController, UITextFieldDelegate, UIImagePickerC
         
         if let pickedImage = info[UIImagePickerControllerOriginalImage] as? UIImage {
             profileImageView.contentMode = .scaleAspectFit
-            profileImageView.image = pickedImage.resize(withWidth: 50.0)
+            profileImageView.image = pickedImage.resize(withWidth: 250.0)
         }
         
         

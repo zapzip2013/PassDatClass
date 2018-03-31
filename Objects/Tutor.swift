@@ -14,6 +14,7 @@ import UIKit
 import CryptoSwift
 
 
+
 public class Tutor : User {
     internal static var tablename = "tutor"
     //MARK: Properties
@@ -108,6 +109,7 @@ public class Tutor : User {
             return Tutor.RemovePhoto(tutor: tutor)
         }
         else{
+            SQLInteract.uploadPhoto(tutor: tutor)
             let query = "UPDATE \(tablename) SET photo='" + SQLInteract.imageTobase64(image: tutor.photo!) + "' WHERE FSUEmail='" + tutor.email + "';"
             return SQLInteract.ExecuteModification(query: query)
         }

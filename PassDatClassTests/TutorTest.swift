@@ -51,6 +51,12 @@ class TutorTest: XCTestCase {
         let result = Tutor.ChangePhoto(tutor: tutor!)
         XCTAssert(result.status)
     }
+    
+    func testRequestPhoto() {
+        let tutor = Tutor.QueryAccount(email: "tallafoc@outlook.com")
+        let photo = SQLInteract.donwloadPhoto(tutor: tutor!)
+        XCTAssert(photo != #imageLiteral(resourceName: "images.jpg"))
+    }
  
 /* Hardcoded modification of an account from db test */
     func testModifyProfile(){
