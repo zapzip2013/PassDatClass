@@ -61,7 +61,7 @@ class SearchpageViewController: UIViewController {
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if(segue.identifier == "searchresultseque"){
-            var viewController = segue.destination as! TutorTableViewController
+            let viewController = segue.destination as! TutorTableViewController
             
             let num = course_num.text
             let char = course_chars.text

@@ -66,11 +66,11 @@ class staticrating: UIStackView {
         }
         ratingButtons.removeAll()
         let bundle = Bundle(for: type(of: self))
-        let filledstar = UIImage(named: "filledstar", in:bundle, compatibleWith:self.traitCollection)
-        let emptystar = UIImage(named: "emptystar", in:bundle, compatibleWith:self.traitCollection)
+        let _ = UIImage(named: "filledstar", in:bundle, compatibleWith:self.traitCollection)
+        let _ = UIImage(named: "emptystar", in:bundle, compatibleWith:self.traitCollection)
         //let touchedstar = UIImage(named: "touchedstar", in:bundle, compatibleWith:self.traitCollection)
         for _ in 0..<rating{
-            var button = UIImageView()
+            let button = UIImageView()
             //button.UIImage(emptystar, for: .normal)
             button.image = UIImage(named: "filledstar")!
             //button.UIImage(touchedstar, for: .highlighted)
@@ -87,7 +87,7 @@ class staticrating: UIStackView {
            // updateButtonSelectionStates()
         }
     for _ in rating..<starCount{
-        var button = UIImageView()
+        let button = UIImageView()
         //button.UIImage(emptystar, for: .normal)
         button.image = UIImage(named: "emptystar")!
         //button.UIImage(touchedstar, for: .highlighted)
