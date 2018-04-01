@@ -17,10 +17,7 @@ class TutorTableViewController: UITableViewController {
         //loads sample tutors
         loadsampletutors()
         
-        
-        
     }
-
 
     var passedclassnum:String!
     var passedclassname:String!

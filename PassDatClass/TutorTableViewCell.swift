@@ -10,8 +10,6 @@ import UIKit
 
 class TutorTableViewCell: UITableViewCell {
     
-
-
     @IBOutlet weak var rating: ratings!
     @IBOutlet weak var namelabel: UILabel!
     @IBOutlet weak var profileimage: UIImageView!
