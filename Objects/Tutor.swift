@@ -14,7 +14,9 @@ import UIKit
 import CryptoSwift
 
 
+
 public class Tutor : User {
+    internal static var tablename = "tutorBool"
     //MARK: Properties
     public var phone : Int
     public var email: String
@@ -79,9 +81,9 @@ public class Tutor : User {
         return ret
     }
     
-/* Using ExecuteSelect() helper function to send query json object to db */
+    /* Using ExecuteSelect() helper function to send query json object to db */
     class func QueryAccount(email: String) -> Tutor? {
-        let query = "SELECT * FROM Tutor WHERE FSUEmail='" + email + "';"
+        let query = "SELECT * FROM \(tablename) WHERE FSUEmail='" + email + "';"
         let resquery = SQLInteract.ExecuteSelect(query: query)
         let msg = resquery.1
         if (msg.status) {
@@ -99,26 +101,27 @@ public class Tutor : User {
         }
     }
     
-/* Creates a new tutor account in db */
+    /* Creates a new tutor account in db */
     class func CreateAccount(tutor: Tutor) -> StatusMsg {
-        let query = "INSERT INTO Tutor (FSUEmail, firstName, lastName, phoneNumber, rating, numberVotes, pricePerHour, bio) VALUES ('\(tutor.email)','\(tutor.firstname)','\(tutor.lastname)',\(tutor.phone),\(tutor.rating),\(tutor.numbervotes),\(tutor.priceperhour),'\(tutor.bio)');"
+        let query = "INSERT INTO \(tablename) (FSUEmail, firstName, lastName, phoneNumber, rating, numberVotes, pricePerHour, bio) VALUES ('\(tutor.email)','\(tutor.firstname)','\(tutor.lastname)',\(tutor.phone),\(tutor.rating),\(tutor.numbervotes),\(tutor.priceperhour),'\(tutor.bio)');"
         return SQLInteract.ExecuteModification(query: query)
     }
-
-/* Creates a new tutor account in db */
+    
+    /* Creates a new tutor account in db */
     class func ChangePhoto(tutor: Tutor) -> StatusMsg {
         if (tutor.photo == nil){
             return Tutor.RemovePhoto(tutor: tutor)
         }
         else{
-            let query = "UPDATE Tutor SET photo='" + SQLInteract.imageTobase64(image: tutor.photo!) + "' WHERE FSUEmail='" + tutor.email + "';"
+            SQLInteract.uploadPhoto(tutor: tutor)
+            let query = "UPDATE \(tablename) SET photo=1 WHERE FSUEmail='" + tutor.email + "';"
             return SQLInteract.ExecuteModification(query: query)
         }
     }
     
- /* Helper function for ChangePhoto() */
+    /* Helper function for ChangePhoto() */
     class func RemovePhoto(tutor: Tutor) -> StatusMsg {
-        let query = "UPDATE Tutor SET photo=NULL WHERE FSUEmail='" + tutor.email + "';"
+        let query = "UPDATE \(tablename) SET photo=0 WHERE FSUEmail='" + tutor.email + "';"
         return SQLInteract.ExecuteModification(query: query)
     }
     
@@ -133,16 +136,16 @@ public class Tutor : User {
         let mutatedlist = list.filter{$0 != course}
         self.bio = mutatedlist.joined(separator: ",")
     }
-  
-/* Extends all the changes made to a Tutor to the DB */
+    
+    /* Extends all the changes made to a Tutor to the DB */
     class func EditAccount(tutor: Tutor) -> StatusMsg {
-        let query = "UPDATE Tutor SET firstName='\(tutor.firstname)', lastName='\(tutor.lastname)', phoneNumber=\(tutor.phone), rating=\(tutor.rating), numberVotes=\(tutor.numbervotes), pricePerHour=\(tutor.priceperhour), bio='\(tutor.bio)'  WHERE FSUEmail='\(tutor.email)';"
+        let query = "UPDATE \(tablename) SET firstName='\(tutor.firstname)', lastName='\(tutor.lastname)', phoneNumber=\(tutor.phone), rating=\(tutor.rating), numberVotes=\(tutor.numbervotes), pricePerHour=\(tutor.priceperhour), bio='\(tutor.bio)'  WHERE FSUEmail='\(tutor.email)';"
         return SQLInteract.ExecuteModification(query: query)
     }
-
-/* Deletes a tutor's information from the db */
+    
+    /* Deletes a tutor's information from the db */
     class func DeleteAccount(tutor: Tutor) -> StatusMsg  {
-        let query = "DELETE FROM Tutor WHERE FSUEmail='" + tutor.email + "';"
+        let query = "DELETE FROM \(tablename) WHERE FSUEmail='" + tutor.email + "';"
         return SQLInteract.ExecuteModification(query: query)
     }
 }
