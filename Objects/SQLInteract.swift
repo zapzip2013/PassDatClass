@@ -20,12 +20,14 @@ import Alamofire_Synchronous
 
 public class SQLInteract{
     //MARK: Propierties
+    static let downloadURL = "https://jcquiles.com/images/"
     static var phpFile: URL! = URL(string: "https://jcquiles.com/DRDatabase.php") // e.g. http://jcquiles.com/DRDatabase.php
+    static let phpUpload: URLConvertible = "https://jcquiles.com/upload.php"
     static let host = "localhost"
     /* If your database is on the same server as the php file,
-    *  use 'localhost' , otherwise use the ip address of
-    *  your database and configure remote access.
-    */
+     *  use 'localhost' , otherwise use the ip address of
+     *  your database and configure remote access.
+     */
     static let databaseName = "PassDatClass" // name of your MySQL database
     static let username = "tallafoc"
     static let password = "carlos13"
@@ -47,7 +49,7 @@ public class SQLInteract{
         return base64String
     }
     
-/* Helper function for imageTobase64() */
+    /* Helper function for imageTobase64() */
     class func base64ToImage (base64: String?) -> UIImage? {
         var img: UIImage = UIImage()
         if base64 != nil{
@@ -66,9 +68,42 @@ public class SQLInteract{
     }
     
     
+    public class func uploadPhoto(tutor: Tutor) -> Void{
+        let imageData = UIImageJPEGRepresentation(tutor.photo!, 1)!
+        let filename = tutor.email + ".jpg"
+        Alamofire.upload(
+            multipartFormData: { multipartFormData in
+                multipartFormData.append(imageData, withName: "image", fileName: filename, mimeType: "file/jpeg")
+        },
+            to: phpUpload,
+            encodingCompletion: { encodingResult in
+                switch encodingResult {
+                case .success(let upload, _, _):
+                    upload.responseJSON { response in
+                        debugPrint(response)
+                    }
+                case .failure(let encodingError):
+                    print(encodingError)
+                }
+        }
+        )
+        
+    }
+    
+    public class func donwloadPhoto(email: String) -> UIImage {
+        let emailjpg = email + ".jpg"
+        let photoresult = Alamofire.download(downloadURL+emailjpg).responseData()
+        if let photo = photoresult.value {
+            return UIImage(data: photo)!
+        }
+        else {
+            return #imageLiteral(resourceName: "images.jpg")
+        }
+    }
+    
     //MARK: Methods
     public class func ExecuteSelect(query: String) -> ([[String:Any]], StatusMsg){
-/* ***TO DO***: Figure out how to force errors; figure out when the alamofire.request() doesn't work and at what stage it failed */
+        /* ***TO DO***: Figure out how to force errors; figure out when the alamofire.request() doesn't work and at what stage it failed */
         var ret = ResQuery()
         var status : StatusMsg
         
@@ -94,8 +129,8 @@ public class SQLInteract{
         
         return (ret,status)
     }
-   
-/* Modify SQL queries that use ExecuteSelect() function */
+    
+    /* Modify SQL queries that use ExecuteSelect() function */
     public class func ExecuteModification(query: String) -> StatusMsg {
         let resquery = ExecuteSelect(query: query)
         return (resquery.1)
