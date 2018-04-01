@@ -44,10 +44,10 @@ class TutorTableViewController: UITableViewController {
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if(segue.identifier == "modalseg"){
-            var viewController = segue.destination as! tutormodal
+            let viewController = segue.destination as! tutormodal
             
             let indexPath = tableView.indexPathForSelectedRow;
-            let currentCell = tableView.cellForRow(at: indexPath!)
+            let _ = tableView.cellForRow(at: indexPath!)
             let tutor = tutors[(indexPath?.row)!]
             print("hello \(tutor.name) \n")
             valueToPass = tutor//[(indexPath?.row)!]
