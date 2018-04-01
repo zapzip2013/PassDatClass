@@ -8,6 +8,9 @@
 
 import UIKit
 
+var searchnum : String = ""
+var searchname : String = ""
+
 class SearchpageViewController: UIViewController {
 
     override func viewDidLoad() {
@@ -57,8 +60,16 @@ class SearchpageViewController: UIViewController {
         }
         return true
     }
-    
-
+    @IBOutlet weak var errorview: UILabel!
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        var touch: UITouch? = touches.first
+        //location is relative to the current view
+        // do something with the touched point
+        if touch?.view != errorview {
+            errorview.isHidden = true
+            hid.isHidden = true
+        }
+    }
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if(segue.identifier == "searchresultseque"){
             let viewController = segue.destination as! TutorTableViewController
@@ -66,8 +77,12 @@ class SearchpageViewController: UIViewController {
             let num = course_num.text
             let char = course_chars.text
             //TODO: Check that user has int instead of string since string will cause failure
-            viewController.passedclassnum = num
-            viewController.passedclassname = char
+            viewController.passedclassnum = searchnum
+            viewController.passedclassname = searchname
+        
+        /*let controller: TutorTableViewController = storyboard!.instantiateViewController(withIdentifier: "tabletutor") as! TutorTableViewController
+        controller.passedclassname = num
+        controller.passedclassnum = char*/
             
         }
     }
