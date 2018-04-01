@@ -7,7 +7,7 @@
 
 import Foundation
 import UIKit
-class SignUpViewController:UIViewController, UITextFieldDelegate {
+class SignUpViewController:UIViewController, UITextFieldDelegate, UINavigationControllerDelegate, UIImagePickerControllerDelegate {
     
     @IBOutlet weak var usernameField: UITextField!
     @IBOutlet weak var emailField: UITextField!
@@ -43,8 +43,27 @@ class SignUpViewController:UIViewController, UITextFieldDelegate {
         activityView.color = secondaryColor
         activityView.frame = CGRect(x: 0, y: 0, width: 50.0, height: 50.0)
         activityView.center = continueButton.center
-        
+        //imagePicker.delegate = self
         view.addSubview(activityView)
        // continueButton.addTarget(self, action: #selector(handleSignUp), for: .touchUpInside)
     }
+    @IBAction func btnClicked() {
+        
+        if UIImagePickerController.isSourceTypeAvailable(.savedPhotosAlbum)
+        {
+            print("Button capture")
+            imagePicker.sourceType = .savedPhotosAlbum;
+            imagePicker.allowsEditing = false
+            
+            self.present(imagePicker, animated: true, completion: nil)
+        }
+    }
+    
+    @objc func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
+        let chosenImage = info[UIImagePickerControllerOriginalImage] as! UIImage
+        profileImageView.image = chosenImage
+        
+        dismiss(animated: true, completion: nil)
+    }
 }
+

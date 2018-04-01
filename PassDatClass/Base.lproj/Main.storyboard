@@ -482,9 +482,13 @@
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bXN-80-4Fe" customClass="RoundedWhiteButton" customModule="PassDatClass" customModuleProvider="target">
                                                 <rect key="frame" x="48" y="488" width="262" height="30"/>
+                                                <rect key="contentStretch" x="0.25" y="0.0" width="1" height="1"/>
                                                 <state key="normal" title="Terms &amp; Conditions">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
+                                                <connections>
+                                                    <segue destination="gtp-SK-QP1" kind="presentation" id="YCg-mL-b9z"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -773,7 +777,7 @@
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="90" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="S79-HV-ucL">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <navigationBar key="tableHeaderView" contentMode="scaleToFill" id="VJS-J9-ghS">
                             <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                             <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
@@ -806,22 +810,25 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="userIcon" highlightedImage="userIcon" translatesAutoresizingMaskIntoConstraints="NO" id="lqy-E9-sMi">
-                                            <rect key="frame" x="0.0" y="0.0" width="90" height="90"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="92" height="90"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            <color key="backgroundColor" red="0.58821886777877808" green="0.70069605112075806" blue="0.91734308004379272" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </imageView>
                                         <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3n4-kI-ymJ" customClass="staticrating" customModule="PassDatClass" customModuleProvider="target">
                                             <rect key="frame" x="116" y="40" width="225" height="39"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </stackView>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A2U-hm-9fg">
                                             <rect key="frame" x="116" y="11" width="225" height="21"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </tableViewCellContentView>
                                 <connections>
                                     <outlet property="namelabel" destination="A2U-hm-9fg" id="ao1-dy-4Ut"/>
@@ -854,19 +861,30 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VQ4-vn-EtX">
-                                <rect key="frame" x="67" y="176" width="240" height="240"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <rect key="frame" x="67" y="176" width="241" height="240"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <subviews>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gAH-FM-UDe">
+                                        <rect key="frame" x="0.0" y="0.0" width="240" height="77"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="0.50002235174179077" green="0.91312271356582642" blue="0.88811570405960083" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7eg-E4-86F">
+                                        <rect key="frame" x="0.0" y="78" width="240" height="162"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="0.83613628149032593" green="0.9519619345664978" blue="0.95607131719589233" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </view>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W8c-QF-OOr">
-                                        <rect key="frame" x="8" y="8" width="91" height="21"/>
+                                        <rect key="frame" x="75" y="133" width="91" height="21"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="userIcon" translatesAutoresizingMaskIntoConstraints="NO" id="qHp-mn-IOb">
-                                        <rect key="frame" x="107" y="8" width="125" height="125"/>
+                                        <rect key="frame" x="58" y="0.0" width="125" height="125"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </imageView>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dvP-Dx-Fgp">
                                         <rect key="frame" x="226" y="-10" width="24" height="23"/>
@@ -877,7 +895,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MOG-EA-OK0">
-                                        <rect key="frame" x="146" y="166" width="86" height="30"/>
+                                        <rect key="frame" x="146" y="171" width="86" height="30"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <state key="normal" title="Call"/>
                                         <connections>
@@ -885,7 +903,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ciX-9d-R48">
-                                        <rect key="frame" x="8" y="166" width="91" height="30"/>
+                                        <rect key="frame" x="8" y="171" width="91" height="30"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <state key="normal" title="Email"/>
                                         <connections>
@@ -893,7 +911,7 @@
                                         </connections>
                                     </button>
                                 </subviews>
-                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -906,7 +924,95 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lAX-7T-6Hh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4326" y="-516"/>
+            <point key="canvasLocation" x="4325.6000000000004" y="-516.79160419790105"/>
+        </scene>
+        <!--Tutormodal-->
+        <scene sceneID="eaW-Go-7Vx">
+            <objects>
+                <viewController modalTransitionStyle="crossDissolve" modalPresentationStyle="overCurrentContext" id="gtp-SK-QP1" customClass="tutormodal" customModule="PassDatClass" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="sVx-qS-xlT">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JRw-V1-usf">
+                                <rect key="frame" x="67" y="176" width="240" height="240"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZgA-9p-k70">
+                                        <rect key="frame" x="226" y="-10" width="24" height="23"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Exit" image="Close_delete_remove_exit_cross_x_button_error.png"/>
+                                        <connections>
+                                            <action selector="back:" destination="gtp-SK-QP1" eventType="touchUpInside" id="ip0-mz-FTZ"/>
+                                        </connections>
+                                    </button>
+                                    <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="R4z-D1-Dcu">
+                                        <rect key="frame" x="0.0" y="0.0" width="240" height="240"/>
+                                        <subviews>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="agb-yX-r8q">
+                                                <rect key="frame" x="0.0" y="8" width="240" height="224"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <string key="text">Please read these Terms and Conditions carefully before using the PassDatClass mobile application (the "Service") operated by PassDatClass LLC .
+
+Your access to and use of the Service is conditioned on your acceptance of and compliance with these Terms. These Terms apply to all visitors, users and others who access or use the Service.
+
+By accessing or using the Service you agree to be bound by these Terms. If you disagree with any part of the terms then you may not access the Service.
+
+
+Content
+
+Our Service allows you to post, link, store, share and otherwise make available certain information, text, graphics, videos, or other material ("Content"). You are responsible for the …
+
+
+Links To Other Web Sites
+
+Our Service may contain links to third-party web sites or services that are not owned or controlled by PassDatClass.
+
+PassDatClass has no control over, and assumes no responsibility for, the content, privacy policies, or practices of any third party web sites or services. You further acknowledge and agree that PassDatClass shall not be responsible or liable, directly or indirectly, for any damage or loss caused or alleged to be caused by or in connection with use of or reliance on any such content, goods or services available on or through any such web sites or services.
+
+Changes
+
+We reserve the right, at our sole discretion, to modify or replace these Terms at any time. If a revision is material we will try to provide at least 30 days' notice prior to any new terms taking effect. What constitutes a material change will be determined at our sole discretion.
+
+Contact Us
+
+If you have any questions about these Terms, please contact us.
+</string>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                            </textView>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="agb-yX-r8q" firstAttribute="centerX" secondItem="R4z-D1-Dcu" secondAttribute="centerX" id="6eg-WR-Pib"/>
+                                            <constraint firstAttribute="trailing" secondItem="agb-yX-r8q" secondAttribute="trailing" id="C43-6s-WZN"/>
+                                            <constraint firstItem="agb-yX-r8q" firstAttribute="bottom" secondItem="R4z-D1-Dcu" secondAttribute="bottomMargin" id="FGY-Ch-fTS"/>
+                                            <constraint firstItem="agb-yX-r8q" firstAttribute="top" secondItem="R4z-D1-Dcu" secondAttribute="topMargin" id="Nkv-Ol-sm0"/>
+                                            <constraint firstItem="agb-yX-r8q" firstAttribute="centerY" secondItem="R4z-D1-Dcu" secondAttribute="centerY" id="Qy6-3P-8hr"/>
+                                            <constraint firstItem="agb-yX-r8q" firstAttribute="leading" secondItem="R4z-D1-Dcu" secondAttribute="leading" id="RNv-w7-uSQ"/>
+                                        </constraints>
+                                    </scrollView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="R4z-D1-Dcu" firstAttribute="leading" secondItem="JRw-V1-usf" secondAttribute="leading" id="6Ib-ZY-BRm"/>
+                                    <constraint firstAttribute="bottom" secondItem="R4z-D1-Dcu" secondAttribute="bottom" id="Fso-pq-9lk"/>
+                                    <constraint firstAttribute="trailing" secondItem="R4z-D1-Dcu" secondAttribute="trailing" id="bez-ET-gku"/>
+                                    <constraint firstItem="R4z-D1-Dcu" firstAttribute="top" secondItem="JRw-V1-usf" secondAttribute="top" id="ejL-wb-6mD"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="JRw-V1-usf" firstAttribute="centerX" secondItem="sVx-qS-xlT" secondAttribute="centerX" id="IaH-VJ-etk"/>
+                            <constraint firstItem="k4z-O0-Wwt" firstAttribute="bottom" secondItem="JRw-V1-usf" secondAttribute="bottom" constant="251" id="VFh-P2-fUh"/>
+                            <constraint firstItem="JRw-V1-usf" firstAttribute="leading" secondItem="k4z-O0-Wwt" secondAttribute="leading" constant="67" id="qqQ-mY-Tpm"/>
+                            <constraint firstItem="JRw-V1-usf" firstAttribute="top" secondItem="k4z-O0-Wwt" secondAttribute="top" constant="156" id="sMA-Nh-BQY"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="k4z-O0-Wwt"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ztc-Kr-NpL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3933.5999999999999" y="1114.992503748126"/>
         </scene>
     </scenes>
     <resources>
@@ -917,7 +1023,7 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="gxR-Zs-3Y1"/>
-        <segue reference="vCg-ME-euF"/>
+        <segue reference="KIe-EE-Qak"/>
         <segue reference="kzq-e7-tfx"/>
     </inferredMetricsTieBreakers>
 </document>

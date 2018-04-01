@@ -28,9 +28,7 @@ class ImageService {
             DispatchQueue.main.async {
                 completion(downloadedImage)
             }
-            
         }
-        
         dataTask.resume()
     }
     

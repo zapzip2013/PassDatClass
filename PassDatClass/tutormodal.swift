@@ -12,10 +12,12 @@ class tutormodal: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.addVerticalGradientLayer(topColor: primaryColor, bottomColor: secondaryColor)
+        view.layer.cornerRadius = 10;
+        view.layer.masksToBounds = true;
         name.text = passedValue.name
         if (passedValue.photo != nil){
             picture.image = passedValue.photo
+            picture.layer.cornerRadius = picture.frame.size.width / 2.0
         }
 
     }
