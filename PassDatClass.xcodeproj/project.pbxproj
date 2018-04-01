@@ -25,6 +25,7 @@
 		2367289520362CCC00287175 /* PassDatClassTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2367289420362CCC00287175 /* PassDatClassTests.swift */; };
 		2367289D20362CE400287175 /* Sorting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2367289C20362CE400287175 /* Sorting.swift */; };
 		237127E320716F1400CA9E8D /* oie_transparent (1).png in Resources */ = {isa = PBXBuildFile; fileRef = 237127E220716F1300CA9E8D /* oie_transparent (1).png */; };
+		237127E720717F4300CA9E8D /* TutorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 237127E620717F4200CA9E8D /* TutorViewController.swift */; };
 		237FFA83205F29200092CA92 /* tutormodal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 237FFA81205F29200092CA92 /* tutormodal.swift */; };
 		2383BEA820655295009B5408 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2383BEA720655295009B5408 /* SignUpViewController.swift */; };
 		2383BEAA2065529C009B5408 /* UserProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2383BEA92065529C009B5408 /* UserProfile.swift */; };
@@ -75,6 +76,7 @@
 		2367289620362CCC00287175 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2367289C20362CE400287175 /* Sorting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sorting.swift; sourceTree = "<group>"; };
 		237127E220716F1300CA9E8D /* oie_transparent (1).png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "oie_transparent (1).png"; sourceTree = "<group>"; };
+		237127E620717F4200CA9E8D /* TutorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TutorViewController.swift; sourceTree = "<group>"; };
 		237FFA81205F29200092CA92 /* tutormodal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = tutormodal.swift; sourceTree = "<group>"; };
 		2383BEA720655295009B5408 /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		2383BEA92065529C009B5408 /* UserProfile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserProfile.swift; sourceTree = "<group>"; };
@@ -84,7 +86,6 @@
 		2383BEB1206552BD009B5408 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		2383BEB3206552C7009B5408 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		2383BEB5206552D1009B5408 /* HelperExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HelperExtensions.swift; sourceTree = "<group>"; };
-		23C8BB46206BFEA6005D492D /* TutorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorViewController.swift; sourceTree = "<group>"; };
 		23CEB53F205C3CC00058972A /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		23D00ABF204742BF00BCA2D6 /* images.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = images.jpg; sourceTree = SOURCE_ROOT; };
 		406FF83DF932D49549A3CBA0 /* Pods-PassDatClass.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PassDatClass.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PassDatClass/Pods-PassDatClass.debug.xcconfig"; sourceTree = "<group>"; };
@@ -168,6 +169,7 @@
 		65898A93202BF9E600E753E5 /* PassDatClass */ = {
 			isa = PBXGroup;
 			children = (
+				237127E620717F4200CA9E8D /* TutorViewController.swift */,
 				23284BFC20683F0600576E01 /* FAQview.swift */,
 				2383BEA92065529C009B5408 /* UserProfile.swift */,
 				2383BEA720655295009B5408 /* SignUpViewController.swift */,
@@ -193,7 +195,6 @@
 				23D00ABF204742BF00BCA2D6 /* images.jpg */,
 				23284BFA20683EFE00576E01 /* Close_delete_remove_exit_cross_x_button_error.png */,
 				65898AA0202BF9E600E753E5 /* Info.plist */,
-				23C8BB46206BFEA6005D492D /* TutorViewController.swift */,
 			);
 			path = PassDatClass;
 			sourceTree = "<group>";
@@ -398,7 +399,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				2383BEA820655295009B5408 /* SignUpViewController.swift in Sources */,
-				23C8BB47206BFEA6005D492D /* TutorViewController.swift in Sources */,
 				230B1C9B206937F8008326E1 /* TutorTableViewController.swift in Sources */,
 				2383BEB6206552D1009B5408 /* HelperExtensions.swift in Sources */,
 				23284BFF20683F1100576E01 /* staticrating.swift in Sources */,
@@ -414,6 +414,7 @@
 				6569B67B203FE0D200A9CC9B /* ratings.swift in Sources */,
 				23672871202D09F000287175 /* Tutor.swift in Sources */,
 				2367286D202D09EF00287175 /* SQLInteract.swift in Sources */,
+				237127E720717F4300CA9E8D /* TutorViewController.swift in Sources */,
 				2383BEAC206552A3009B5408 /* MenuViewController.swift in Sources */,
 				1CD01509206E85A800F038F8 /* T&C.swift in Sources */,
 				2383BEAA2065529C009B5408 /* UserProfile.swift in Sources */,

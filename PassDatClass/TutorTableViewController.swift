@@ -19,12 +19,13 @@ class TutorTableViewController: UITableViewController {
         referencetable = self
         tableView.backgroundColor = UIColor.clear
         //loads sample tutors
-        loadsampletutors()
-        
+        passedclassname = searchname
+        passedclassnum = searchnum
+        loadsampletutors()	
     }
 
-    var passedclassnum:String!
-    var passedclassname:String!
+    public var passedclassnum:String!
+    public var passedclassname:String!
     
     @IBOutlet weak var testlabel: UILabel!
     

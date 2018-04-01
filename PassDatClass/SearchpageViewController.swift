@@ -15,8 +15,7 @@ class SearchpageViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.addVerticalGradientLayer(topColor: primaryColor, bottomColor: secondaryColor)
-        // Do any additional setup after loading the view.
+                view.addVerticalGradientLayer(topColor: primaryColor, bottomColor: secondaryColor)        // Do any additional setup after loading the view.
     }
 
     override func didReceiveMemoryWarning() {
@@ -72,10 +71,10 @@ class SearchpageViewController: UIViewController {
     }
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if(segue.identifier == "searchresultseque"){
-            let viewController = segue.destination as! TutorTableViewController
-            
-            let num = course_num.text
-            let char = course_chars.text
+            var viewController = segue.destination as! TutorViewController
+          
+        searchnum = course_num.text!
+        searchname = course_chars.text!
             //TODO: Check that user has int instead of string since string will cause failure
             viewController.passedclassnum = searchnum
             viewController.passedclassname = searchname

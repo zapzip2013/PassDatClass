@@ -62,6 +62,7 @@ public class Tutor : User {
         let bio = row["bio"] as! String
         let rating = row["rating"] as! String
         let fsuver = row["FSUVerified"] as! String
+        let isPhoto = row["photo"] as! String
         var fsuverified : Bool
         if (fsuver == "1"){ /* Set true/1 for FSUVerification, else false/0 */
             fsuverified = true
@@ -70,7 +71,10 @@ public class Tutor : User {
             fsuverified = false
         }
         let email = row["FSUEmail"] as! String
-        let photo = SQLInteract.base64ToImage(base64: row["photo"] as? String)  /* Encode to base64 */
+        var photo : UIImage? = nil
+        if (isPhoto == "1"){
+            photo = SQLInteract.donwloadPhoto(email: email)
+        }
         let ret = Tutor(phone: Int(phone)!, email: email, name: firstname, lastname: lastname, rating: Float(rating)!, numbervotes: Int(numbervotes)!, photo: photo, price: Float(priceperhour)!, verified: fsuverified, bio: bio) /* Init tutor object with current call's DB data, then return that */
         return ret
     }
