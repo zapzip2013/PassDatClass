@@ -8,12 +8,16 @@
 
 import UIKit
 
+var referencetable : TutorTableViewController? = nil
+
 class TutorTableViewController: UITableViewController {
 
     var tutors = [Tutor]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        referencetable = self
+        tableView.backgroundColor = UIColor.clear
         //loads sample tutors
         loadsampletutors()
         
@@ -62,7 +66,7 @@ class TutorTableViewController: UITableViewController {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath) as? TutorTableViewCell else {
             fatalError("the dequeued cell is not an instance of tutorTableViewCell")
         }
-        let nophoto = UIImage(named: "download-1.jpg")
+        let nophoto = UIImage(named: "userIcon")
         let tutor = tutors[indexPath.row]
         // Configure the cell...
         cell.namelabel.text = tutor.name
@@ -71,7 +75,7 @@ class TutorTableViewController: UITableViewController {
         }
         cell.profileimage.image = tutor.photo
         cell.rating.rating = Int(tutor.rating)
-        cell.backgroundColor = UIColor(white: 1, alpha: 0.5)
+    cell.contentView.backgroundColor = UIColor.clear
         return cell
     }
     /*
@@ -143,6 +147,11 @@ class TutorTableViewController: UITableViewController {
             testlabel.isHidden = false
         }
         
+    }
+    
+    func changeOrder(sort : Sorting) {
+        tutors = Sorted.sort(by: sort, tutors: tutors)
+        self.tableView.reloadData()
     }
     
 }
