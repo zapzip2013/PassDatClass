@@ -25,6 +25,8 @@
 		2367289520362CCC00287175 /* PassDatClassTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2367289420362CCC00287175 /* PassDatClassTests.swift */; };
 		2367289D20362CE400287175 /* Sorting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2367289C20362CE400287175 /* Sorting.swift */; };
 		236C526620719BFC0003213C /* GenericModalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 236C526520719BFC0003213C /* GenericModalViewController.swift */; };
+		236C52682071A5180003213C /* EditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 236C52672071A5180003213C /* EditViewController.swift */; };
+		236C526A2071A7340003213C /* EditCourseTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 236C52692071A7340003213C /* EditCourseTableViewController.swift */; };
 		237127E320716F1400CA9E8D /* oie_transparent (1).png in Resources */ = {isa = PBXBuildFile; fileRef = 237127E220716F1300CA9E8D /* oie_transparent (1).png */; };
 		237127E720717F4300CA9E8D /* TutorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 237127E620717F4200CA9E8D /* TutorViewController.swift */; };
 		237FFA83205F29200092CA92 /* tutormodal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 237FFA81205F29200092CA92 /* tutormodal.swift */; };
@@ -77,6 +79,8 @@
 		2367289620362CCC00287175 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2367289C20362CE400287175 /* Sorting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sorting.swift; sourceTree = "<group>"; };
 		236C526520719BFC0003213C /* GenericModalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericModalViewController.swift; sourceTree = "<group>"; };
+		236C52672071A5180003213C /* EditViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditViewController.swift; sourceTree = "<group>"; };
+		236C52692071A7340003213C /* EditCourseTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditCourseTableViewController.swift; sourceTree = "<group>"; };
 		237127E220716F1300CA9E8D /* oie_transparent (1).png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "oie_transparent (1).png"; sourceTree = "<group>"; };
 		237127E620717F4200CA9E8D /* TutorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TutorViewController.swift; sourceTree = "<group>"; };
 		237FFA81205F29200092CA92 /* tutormodal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = tutormodal.swift; sourceTree = "<group>"; };
@@ -198,6 +202,8 @@
 				23284BFA20683EFE00576E01 /* Close_delete_remove_exit_cross_x_button_error.png */,
 				65898AA0202BF9E600E753E5 /* Info.plist */,
 				236C526520719BFC0003213C /* GenericModalViewController.swift */,
+				236C52672071A5180003213C /* EditViewController.swift */,
+				236C52692071A7340003213C /* EditCourseTableViewController.swift */,
 			);
 			path = PassDatClass;
 			sourceTree = "<group>";
@@ -413,6 +419,7 @@
 				65898A97202BF9E600E753E5 /* ViewController.swift in Sources */,
 				65898A95202BF9E600E753E5 /* AppDelegate.swift in Sources */,
 				23284BFD20683F0600576E01 /* FAQview.swift in Sources */,
+				236C526A2071A7340003213C /* EditCourseTableViewController.swift in Sources */,
 				2383BEB2206552BD009B5408 /* LoginViewController.swift in Sources */,
 				6569B67B203FE0D200A9CC9B /* ratings.swift in Sources */,
 				23672871202D09F000287175 /* Tutor.swift in Sources */,
@@ -427,6 +434,7 @@
 				6569B6802040DF8700A9CC9B /* TutorTableViewCell.swift in Sources */,
 				2383BEAE206552AD009B5408 /* ImageService.swift in Sources */,
 				23672870202D09F000287175 /* Search.swift in Sources */,
+				236C52682071A5180003213C /* EditViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
