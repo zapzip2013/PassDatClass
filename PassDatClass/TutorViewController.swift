@@ -15,10 +15,12 @@ class TutorViewController: UIViewController {
     @IBOutlet weak var name: UILabel!
     @IBOutlet weak var num: UILabel!
     @IBOutlet weak var sortView: UIView!
+    @IBOutlet weak var blocktableview: UIView!
     
     
     func changeSort(sort: Sorting) { referencetable?.changeOrder(sort: sort)
         sortView.isHidden = true
+        blocktableview.isHidden = true
     }
     
     @IBAction func firsNameSort(_ sender: Any) {
@@ -52,14 +54,18 @@ class TutorViewController: UIViewController {
         // do something with the touched point
         if touch?.view != sortView {
             sortView.isHidden = true
+            blocktableview.isHidden = true
         }
+        //rough implementation to close sort if touch isnt on sort
     }
     
     
     
     @IBAction func showSort(_ sender: Any) {
         sortView.isHidden = false
+        blocktableview.isHidden = false
     }
+    @IBOutlet weak var navbar: UINavigationBar!
     
     override func viewDidLoad() {
         super.viewDidLoad()
