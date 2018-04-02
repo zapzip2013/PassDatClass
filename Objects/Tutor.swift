@@ -34,9 +34,9 @@ public class Tutor : User {
         }
     }
     
-    public var listcourses : [String.SubSequence]{
+    public var listcourses : [String]{
         get{
-            return bio.split(separator: ",")
+            return bio.split(separator: ",").map{ String($0)}
         }
     }
     

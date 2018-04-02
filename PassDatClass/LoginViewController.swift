@@ -116,14 +116,36 @@ class LoginViewController:UIViewController, UITextFieldDelegate {
         }
     }
     
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if (segue.identifier == "gotoedit"){
+            var viewController = segue.destination as! EditViewController
+            let tutor = Tutor.QueryAccount(email: emailr!)
+            viewController.tutor = tutor
+        }
+    }
+    
+    var emailr : String?
+    
     @objc func handleSignIn() {
         guard let email = emailField.text else { return }
         guard let pass = passwordField.text else { return }
         
+        emailr = email
         setContinueButton(enabled: false)
         continueButton.setTitle("", for: .normal)
         activityView.startAnimating()
         
+        let result = User.LogIn(email: email, password: pass)
+        if (result.status) {
+            activityView.stopAnimating()
+            continueButton.setTitle("Logged IN!", for: .normal)
+            self.performSegue(withIdentifier: "gotoedit", sender: self)
+        }
+        else {
+            activityView.stopAnimating()
+            continueButton.setTitle("FAILURE", for: .normal)
+        }
        
     }
 }
