@@ -18,6 +18,8 @@ class EditViewController: UIViewController, UITextFieldDelegate, UIImagePickerCo
     @IBOutlet weak var phoneField: UITextField!
     @IBOutlet weak var addclassField: UITextField!
     @IBOutlet weak var photo: UIImageView!
+    @IBOutlet weak var internalView: UIView!
+    @IBOutlet weak var referenceButton: UIView!
     
     var continueButton:RoundedWhiteButton!
     var imagePicker:UIImagePickerController!
@@ -88,12 +90,12 @@ class EditViewController: UIViewController, UITextFieldDelegate, UIImagePickerCo
         continueButton.setTitleColor(secondaryColor, for: .normal)
         continueButton.setTitle("Edit", for: .normal)
         continueButton.titleLabel?.font = UIFont.systemFont(ofSize: 18.0, weight: UIFont.Weight.bold)
-        continueButton.center = CGPoint(x: view.center.x, y: view.frame.height - continueButton.frame.height - 24)
+        continueButton.center = CGPoint(x: view.center.x, y: referenceButton.center.y + continueButton.frame.height)
         continueButton.highlightedColor = UIColor(white: 1.0, alpha: 1.0)
         continueButton.defaultColor = UIColor.white
         continueButton.addTarget(self, action: #selector(handleEdit), for: .touchUpInside)
         continueButton.alpha = 0.5
-        view.addSubview(continueButton)
+        internalView.addSubview(continueButton)
     }
     
     func reloadValues() {

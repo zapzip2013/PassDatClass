@@ -23,6 +23,8 @@ class SignUpViewController:UIViewController, UITextFieldDelegate, UIImagePickerC
     @IBOutlet weak var tapToChangeProfileButton: UIButton!
     @IBOutlet weak var priceField: UITextField!
     @IBOutlet weak var warningLabel: UILabel!
+    @IBOutlet weak var internalView: UIView!
+    @IBOutlet weak var referenceButton: UILabel!
     
     var continueButton:RoundedWhiteButton!
     var activityView:UIActivityIndicatorView!
@@ -38,12 +40,12 @@ class SignUpViewController:UIViewController, UITextFieldDelegate, UIImagePickerC
         continueButton.setTitleColor(secondaryColor, for: .normal)
         continueButton.setTitle("Continue", for: .normal)
         continueButton.titleLabel?.font = UIFont.systemFont(ofSize: 18.0, weight: UIFont.Weight.bold)
-        continueButton.center = CGPoint(x: view.center.x, y: view.frame.height - continueButton.frame.height - 24)
+        continueButton.center = CGPoint(x: view.center.x, y: referenceButton.center.y + continueButton.frame.height)
         continueButton.highlightedColor = UIColor(white: 1.0, alpha: 1.0)
         continueButton.defaultColor = UIColor.white
         continueButton.addTarget(self, action: #selector(handleSignIn), for: .touchUpInside)
         continueButton.alpha = 0.5
-        view.addSubview(continueButton)
+        internalView.addSubview(continueButton)
         // setContinueButton(enabled: false)
         
         activityView = UIActivityIndicatorView(activityIndicatorStyle: .gray)
