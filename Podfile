@@ -5,6 +5,7 @@ target 'PassDatClass' do
 pod 'Alamofire', '~> 4.7'
 pod 'Alamofire-Synchronous', '~> 4.0'
 pod 'CryptoSwift'
+pod 'IQKeyboardManagerSwift'
 end
 
 

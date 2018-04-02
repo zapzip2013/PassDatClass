@@ -3,17 +3,20 @@ PODS:
   - Alamofire-Synchronous (4.0.0):
     - Alamofire (~> 4.0)
   - CryptoSwift (0.8.3)
+  - IQKeyboardManagerSwift (5.0.8)
 
 DEPENDENCIES:
   - Alamofire (~> 4.7)
   - Alamofire-Synchronous (~> 4.0)
   - CryptoSwift
+  - IQKeyboardManagerSwift
 
 SPEC CHECKSUMS:
   Alamofire: 907e0a98eb68cdb7f9d1f541a563d6ac5dc77b25
   Alamofire-Synchronous: eedf1e6e961c3795a63c74990b3f7d9fbfac7e50
   CryptoSwift: 033efc3523865d19cc6ab6612fa17a62613b5dfa
+  IQKeyboardManagerSwift: 2e7dc7f98c111458c1ea2b373f893e8cf95e2b97
 
-PODFILE CHECKSUM: 5523640480f22717a96cddd1cac44c515d34daf0
+PODFILE CHECKSUM: d5e093d87110b7936a962bae589559c629a01eb8
 
 COCOAPODS: 1.4.0
