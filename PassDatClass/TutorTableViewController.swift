@@ -9,7 +9,6 @@
 import UIKit
 
 var referencetable : TutorTableViewController? = nil
-
 class TutorTableViewController: UITableViewController {
 
     var tutors = [Tutor]()
@@ -61,7 +60,6 @@ class TutorTableViewController: UITableViewController {
         // #warning Incomplete implementation, return the number of rows
         return tutors.count
     }
-    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cellIdentifier = "TutorViewCell"
         guard let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath) as? TutorTableViewCell else {
@@ -77,6 +75,9 @@ class TutorTableViewController: UITableViewController {
         cell.profileimage.image = tutor.photo
         cell.rating.rating = Int(tutor.rating)
     cell.contentView.backgroundColor = UIColor.clear
+        if(tutor.fsuverified == true){
+            cell.fsuverified.isHidden = false
+        }
         return cell
     }
     /*
