@@ -79,6 +79,8 @@ class EditViewController: UIViewController, UITextFieldDelegate, UIImagePickerCo
     var tutor : Tutor?
     override func viewDidLoad() {
         super.viewDidLoad()
+        view.addVerticalGradientLayer(topColor: primaryColor, bottomColor: secondaryColor)
+        
         referenceedit = self
         // Do any additional setup after loading the view.
         loadValues()
