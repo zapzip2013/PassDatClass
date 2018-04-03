@@ -1699,7 +1699,7 @@ If you have any questions about these Terms, please contact us.
                                                 <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="emailAddress" returnKeyType="next" textContentType="tel"/>
                                             </textField>
                                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3nv-dd-7ja">
-                                                <rect key="frame" x="57" y="451" width="261" height="22"/>
+                                                <rect key="frame" x="57" y="451" width="115" height="22"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                                 <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="emailAddress" returnKeyType="next"/>
@@ -1715,13 +1715,13 @@ If you have any questions about these Terms, please contact us.
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                             </view>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PHONE" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="33d-JJ-kr5">
-                                                <rect key="frame" x="50" y="366" width="78" height="17"/>
+                                                <rect key="frame" x="50" y="366" width="87.5" height="17"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HYZ-wq-glQ">
-                                                <rect key="frame" x="50" y="481" width="268" height="1"/>
+                                                <rect key="frame" x="50" y="481" width="130" height="1"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                             </view>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cs1-21-Xfc">
@@ -1741,7 +1741,7 @@ If you have any questions about these Terms, please contact us.
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                             </view>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PASSWORD" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vyz-Jo-dvb">
-                                                <rect key="frame" x="50" y="494" width="78" height="17"/>
+                                                <rect key="frame" x="50" y="494" width="87.5" height="17"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <nil key="highlightedColor"/>
@@ -1768,6 +1768,11 @@ If you have any questions about these Terms, please contact us.
                                             </button>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7tS-zp-6Ox">
                                                 <rect key="frame" x="188" y="211" width="130" height="1"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            </view>
+                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qrd-fS-OuJ">
+                                                <rect key="frame" x="188" y="481" width="130" height="1"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nQW-UU-ZMN">
@@ -1833,10 +1838,24 @@ If you have any questions about these Terms, please contact us.
                                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CLASS" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8rv-yM-1Pb">
-                                                <rect key="frame" x="50" y="426" width="78" height="17"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CLASS CODE" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8rv-yM-1Pb">
+                                                <rect key="frame" x="50" y="426" width="87.5" height="17"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Bwh-fe-Y0b">
+                                                <rect key="frame" x="188" y="451" width="130" height="22"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="emailAddress" returnKeyType="next"/>
+                                            </textField>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="CLASS NUMBER" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tuZ-PQ-YCI">
+                                                <rect key="frame" x="188" y="426" width="108" height="17"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
@@ -1858,7 +1877,7 @@ If you have any questions about these Terms, please contact us.
                                             <constraint firstItem="nQW-UU-ZMN" firstAttribute="top" secondItem="7tS-zp-6Ox" secondAttribute="top" id="AK4-Y6-LOE"/>
                                             <constraint firstItem="8rv-yM-1Pb" firstAttribute="leading" secondItem="3nv-dd-7ja" secondAttribute="leading" constant="-7" id="AMr-8B-ziB"/>
                                             <constraint firstItem="cs1-21-Xfc" firstAttribute="leading" secondItem="SIq-QN-9Fc" secondAttribute="leading" id="APX-g0-Sic"/>
-                                            <constraint firstItem="IQB-I3-c9x" firstAttribute="trailing" secondItem="HYZ-wq-glQ" secondAttribute="trailing" id="C28-fr-yqq"/>
+                                            <constraint firstItem="IQB-I3-c9x" firstAttribute="trailing" secondItem="HYZ-wq-glQ" secondAttribute="trailing" constant="138" id="C28-fr-yqq"/>
                                             <constraint firstItem="IQB-I3-c9x" firstAttribute="top" secondItem="aE4-yD-dgA" secondAttribute="bottom" constant="4" id="CZZ-HS-aMb"/>
                                             <constraint firstItem="HYZ-wq-glQ" firstAttribute="top" secondItem="3nv-dd-7ja" secondAttribute="bottom" constant="8" symbolic="YES" id="D0G-uP-sTl"/>
                                             <constraint firstItem="2hk-7w-dse" firstAttribute="leading" secondItem="eLa-fE-6DX" secondAttribute="leading" constant="-7" id="DEc-lj-NuR"/>
@@ -1914,14 +1933,14 @@ If you have any questions about these Terms, please contact us.
                                             <constraint firstItem="53e-Yd-q0D" firstAttribute="trailing" secondItem="7tS-zp-6Ox" secondAttribute="trailing" id="mF4-oh-VzI"/>
                                             <constraint firstItem="tMs-uG-lW0" firstAttribute="top" secondItem="Pq6-dV-CcF" secondAttribute="bottom" constant="4" id="mpO-2K-ufm"/>
                                             <constraint firstItem="8kd-Ru-yGJ" firstAttribute="top" secondItem="Q1i-mE-TPn" secondAttribute="bottom" constant="12" id="nMx-NH-NIr"/>
-                                            <constraint firstItem="HYZ-wq-glQ" firstAttribute="trailing" secondItem="tMs-uG-lW0" secondAttribute="trailing" id="p5u-pS-8Hb"/>
+                                            <constraint firstItem="HYZ-wq-glQ" firstAttribute="trailing" secondItem="tMs-uG-lW0" secondAttribute="trailing" constant="-138" id="p5u-pS-8Hb"/>
                                             <constraint firstItem="aE4-yD-dgA" firstAttribute="top" secondItem="33d-JJ-kr5" secondAttribute="bottom" constant="8" id="pTh-FC-88w"/>
                                             <constraint firstItem="33d-JJ-kr5" firstAttribute="leading" secondItem="SIq-QN-9Fc" secondAttribute="leading" constant="50" id="prW-fq-YQC"/>
                                             <constraint firstItem="zJP-Bp-aYs" firstAttribute="top" secondItem="SIq-QN-9Fc" secondAttribute="top" constant="298" id="qRO-2o-uvl"/>
                                             <constraint firstItem="33d-JJ-kr5" firstAttribute="trailing" secondItem="8rv-yM-1Pb" secondAttribute="trailing" id="rMQ-IH-Wx1"/>
                                             <constraint firstItem="eLa-fE-6DX" firstAttribute="top" secondItem="2hk-7w-dse" secondAttribute="bottom" constant="8" id="slG-ns-bxf"/>
                                             <constraint firstItem="nQW-UU-ZMN" firstAttribute="top" secondItem="Z9o-4F-cW6" secondAttribute="bottom" constant="4" id="tkK-ji-emD"/>
-                                            <constraint firstAttribute="trailingMargin" secondItem="3nv-dd-7ja" secondAttribute="trailing" constant="49" id="wUo-ch-Hkz"/>
+                                            <constraint firstAttribute="trailingMargin" secondItem="3nv-dd-7ja" secondAttribute="trailing" constant="195" id="wUo-ch-Hkz"/>
                                             <constraint firstItem="zJP-Bp-aYs" firstAttribute="leading" secondItem="SIq-QN-9Fc" secondAttribute="leading" constant="52" id="zwR-QA-xfG"/>
                                         </constraints>
                                     </view>
@@ -1945,7 +1964,8 @@ If you have any questions about these Terms, please contact us.
                         <viewLayoutGuide key="safeArea" id="lyd-Hs-bpI"/>
                     </view>
                     <connections>
-                        <outlet property="classField" destination="3nv-dd-7ja" id="HvT-y1-3cV"/>
+                        <outlet property="classcodeField" destination="3nv-dd-7ja" id="7DX-4x-gMh"/>
+                        <outlet property="classnumber" destination="Bwh-fe-Y0b" id="LZr-bb-KMs"/>
                         <outlet property="dismissButton" destination="cs1-21-Xfc" id="g0W-7f-zaJ"/>
                         <outlet property="emailField" destination="Ajz-a9-mp3" id="Hop-qM-hO9"/>
                         <outlet property="internalView" destination="SIq-QN-9Fc" id="iXt-Fx-UE4"/>
@@ -2299,6 +2319,6 @@ If you have any questions about these Terms, please contact us.
         <segue reference="EQQ-1q-sMF"/>
         <segue reference="IEz-UV-YeM"/>
         <segue reference="Ol2-D9-yLK"/>
-        <segue reference="pWa-2u-FIE"/>
+        <segue reference="ELa-jf-AEp"/>
     </inferredMetricsTieBreakers>
 </document>

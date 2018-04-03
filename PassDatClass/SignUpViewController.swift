@@ -17,7 +17,7 @@ class SignUpViewController:UIViewController, UITextFieldDelegate, UIImagePickerC
     @IBOutlet weak var emailField: UITextField!
     @IBOutlet weak var phoneField: UITextField!
     @IBOutlet weak var passwordField: UITextField!
-    @IBOutlet weak var classField: UITextField!
+    @IBOutlet weak var classcodeField: UITextField!
     @IBOutlet weak var dismissButton: UIButton!
     @IBOutlet weak var profileImageView: UIImageView!
     @IBOutlet weak var tapToChangeProfileButton: UIButton!
@@ -25,6 +25,7 @@ class SignUpViewController:UIViewController, UITextFieldDelegate, UIImagePickerC
     @IBOutlet weak var warningLabel: UILabel!
     @IBOutlet weak var internalView: UIView!
     @IBOutlet weak var referenceButton: UILabel!
+    @IBOutlet weak var classnumber: UITextField!
     
     var continueButton:RoundedWhiteButton!
     var activityView:UIActivityIndicatorView!
@@ -59,9 +60,51 @@ class SignUpViewController:UIViewController, UITextFieldDelegate, UIImagePickerC
         imagePicker = UIImagePickerController()
         imagePicker.delegate = self
     }
+    func valid_name() -> Bool{
+        let Classcode = classcodeField.text
+        let Classnum = classnumber.text
+        let phone = phoneField.text
+        let Digits = CharacterSet.decimalDigits
+        let Chars = CharacterSet.letters
+        if(lastnameField.text == "" || nameField.text == "" || phoneField.text == "" || priceField.text == "" || emailField.text == "" || classcodeField.text == "" || passwordField.text == "" || classnumber.text == ""){
+            alert(warning: "must enter all fields")
+            return false
+        }
+        if(Classcode?.count != 3){
+            alert(warning: "Class code must be 3 letters long")
+            return false
+        }
+        if(phone?.count != 10){
+            alert(warning: "Phone number must be 10 digits long with no dashes")
+            return false
+        }
+        for index in phone!.unicodeScalars {
+            if(!(Digits.contains(index))){
+                alert(warning: "phone number must be only digits")
+                return false
+            }
+        }
+        for index in Classcode!.unicodeScalars {
+                if(!(Chars.contains(index))){
+                    alert(warning: "class code must be letters")
+                    return false
+                }
+        }
+        for index in Classnum!.unicodeScalars{
+            if(!(Digits.contains(index))){
+                alert(warning: "Class number must be digits")
+                return false
+            }
+        }
+        return true
+    }
+    func alert(warning: String){
+        warningLabel.text = warning
+    }
     
     @objc func handleSignIn() {
-        let newtutor = Tutor(phone: Int(phoneField.text!)!, email: emailField.text!, name: nameField.text!, lastname: lastnameField.text!, rating: 0, numbervotes: 0, photo: profileImageView.image, price: Float(priceField.text!)!, verified: false, bio: classField.text!)
+        if(valid_name()){
+        let newtutor = Tutor(phone: Int(phoneField.text!)!, email: emailField.text!, name: nameField.text!, lastname: lastnameField.text!, rating: 0, numbervotes: 0, photo: profileImageView.image, price: Float(priceField.text!)!, verified: false, bio: (classcodeField.text! + classnumber.text!))
         let user = User.SignIn(FSUEmail: emailField.text!, Password: passwordField.text!)
         if (user.status){
             let result = Tutor.CreateAccount(tutor: newtutor)
@@ -81,6 +124,7 @@ class SignUpViewController:UIViewController, UITextFieldDelegate, UIImagePickerC
         else {
             warningLabel.text = "Error: \(user.msg)"
         }
+    }
     }
     
     @IBAction func changePhoto(_ sender: Any) {
