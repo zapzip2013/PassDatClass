@@ -106,7 +106,7 @@ class SignUpViewController:UIViewController, UITextFieldDelegate, UIImagePickerC
             return false
         }
 
-        let floatRegEx = "([1-9]).([1-9]){1,2}"
+        let floatRegEx = "([0-9]).([0-9]){1,2}"
         let floatTest = NSPredicate(format:"SELF MATCHES %@", floatRegEx)
         if(!floatTest.evaluate(with: price!)){
             alert(warning: "Price must be in format $.¢¢")
