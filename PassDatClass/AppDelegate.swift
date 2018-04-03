@@ -16,8 +16,6 @@ let secondaryColor = UIColor(red: 52/255, green: 148/255, blue: 230/255, alpha: 
 class AppDelegate: UIResponder, UIApplicationDelegate {
     
     var window: UIWindow?
-    
-    
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
          IQKeyboardManager.sharedManager().enable = true
         return true
