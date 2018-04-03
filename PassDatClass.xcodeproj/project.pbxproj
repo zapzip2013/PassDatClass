@@ -60,7 +60,7 @@
 
 /* Begin PBXFileReference section */
 		1C27E1C42062B97300D1FA7C /* InitialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialViewController.swift; sourceTree = "<group>"; };
-		1CD01506206E7CF200F038F8 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		1CD01506206E7CF200F038F8 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = "Launch Screen.storyboard"; path = "PassDatClass/Launch Screen.storyboard"; sourceTree = "<group>"; };
 		1CD01508206E85A800F038F8 /* T&C.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "T&C.swift"; sourceTree = "<group>"; };
 		230B1C9A206937F8008326E1 /* TutorTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TutorTableViewController.swift; sourceTree = "<group>"; };
 		23284BFA20683EFE00576E01 /* Close_delete_remove_exit_cross_x_button_error.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Close_delete_remove_exit_cross_x_button_error.png; sourceTree = "<group>"; };
