@@ -2,7 +2,7 @@
 //  FAQview.swift
 //  PassDatClass
 //
-//  Created by Daniel Gibney on 3/19/18.
+//  Created by Daniel Gibney and Tyree Lewis on 3/19/18.
 //  Copyright © 2018 Daniel Gibney. All rights reserved.
 //
 
@@ -26,6 +26,7 @@ class FAQview: UIViewController {
 
     }
     
+    //**** Addition by Tyree Lewis ****//
     @IBOutlet weak var internalView: UIView!
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?){
         var touch: UITouch? = touches.first
