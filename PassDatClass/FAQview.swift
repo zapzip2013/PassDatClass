@@ -26,6 +26,13 @@ class FAQview: UIViewController {
 
     }
     
+    @IBOutlet weak var internalView: UIView!
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?){
+        var touch: UITouch? = touches.first
+        if touch?.view != internalView{
+            dismiss(animated: true, completion: nil)
+        }
+    }
     /*
     // MARK: - Navigation
 
