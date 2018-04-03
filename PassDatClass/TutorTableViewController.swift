@@ -143,7 +143,7 @@ class TutorTableViewController: UITableViewController {
         let tutor3 = Tutor(phone: 5, email: "1", name: "anakin", lastname: "aja", rating: 1, numbervotes: 23, photo: photo3, price: 22222.2, verified: true, bio: "String")
        // let search = Search(prefix: <#T##String#>, number: <#T##Int#>, ver: <#T##Bool#>)
         tutors += [tutor1, tutor2, tutor3] //Tutor.QueryAccount(email: "kljhklhg")!]*/
-        let test = Search(prefix: passedclassname, number: Int(passedclassnum)!, ver: true)
+        let test = Search(prefix: passedclassname, number: passedclassnum!, ver: true)
         tutors += test.ExecuteQuery()
         if (tutors.count == 0){
             testlabel.isHidden = false
