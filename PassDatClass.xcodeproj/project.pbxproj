@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		1C27E1C52062B97300D1FA7C /* InitialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C27E1C42062B97300D1FA7C /* InitialViewController.swift */; };
 		1CD01507206E7CF200F038F8 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1CD01506206E7CF200F038F8 /* Launch Screen.storyboard */; };
-		1CD01509206E85A800F038F8 /* T&C.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CD01508206E85A800F038F8 /* T&C.swift */; };
 		230B1C9B206937F8008326E1 /* TutorTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 230B1C9A206937F8008326E1 /* TutorTableViewController.swift */; };
 		23284BFB20683EFF00576E01 /* Close_delete_remove_exit_cross_x_button_error.png in Resources */ = {isa = PBXBuildFile; fileRef = 23284BFA20683EFE00576E01 /* Close_delete_remove_exit_cross_x_button_error.png */; };
 		23284BFD20683F0600576E01 /* FAQview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23284BFC20683F0600576E01 /* FAQview.swift */; };
@@ -61,7 +60,6 @@
 /* Begin PBXFileReference section */
 		1C27E1C42062B97300D1FA7C /* InitialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialViewController.swift; sourceTree = "<group>"; };
 		1CD01506206E7CF200F038F8 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = "Launch Screen.storyboard"; path = "PassDatClass/Launch Screen.storyboard"; sourceTree = "<group>"; };
-		1CD01508206E85A800F038F8 /* T&C.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "T&C.swift"; sourceTree = "<group>"; };
 		230B1C9A206937F8008326E1 /* TutorTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TutorTableViewController.swift; sourceTree = "<group>"; };
 		23284BFA20683EFE00576E01 /* Close_delete_remove_exit_cross_x_button_error.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Close_delete_remove_exit_cross_x_button_error.png; sourceTree = "<group>"; };
 		23284BFC20683F0600576E01 /* FAQview.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FAQview.swift; sourceTree = "<group>"; };
@@ -180,7 +178,6 @@
 				2383BEA92065529C009B5408 /* UserProfile.swift */,
 				2383BEA720655295009B5408 /* SignUpViewController.swift */,
 				2383BEAB206552A3009B5408 /* MenuViewController.swift */,
-				1CD01508206E85A800F038F8 /* T&C.swift */,
 				2383BEAD206552AD009B5408 /* ImageService.swift */,
 				230B1C9A206937F8008326E1 /* TutorTableViewController.swift */,
 				2383BEAF206552B5009B5408 /* RoundedWhiteButton.swift */,
@@ -428,7 +425,6 @@
 				2367286D202D09EF00287175 /* SQLInteract.swift in Sources */,
 				237127E720717F4300CA9E8D /* TutorViewController.swift in Sources */,
 				2383BEAC206552A3009B5408 /* MenuViewController.swift in Sources */,
-				1CD01509206E85A800F038F8 /* T&C.swift in Sources */,
 				2383BEAA2065529C009B5408 /* UserProfile.swift in Sources */,
 				23284C0120683F2000576E01 /* SearchpageViewController.swift in Sources */,
 				2367286C202D09EF00287175 /* User.swift in Sources */,

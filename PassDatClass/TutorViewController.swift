@@ -43,11 +43,6 @@ class TutorViewController: UIViewController {
         changeSort(sort: .firstwithphoto)
     }
     
-    
-    
-    
-    
-    
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         let touch: UITouch? = touches.first
         //location is relative to the current view
