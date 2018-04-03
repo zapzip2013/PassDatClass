@@ -7,9 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1C0B0EEF2074301A006E0EA5 /* 17484-200.png in Resources */ = {isa = PBXBuildFile; fileRef = 1C0B0EEE2074301A006E0EA5 /* 17484-200.png */; };
 		1C27E1C52062B97300D1FA7C /* InitialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C27E1C42062B97300D1FA7C /* InitialViewController.swift */; };
 		1CD01507206E7CF200F038F8 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1CD01506206E7CF200F038F8 /* Launch Screen.storyboard */; };
-		1CEBFD2B207422AE00AD36C8 /* 17484-200.png in Resources */ = {isa = PBXBuildFile; fileRef = 1CEBFD2A207422AE00AD36C8 /* 17484-200.png */; };
 		230B1C9B206937F8008326E1 /* TutorTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 230B1C9A206937F8008326E1 /* TutorTableViewController.swift */; };
 		23284BFB20683EFF00576E01 /* Close_delete_remove_exit_cross_x_button_error.png in Resources */ = {isa = PBXBuildFile; fileRef = 23284BFA20683EFE00576E01 /* Close_delete_remove_exit_cross_x_button_error.png */; };
 		23284BFD20683F0600576E01 /* FAQview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23284BFC20683F0600576E01 /* FAQview.swift */; };
@@ -59,9 +59,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1C0B0EEE2074301A006E0EA5 /* 17484-200.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "17484-200.png"; path = "../../../../Desktop/17484-200.png"; sourceTree = "<group>"; };
 		1C27E1C42062B97300D1FA7C /* InitialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialViewController.swift; sourceTree = "<group>"; };
 		1CD01506206E7CF200F038F8 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = "Launch Screen.storyboard"; path = "PassDatClass/Launch Screen.storyboard"; sourceTree = "<group>"; };
-		1CEBFD2A207422AE00AD36C8 /* 17484-200.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "17484-200.png"; path = "../../../../Desktop/17484-200.png"; sourceTree = "<group>"; };
 		230B1C9A206937F8008326E1 /* TutorTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TutorTableViewController.swift; sourceTree = "<group>"; };
 		23284BFA20683EFE00576E01 /* Close_delete_remove_exit_cross_x_button_error.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Close_delete_remove_exit_cross_x_button_error.png; sourceTree = "<group>"; };
 		23284BFC20683F0600576E01 /* FAQview.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FAQview.swift; sourceTree = "<group>"; };
@@ -197,7 +197,7 @@
 				237FFA81205F29200092CA92 /* tutormodal.swift */,
 				6569B67A203FE0D200A9CC9B /* ratings.swift */,
 				65898A9B202BF9E600E753E5 /* Assets.xcassets */,
-				1CEBFD2A207422AE00AD36C8 /* 17484-200.png */,
+				1C0B0EEE2074301A006E0EA5 /* 17484-200.png */,
 				23D00ABF204742BF00BCA2D6 /* images.jpg */,
 				23284BFA20683EFE00576E01 /* Close_delete_remove_exit_cross_x_button_error.png */,
 				65898AA0202BF9E600E753E5 /* Info.plist */,
@@ -327,7 +327,7 @@
 				23284BFB20683EFF00576E01 /* Close_delete_remove_exit_cross_x_button_error.png in Resources */,
 				23D00AC3204742BF00BCA2D6 /* images.jpg in Resources */,
 				237127E320716F1400CA9E8D /* oie_transparent (1).png in Resources */,
-				1CEBFD2B207422AE00AD36C8 /* 17484-200.png in Resources */,
+				1C0B0EEF2074301A006E0EA5 /* 17484-200.png in Resources */,
 				1CD01507206E7CF200F038F8 /* Launch Screen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
