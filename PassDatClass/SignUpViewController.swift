@@ -64,10 +64,12 @@ class SignUpViewController:UIViewController, UITextFieldDelegate, UIImagePickerC
         let Classcode = classcodeField.text
         let Classnum = classnumber.text
         let phone = phoneField.text
+        let price = priceField.text
+        let email = emailField.text
         let Digits = CharacterSet.decimalDigits
         let Chars = CharacterSet.letters
         if(lastnameField.text == "" || nameField.text == "" || phoneField.text == "" || priceField.text == "" || emailField.text == "" || classcodeField.text == "" || passwordField.text == "" || classnumber.text == ""){
-            alert(warning: "must enter all fields")
+            alert(warning: "Must enter all fields")
             return false
         }
         if(Classcode?.count != 3){
@@ -80,7 +82,7 @@ class SignUpViewController:UIViewController, UITextFieldDelegate, UIImagePickerC
         }
         for index in phone!.unicodeScalars {
             if(!(Digits.contains(index))){
-                alert(warning: "phone number must be only digits")
+                alert(warning: "Phone number must be only digits")
                 return false
             }
         }
@@ -95,6 +97,20 @@ class SignUpViewController:UIViewController, UITextFieldDelegate, UIImagePickerC
                 alert(warning: "Class number must be digits")
                 return false
             }
+        }
+        
+        let emailRegEx = "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,}"
+        let emailTest = NSPredicate(format:"SELF MATCHES %@", emailRegEx)
+        if(!emailTest.evaluate(with: email!)){
+            alert(warning: "Email must be apropiate format")
+            return false
+        }
+
+        let floatRegEx = "([1-9]).([1-9]){1,2}"
+        let floatTest = NSPredicate(format:"SELF MATCHES %@", floatRegEx)
+        if(!floatTest.evaluate(with: price!)){
+            alert(warning: "Price must be in format $.¢¢")
+            return false
         }
         return true
     }
