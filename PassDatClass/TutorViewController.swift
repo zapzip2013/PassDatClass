@@ -62,11 +62,16 @@ class TutorViewController: UIViewController {
     }
     @IBOutlet weak var navbar: UINavigationBar!
     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         name.text = passedclassnum
         num.text = passedclassname
         view.addVerticalGradientLayer(topColor: primaryColor, bottomColor: secondaryColor)
+      
+        self.navigationController?.navigationBar.shadowImage = UIImage()
+        self.navigationController?.navigationBar.isTranslucent = true
+        self.navigationController?.view.backgroundColor = UIColor.clear
         // Do any additional setup after loading the view.
     }
 
