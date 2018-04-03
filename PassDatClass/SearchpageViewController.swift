@@ -61,7 +61,7 @@ class SearchpageViewController: UIViewController {
     }
     @IBOutlet weak var errorview: UILabel!
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-        var touch: UITouch? = touches.first
+        let touch: UITouch? = touches.first
         //location is relative to the current view
         // do something with the touched point
         if touch?.view != errorview {
@@ -71,7 +71,7 @@ class SearchpageViewController: UIViewController {
     }
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if(segue.identifier == "searchresultseque"){
-            var viewController = segue.destination as! TutorViewController
+            let viewController = segue.destination as! TutorViewController
           
         searchnum = course_num.text!
         searchname = course_chars.text!

@@ -119,7 +119,7 @@ class LoginViewController:UIViewController, UITextFieldDelegate {
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if (segue.identifier == "gotoedit"){
-            var viewController = segue.destination as! EditViewController
+            let viewController = segue.destination as! EditViewController
             let tutor = Tutor.QueryAccount(email: emailr!)
             viewController.tutor = tutor
         }
