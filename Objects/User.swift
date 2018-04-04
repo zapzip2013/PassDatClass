@@ -36,6 +36,10 @@ public class User {
 
 /* SignIn() inserts the current user entry from our user/profile table */
     class func SignIn(FSUEmail: String, Password: String) -> StatusMsg {
+        let result = Tutor.QueryAccount(email: FSUEmail)
+        if (result != nil){
+            return (false, "The email is already registered on the system")
+        }
         let query = "INSERT INTO User VALUES ('" + FSUEmail + "','" + AddSaltPepper(pass: Password) + "');"
         return SQLInteract.ExecuteModification(query: query)
     }
