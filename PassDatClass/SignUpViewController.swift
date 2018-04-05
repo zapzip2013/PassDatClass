@@ -33,6 +33,13 @@ class SignUpViewController:UIViewController, UITextFieldDelegate, UIImagePickerC
     var imagePicker:UIImagePickerController!
     
     override func viewDidLoad() {
+        
+        let arrayField = [nameField, lastnameField,emailField,phoneField,passwordField,priceField,classnumber,classcodeField]
+        for field in arrayField{
+            field?.delegate = self
+            field?.addTarget(self, action: #selector(textFieldChanged), for: .editingChanged)
+        }
+        
         super.viewDidLoad()
         
         view.addVerticalGradientLayer(topColor: primaryColor, bottomColor: secondaryColor)
@@ -106,16 +113,32 @@ class SignUpViewController:UIViewController, UITextFieldDelegate, UIImagePickerC
             return false
         }
 
-        let floatRegEx = "([0-9]).([0-9]){1,2}"
+        let floatRegEx = "([0-9])+.([0-9]){1,2}"
         let floatTest = NSPredicate(format:"SELF MATCHES %@", floatRegEx)
         if(!floatTest.evaluate(with: price!)){
-            alert(warning: "Price must be in format $.¢¢")
+            alert(warning: "Price must be in format $$.¢¢")
             return false
         }
         return true
     }
     func alert(warning: String){
         warningLabel.text = warning
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if (segue.identifier == "gotoedit"){
+            let viewController = segue.destination as! EditViewController
+            let tutor = Tutor.QueryAccount(email: emailField.text!)
+            viewController.tutor = tutor
+        }
+    }
+    
+    func gotoEdit(){
+        let name = emailField.text!
+        let tutor = Tutor.QueryAccount(email: name)
+        let vc = storyboard?.instantiateViewController(withIdentifier: "EditViewController") as! EditViewController
+        vc.tutor = tutor
+        present(vc, animated: true, completion: nil)
     }
     
     @objc func handleSignIn() {
@@ -128,6 +151,7 @@ class SignUpViewController:UIViewController, UITextFieldDelegate, UIImagePickerC
                 let result2 = Tutor.ChangePhoto(tutor: newtutor)
                 if (result2.status) {
                     warningLabel.text = "Created successfully"
+                    gotoEdit()
                 }
                 else {
                     warningLabel.text = "Error :\(result.msg)"
@@ -177,6 +201,21 @@ class SignUpViewController:UIViewController, UITextFieldDelegate, UIImagePickerC
     
     func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
         dismiss(animated: true, completion:nil)
+    }
+    
+    @objc func textFieldChanged(_ target:UITextField) {
+        let formFilled = !(lastnameField.text == "" || nameField.text == "" || phoneField.text == "" || priceField.text == "" || emailField.text == "" || classcodeField.text == "" || passwordField.text == "" || classnumber.text == "")
+        setContinueButton(enabled: formFilled)
+    }
+    
+    func setContinueButton(enabled:Bool) {
+        if enabled {
+            continueButton.alpha = 1.0
+            continueButton.isEnabled = true
+        } else {
+            continueButton.alpha = 0.5
+            continueButton.isEnabled = false
+        }
     }
 }
 

@@ -41,6 +41,7 @@ class EditViewController: UIViewController, UITextFieldDelegate, UIImagePickerCo
         if let pickedImage = info[UIImagePickerControllerOriginalImage] as? UIImage {
             photo.contentMode = .scaleAspectFit
             photo.image = pickedImage.resize(withWidth: 500.0)
+            continueButton.setTitle("Edit", for: .normal)
         }
         
         
@@ -75,12 +76,32 @@ class EditViewController: UIViewController, UITextFieldDelegate, UIImagePickerCo
         photo.image = tutor?.photo
     }
     
+    @objc func textFieldChanged(_ target:UITextField) {
+        let formFilled = !(lastnameField.text == "" || nameField.text == "" || phoneField.text == "" || priceField.text == "")
+        continueButton.setTitle("Edit", for: .normal)
+        setContinueButton(enabled: formFilled)
+    }
+    
+    func setContinueButton(enabled:Bool) {
+        if enabled {
+            continueButton.alpha = 1.0
+            continueButton.isEnabled = true
+        } else {
+            continueButton.alpha = 0.5
+            continueButton.isEnabled = false
+        }
+    }
+    
     
     var tutor : Tutor?
     override func viewDidLoad() {
         super.viewDidLoad()
         view.addVerticalGradientLayer(topColor: primaryColor, bottomColor: secondaryColor)
-        
+        let arrayField = [nameField, lastnameField,phoneField,priceField,addclassField]
+        for field in arrayField{
+            field?.delegate = self
+            field?.addTarget(self, action: #selector(textFieldChanged), for: .editingChanged)
+        }
         referenceedit = self
         // Do any additional setup after loading the view.
         loadValues()
@@ -96,7 +117,6 @@ class EditViewController: UIViewController, UITextFieldDelegate, UIImagePickerCo
         continueButton.highlightedColor = UIColor(white: 1.0, alpha: 1.0)
         continueButton.defaultColor = UIColor.white
         continueButton.addTarget(self, action: #selector(handleEdit), for: .touchUpInside)
-        continueButton.alpha = 0.5
         internalView.addSubview(continueButton)
     }
     
