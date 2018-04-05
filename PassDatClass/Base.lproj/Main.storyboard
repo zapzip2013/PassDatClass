@@ -1366,7 +1366,7 @@
                         <color key="separatorColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <color key="sectionIndexBackgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <color key="sectionIndexTrackingBackgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <label key="tableFooterView" hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No results found" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="fJp-4a-UCI">
+                        <label key="tableFooterView" hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="No results found" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="fJp-4a-UCI">
                             <rect key="frame" x="0.0" y="118" width="343" height="44"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -2191,7 +2191,7 @@ If you have any questions about these Terms, please contact us.
                                                 <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" returnKeyType="next" textContentType="family-name"/>
                                             </textField>
                                             <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="749" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5wp-zv-oRp">
-                                                <rect key="frame" x="245" y="551" width="29" height="22"/>
+                                                <rect key="frame" x="206" y="561" width="29" height="22"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="30" id="DNT-WN-KFj"/>
                                                 </constraints>
@@ -2383,7 +2383,6 @@ If you have any questions about these Terms, please contact us.
         <image name="white_hamburger_button" width="500" height="500"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="6ha-UM-gQP"/>
         <segue reference="VfK-fC-XZj"/>
         <segue reference="xcX-P7-QGH"/>
         <segue reference="FxL-PL-tyL"/>
