@@ -9,12 +9,26 @@
 
 import UIKit
 
+var loggedin : String?
+
 
 class ViewController: UIViewController {
     
     
     @IBOutlet weak var HamburgerMenu: UIView!
     @IBOutlet weak var FAQ: UIScrollView!
+    
+    @IBAction func wantToHelp(_ sender: Any) {
+        if let email = loggedin {
+            let vc = storyboard?.instantiateViewController(withIdentifier: "EditViewController") as! EditViewController
+            vc.tutor = Tutor.QueryAccount(email: email)
+            present(vc, animated: true, completion: nil)
+        }
+        else {
+            let vc = storyboard?.instantiateViewController(withIdentifier: "MenuViewController") as! MenuViewController
+            present(vc, animated: true, completion: nil)
+        }
+    }
     
     @IBAction func hamburgerButtonIsPressed(_ sender: Any) {
         if (HamburgerMenu.isHidden){

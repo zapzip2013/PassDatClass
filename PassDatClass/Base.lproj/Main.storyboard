@@ -38,7 +38,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <segue destination="qfq-PE-9zf" kind="showDetail" id="vCg-ME-euF"/>
+                                    <action selector="wantToHelp:" destination="BYZ-38-t0r" eventType="touchUpInside" id="10Q-Ud-rqe"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Aej-f0-bsS">
@@ -82,7 +82,7 @@
         <!--Menu View Controller-->
         <scene sceneID="7ST-Wm-zAj">
             <objects>
-                <viewController id="qfq-PE-9zf" customClass="MenuViewController" customModule="PassDatClass" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MenuViewController" id="qfq-PE-9zf" customClass="MenuViewController" customModule="PassDatClass" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="cwg-us-4Ze"/>
                         <viewControllerLayoutGuide type="bottom" id="uoj-XN-NuX"/>
@@ -2070,7 +2070,7 @@ If you have any questions about these Terms, please contact us.
                                                 <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <state key="normal" image="backArrow"/>
                                                 <connections>
-                                                    <segue destination="qfq-PE-9zf" kind="show" id="nmu-Zn-cFK"/>
+                                                    <segue destination="BYZ-38-t0r" kind="show" id="wmS-v4-LoK"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5zm-0V-bA0" customClass="RoundedWhiteButton" customModule="PassDatClass" customModuleProvider="target">
@@ -2303,11 +2303,9 @@ If you have any questions about these Terms, please contact us.
         <image name="white_hamburger_button" width="500" height="500"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="QAp-JL-0Fm"/>
-        <segue reference="6ha-UM-gQP"/>
         <segue reference="VfK-fC-XZj"/>
-        <segue reference="IEz-UV-YeM"/>
-        <segue reference="nmu-Zn-cFK"/>
-        <segue reference="ELa-jf-AEp"/>
+        <segue reference="xcX-P7-QGH"/>
+        <segue reference="Ol2-D9-yLK"/>
+        <segue reference="wmS-v4-LoK"/>
     </inferredMetricsTieBreakers>
 </document>
