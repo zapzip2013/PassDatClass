@@ -68,42 +68,33 @@ class SignUpViewController:UIViewController, UITextFieldDelegate, UIImagePickerC
         imagePicker.delegate = self
     }
     func valid_name() -> Bool{
+        let name = nameField.text
+        let lastname = lastnameField.text
         let Classcode = classcodeField.text
         let Classnum = classnumber.text
         let phone = phoneField.text
         let price = priceField.text
         let email = emailField.text
-        let Digits = CharacterSet.decimalDigits
-        let Chars = CharacterSet.letters
         if(lastnameField.text == "" || nameField.text == "" || phoneField.text == "" || priceField.text == "" || emailField.text == "" || classcodeField.text == "" || passwordField.text == "" || classnumber.text == ""){
             alert(warning: "Must enter all fields")
             return false
         }
-        if(Classcode?.count != 3){
+        if(!nameregex.evaluate(with: name) || (!nameregex.evaluate(with: lastname))){
+            alert(warning: "Name must be characters,dashes or spaces")
+            return false
+        }
+        
+        if(!clasregex.evaluate(with: Classcode)){
             alert(warning: "Class code must be 3 letters long")
             return false
         }
-        if(phone?.count != 10){
-            alert(warning: "Phone number must be 10 digits long with no dashes")
+        if(!numregex.evaluate(with: Classnum)){
+            alert(warning: "Class number must be 4 numbers long")
             return false
         }
-        for index in phone!.unicodeScalars {
-            if(!(Digits.contains(index))){
-                alert(warning: "Phone number must be only digits")
-                return false
-            }
-        }
-        for index in Classcode!.unicodeScalars {
-                if(!(Chars.contains(index))){
-                    alert(warning: "class code must be letters")
-                    return false
-                }
-        }
-        for index in Classnum!.unicodeScalars{
-            if(!(Digits.contains(index))){
-                alert(warning: "Class number must be digits")
-                return false
-            }
+        if(!phoneregex.evaluate(with: phone)){
+            alert(warning: "US Phone number must be 10 digits long")
+            return false
         }
         
         let emailRegEx = "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,}"
@@ -113,8 +104,7 @@ class SignUpViewController:UIViewController, UITextFieldDelegate, UIImagePickerC
             return false
         }
 
-        let floatRegEx = "([0-9])+.([0-9]){1,2}"
-        let floatTest = NSPredicate(format:"SELF MATCHES %@", floatRegEx)
+        let floatTest = priceregex
         if(!floatTest.evaluate(with: price!)){
             alert(warning: "Price must be in format $$.¢¢")
             return false
