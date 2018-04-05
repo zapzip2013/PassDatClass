@@ -134,6 +134,8 @@ class SignUpViewController:UIViewController, UITextFieldDelegate, UIImagePickerC
     }
     
     func gotoEdit(){
+        loggedin = emailField.text!
+        
         let name = emailField.text!
         let tutor = Tutor.QueryAccount(email: name)
         let vc = storyboard?.instantiateViewController(withIdentifier: "EditViewController") as! EditViewController

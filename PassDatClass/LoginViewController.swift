@@ -140,6 +140,7 @@ class LoginViewController:UIViewController, UITextFieldDelegate {
         if (result.status) {
             activityView.stopAnimating()
             continueButton.setTitle("Logged IN!", for: .normal)
+            loggedin = email
             self.performSegue(withIdentifier: "gotoedit", sender: self)
         }
         else {
