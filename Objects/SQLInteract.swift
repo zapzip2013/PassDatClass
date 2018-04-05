@@ -69,6 +69,9 @@ public class SQLInteract{
     
     
     public class func uploadPhoto(tutor: Tutor) -> Void{
+        if (tutor.photo == nil || tutor.photo! == #imageLiteral(resourceName: "userIcon")){
+            return
+        }
         let imageData = UIImageJPEGRepresentation(tutor.photo!, 1)!
         let filename = tutor.email + ".jpg"
         Alamofire.upload(
@@ -93,11 +96,11 @@ public class SQLInteract{
     public class func donwloadPhoto(email: String) -> UIImage {
         let emailjpg = email + ".jpg"
         let photoresult = Alamofire.download(downloadURL+emailjpg).responseData()
-        if let photo = photoresult.value {
-            return UIImage(data: photo)!
+        if (photoresult.error == nil) {
+            return UIImage(data: photoresult.value!)!
         }
         else {
-            return #imageLiteral(resourceName: "images.jpg")
+            return #imageLiteral(resourceName: "userIcon")
         }
     }
     

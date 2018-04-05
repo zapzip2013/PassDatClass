@@ -73,7 +73,7 @@ public class Tutor : User {
             fsuverified = false
         }
         let email = row["FSUEmail"] as! String
-        var photo : UIImage? = nil
+        var photo = #imageLiteral(resourceName: "userIcon")
         if (isPhoto == "1"){
             photo = SQLInteract.donwloadPhoto(email: email)
         }
@@ -109,7 +109,7 @@ public class Tutor : User {
     
     /* Creates a new tutor account in db */
     class func ChangePhoto(tutor: Tutor) -> StatusMsg {
-        if (tutor.photo == nil){
+        if (tutor.photo == nil || tutor.photo == #imageLiteral(resourceName: "userIcon")){
             return Tutor.RemovePhoto(tutor: tutor)
         }
         else{
