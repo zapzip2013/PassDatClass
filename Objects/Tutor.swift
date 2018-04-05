@@ -30,7 +30,7 @@ public class Tutor : User {
     public var bio: String
     public var name : String {  /* Swift allows easy get methods */
         get{
-            return lastname + "," + firstname
+            return lastname + ", " + firstname
         }
     }
     
