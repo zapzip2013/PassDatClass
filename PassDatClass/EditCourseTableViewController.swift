@@ -63,6 +63,7 @@ class EditCourseTableViewController: UITableViewController {
  
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let index = indexPath.row
+        referenceedit?.continueButton.setTitle("Edit", for: .normal)
         referenceedit?.tutor?.RemoveCourse(course: list[index])
         chargeList(list: (referenceedit?.tutor?.listcourses)!)
     }

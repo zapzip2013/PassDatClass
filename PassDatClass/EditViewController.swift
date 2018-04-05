@@ -10,6 +10,13 @@ import UIKit
 
 var referenceedit : EditViewController? = nil
 
+
+let nameregex = NSPredicate(format:"SELF MATCHES %@", "([A-Za-z- ])+")
+let phoneregex = NSPredicate(format:"SELF MATCHES %@", "1([0-9]){9}")
+let priceregex = NSPredicate(format: "SELF MATCHES %@", "([0-9])+.([0-9]){1,2}")
+let clasregex = NSPredicate(format:"SELF MATCHES %@", "[A-Z]{3}")
+let numregex = NSPredicate(format:"SELF MATCHES %@", "[1-9][0-9]{3}")
+
 class EditViewController: UIViewController, UITextFieldDelegate, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
 
     @IBOutlet weak var nameField: UITextField!
@@ -17,6 +24,9 @@ class EditViewController: UIViewController, UITextFieldDelegate, UIImagePickerCo
     @IBOutlet weak var priceField: UITextField!
     @IBOutlet weak var phoneField: UITextField!
     @IBOutlet weak var addclassField: UITextField!
+    @IBOutlet weak var addnumberField: UITextField!
+    @IBOutlet weak var warningLabel: UILabel!
+    
     @IBOutlet weak var photo: UIImageView!
     @IBOutlet weak var internalView: UIView!
     @IBOutlet weak var referenceButton: UIView!
@@ -25,9 +35,26 @@ class EditViewController: UIViewController, UITextFieldDelegate, UIImagePickerCo
     var imagePicker:UIImagePickerController!
     
     @IBAction func addClass(_ sender: Any) {
-        let text = addclassField.text
-        tutor?.AddCourse(course: text!)
+        let clas = addclassField.text!
+        let num = addnumberField.text!
+        if (!clasregex.evaluate(with: clas)){
+            alert(warning: "Class must be 3 letters long")
+            return
+        }
+        if (!numregex.evaluate(with: num)){
+            alert(warning: "Number must be 4 letters long")
+            return
+        }
+        let text = addclassField.text! + addnumberField.text!
+        continueButton.setTitle("Edit", for: .normal)
+        addclassField.text = ""
+        addnumberField.text = ""
+        tutor?.AddCourse(course: text)
         referencecourses?.chargeList(list: (tutor?.listcourses)!)
+    }
+    
+    func alert(warning: String){
+        warningLabel.text = warning
     }
     
     @IBAction func changePhoto(_ sender: Any) {
@@ -40,7 +67,7 @@ class EditViewController: UIViewController, UITextFieldDelegate, UIImagePickerCo
         
         if let pickedImage = info[UIImagePickerControllerOriginalImage] as? UIImage {
             photo.contentMode = .scaleAspectFit
-            photo.image = pickedImage.resize(withWidth: 500.0)
+            photo.image = pickedImage.resize(withWidth: 250.0)
             continueButton.setTitle("Edit", for: .normal)
         }
         
@@ -97,7 +124,7 @@ class EditViewController: UIViewController, UITextFieldDelegate, UIImagePickerCo
     override func viewDidLoad() {
         super.viewDidLoad()
         view.addVerticalGradientLayer(topColor: primaryColor, bottomColor: secondaryColor)
-        let arrayField = [nameField, lastnameField,phoneField,priceField,addclassField]
+        let arrayField = [nameField,lastnameField,phoneField,priceField]
         for field in arrayField{
             field?.delegate = self
             field?.addTarget(self, action: #selector(textFieldChanged), for: .editingChanged)
@@ -120,16 +147,34 @@ class EditViewController: UIViewController, UITextFieldDelegate, UIImagePickerCo
         internalView.addSubview(continueButton)
     }
     
-    func reloadValues() {
+    func reloadValues() -> Bool {
         tutor?.photo = photo.image
+        if (!nameregex.evaluate(with: nameField.text!)){
+            alert(warning: "Only valid characters on name")
+            return false
+        }
+        if (!nameregex.evaluate(with: lastnameField.text!)){
+            alert(warning: "Only valid characters on last name")
+            return false
+        }
+        if (!phoneregex.evaluate(with: phoneField.text!)){
+            alert(warning: "Only valid US numbers")
+            return false
+        }
+        if (!priceregex.evaluate(with: priceField.text!)){
+            alert(warning: "Price must be in format $$.¢¢")
+            return false
+        }
+        
         tutor?.firstname = nameField.text!
         tutor?.lastname = lastnameField.text!
         tutor?.phone = Int(phoneField.text!)!
         tutor?.priceperhour = Float(priceField.text!)!
+        return true
     }
     
     @objc func handleEdit(){
-        reloadValues()
+        if (reloadValues()) {
         let result = Tutor.EditAccount(tutor: tutor!)
         let result2 = Tutor.ChangePhoto(tutor: tutor!)
         if (result.status && result2.status) {
@@ -137,6 +182,7 @@ class EditViewController: UIViewController, UITextFieldDelegate, UIImagePickerCo
         }
         else {
             continueButton.setTitle("Failed", for: .normal)
+        }
         }
     }
 
