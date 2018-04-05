@@ -14,7 +14,11 @@ var loggedin : String?
 
 class ViewController: UIViewController {
     
+    @IBAction func logOut(_ sender: Any) {
+        loggedin = nil
+    }
     
+    @IBOutlet weak var logOutButton: RoundedWhiteButton!
     @IBOutlet weak var HamburgerMenu: UIView!
     @IBOutlet weak var FAQ: UIScrollView!
     
@@ -55,6 +59,10 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        if (loggedin == nil && logOutButton != nil){
+            logOutButton.isHidden = true
+        }
+        
         view.addVerticalGradientLayer(topColor: primaryColor, bottomColor: secondaryColor)
     
         // Do any additional setup after loading the view, typically from a nib.
