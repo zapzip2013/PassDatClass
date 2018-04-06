@@ -47,7 +47,6 @@ class TutorTableViewController: UITableViewController {
             let viewController = segue.destination as! tutormodal
             
             let indexPath = tableView.indexPathForSelectedRow;
-            let _ = tableView.cellForRow(at: indexPath!)
             let tutor = tutors[(indexPath?.row)!]
             print("hello \(tutor.name) \n")
             valueToPass = tutor//[(indexPath?.row)!]
@@ -69,12 +68,9 @@ class TutorTableViewController: UITableViewController {
         let tutor = tutors[indexPath.row]
         // Configure the cell...
         cell.namelabel.text = tutor.name
-        if(tutor.photo == nil){
-            tutor.photo = nophoto
-        }
         cell.profileimage.image = tutor.photo
         cell.rating.rating = Int(tutor.rating)
-    cell.contentView.backgroundColor = UIColor.clear
+        cell.contentView.backgroundColor = UIColor.clear
         if(tutor.fsuverified == true){
             cell.fsuverified.isHidden = false
         }
