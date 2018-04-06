@@ -168,8 +168,10 @@ class SignUpViewController:UIViewController, UITextFieldDelegate, UIImagePickerC
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
         
         if let pickedImage = info[UIImagePickerControllerOriginalImage] as? UIImage {
-            profileImageView.contentMode = .scaleAspectFit
+            profileImageView.contentMode = .scaleAspectFill
             profileImageView.image = pickedImage.resize(withWidth: 500.0)
+            profileImageView.layer.cornerRadius = profileImageView.frame.size.width / 2
+            profileImageView.clipsToBounds = true
         }
         
         

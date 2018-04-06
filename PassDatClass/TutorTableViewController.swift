@@ -20,7 +20,8 @@ class TutorTableViewController: UITableViewController {
         //loads sample tutors
         passedclassname = searchname
         passedclassnum = searchnum
-        loadsampletutors()	
+        loadsampletutors()
+        
     }
 
     public var passedclassnum:String!
@@ -69,6 +70,9 @@ class TutorTableViewController: UITableViewController {
         // Configure the cell...
         cell.namelabel.text = tutor.name
         cell.profileimage.image = tutor.photo
+        cell.profileimage.contentMode = .scaleAspectFill
+        cell.profileimage.layer.cornerRadius = cell.profileimage.frame.size.width / 2
+        cell.profileimage.clipsToBounds = true
         cell.rating.rating = Int(tutor.rating)
         cell.contentView.backgroundColor = UIColor.clear
         if(tutor.fsuverified == true){
