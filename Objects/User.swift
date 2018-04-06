@@ -5,7 +5,7 @@
 //  Created by Jose Carlos on 2/8/18.
 //  Copyright © 2018 PassDatClass. All rights reserved.
 //  User-defined functions for User profiles
-/*  Implimented by Jose Carlos & Jordan Mussman */
+/*  Implemented by Jose Carlos & Jordan Mussman */
 
 import Foundation
 import CryptoSwift

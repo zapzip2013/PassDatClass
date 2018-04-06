@@ -18,6 +18,7 @@ class tutormodal: UIViewController {
         if (passedValue.photo != nil){
             picture.image = passedValue.photo
             picture.layer.cornerRadius = picture.frame.size.width / 2.0
+            picture.clipsToBounds = true
         }
 
     }
