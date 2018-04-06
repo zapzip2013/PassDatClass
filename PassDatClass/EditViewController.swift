@@ -66,8 +66,8 @@ class EditViewController: UIViewController, UITextFieldDelegate, UIImagePickerCo
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
         
         if let pickedImage = info[UIImagePickerControllerOriginalImage] as? UIImage {
-            photo.contentMode = .scaleAspectFit
-            photo.image = pickedImage.resize(withWidth: 250.0)
+            
+            photo.image = pickedImage.resize(withWidth: 500.0)
             continueButton.setTitle("Edit", for: .normal)
         }
         
@@ -135,6 +135,10 @@ class EditViewController: UIViewController, UITextFieldDelegate, UIImagePickerCo
         imagePicker = UIImagePickerController()
         imagePicker.delegate = self
         
+        photo.contentMode = .scaleAspectFill
+        photo.layer.cornerRadius = photo.frame.size.width / 2
+        photo.clipsToBounds = true
+        
         
         continueButton = RoundedWhiteButton(frame: CGRect(x: 0, y: 0, width: 200, height: 50))
         continueButton.setTitleColor(secondaryColor, for: .normal)
@@ -175,6 +179,7 @@ class EditViewController: UIViewController, UITextFieldDelegate, UIImagePickerCo
     
     @objc func handleEdit(){
         if (reloadValues()) {
+        alert(warning: "")
         let result = Tutor.EditAccount(tutor: tutor!)
         let result2 = Tutor.ChangePhoto(tutor: tutor!)
         if (result.status && result2.status) {
