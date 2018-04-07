@@ -55,8 +55,16 @@ class tutormodal: UIViewController {
         //location is relative to the current view
         // do something with the touched point
         if touch?.view != tutormodalpop {
+            //calculating new rating and sending to DB before dismissing modal
+            passedValue.rating = ((passedValue.rating * Float(passedValue.numbervotes)) + Float(tutorRating.rating))/(Float(passedValue.numbervotes + 1))
+            _ = Tutor.EditAccount(tutor: passedValue)
+            passedValue.numbervotes += 1
             dismiss(animated: true, completion: nil)
         }
     }
+    
+    @IBOutlet weak var tutorRating: ratings!
+    
+    
 }
 
