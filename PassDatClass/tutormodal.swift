@@ -10,6 +10,8 @@ import UIKit
 
 class tutormodal: UIViewController {
 
+    var result : Int? = nil
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         view.layer.cornerRadius = 10;
@@ -20,15 +22,77 @@ class tutormodal: UIViewController {
             picture.layer.cornerRadius = picture.frame.size.width / 2.0
             picture.clipsToBounds = true
         }
+        if (loggedin == nil){
+            tutorRating.isHidden = true
+            notloggedlabel.text = "Only logged users can rate"
+        }
+        else {
+            let resultcheck = tutorCheck()
+            if (resultcheck.0){
+                result = resultcheck.1
+                tutorRating.rating = result!
+            }
+        }
 
     }
     var passedValue:Tutor!
+    @IBOutlet weak var notloggedlabel: UILabel!
+    
+    func tutorCheck() -> (Bool, Int) {
+        if (loggedin != nil){
+            let query = "SELECT * FROM tutorrated WHERE Tutor='\(passedValue.email)' AND Ratedby='\(loggedin!)';"
+            let result = SQLInteract.ExecuteSelect(query: query).0
+            if let first = result.first {
+                let numberstring = first["Rating"] as! String
+                let number = Int(numberstring)!
+                return (true,number)
+            }
+            else {
+                return (false,0)
+            }
+        }
+        else {
+            return (false,0)
+        }
+    }
+    
+    func uploadVote() {
+        let query2 : String = "INSERT INTO tutorrated VALUES ('\(passedValue.email)','\(loggedin!)',\(tutorRating.rating));"
+        let _ = SQLInteract.ExecuteModification(query: query2)
+    }
+    
+    func editVote() {
+        let query2 : String = "UPDATE tutorrated SET Rating=\(result!) WHERE Tutor='\(passedValue.email)' AND Ratedby='\(loggedin!)';"
+        let _ = SQLInteract.ExecuteModification(query: query2)
+    }
+    
+    func updateCell(){
+        if let i = referencetable?.tutors.index(where: { $0.email == passedValue.email }) {
+            referencetable?.tutors[i].rating = passedValue.rating
+        }
+        referencetable?.tableView.reloadData()
+    }
     
     func changeRating(){
         if (tutorRating.touched){
+            if (result != nil){
+                if (passedValue.numbervotes == 1){
+                    passedValue.rating = 0
+                }
+                else {
+                    passedValue.rating = ((passedValue.rating * Float(passedValue.numbervotes)) - Float(result!))/(Float(passedValue.numbervotes - 1))
+                }
+                result = tutorRating.rating
+                passedValue.numbervotes -= 1
+                editVote()
+            }
+            else {
+                uploadVote()
+            }
             passedValue.rating = ((passedValue.rating * Float(passedValue.numbervotes)) + Float(tutorRating.rating))/(Float(passedValue.numbervotes + 1))
             passedValue.numbervotes += 1
             _ = Tutor.EditAccount(tutor: passedValue)
+            updateCell()
         }
     }
 
