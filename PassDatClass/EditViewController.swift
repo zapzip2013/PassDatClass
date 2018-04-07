@@ -35,17 +35,17 @@ class EditViewController: UIViewController, UITextFieldDelegate, UIImagePickerCo
     var imagePicker:UIImagePickerController!
     
     @IBAction func addClass(_ sender: Any) {
-        let clas = addclassField.text!
+        let clas = addclassField.text!.uppercased()
         let num = addnumberField.text!
         if (!clasregex.evaluate(with: clas)){
             alert(warning: "Class must be 3 letters long")
             return
         }
         if (!numregex.evaluate(with: num)){
-            alert(warning: "Number must be 4 letters long")
+            alert(warning: "Number must be 4 number long")
             return
         }
-        let text = addclassField.text! + addnumberField.text!
+        let text = clas + num
         continueButton.setTitle("Edit", for: .normal)
         addclassField.text = ""
         addnumberField.text = ""

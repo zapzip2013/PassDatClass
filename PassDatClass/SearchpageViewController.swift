@@ -77,7 +77,7 @@ class SearchpageViewController: UIViewController {
         searchname = course_chars.text!
             //TODO: Check that user has int instead of string since string will cause failure
             viewController.passedclassnum = searchnum
-            viewController.passedclassname = searchname
+            viewController.passedclassname = searchname.uppercased()
         
         /*let controller: TutorTableViewController = storyboard!.instantiateViewController(withIdentifier: "tabletutor") as! TutorTableViewController
         controller.passedclassname = num

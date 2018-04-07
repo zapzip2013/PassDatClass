@@ -70,7 +70,7 @@ class SignUpViewController:UIViewController, UITextFieldDelegate, UIImagePickerC
     func valid_name() -> Bool{
         let name = nameField.text
         let lastname = lastnameField.text
-        let Classcode = classcodeField.text
+        let Classcode = classcodeField.text?.uppercased()
         let Classnum = classnumber.text
         let phone = phoneField.text
         let price = priceField.text
@@ -135,7 +135,7 @@ class SignUpViewController:UIViewController, UITextFieldDelegate, UIImagePickerC
     
     @objc func handleSignIn() {
         if(valid_name()){
-        let newtutor = Tutor(phone: Int(phoneField.text!)!, email: emailField.text!, name: nameField.text!, lastname: lastnameField.text!, rating: 0, numbervotes: 0, photo: profileImageView.image, price: Float(priceField.text!)!, verified: false, bio: (classcodeField.text! + classnumber.text!))
+        let newtutor = Tutor(phone: Int(phoneField.text!)!, email: emailField.text!, name: nameField.text!, lastname: lastnameField.text!, rating: 0, numbervotes: 0, photo: profileImageView.image, price: Float(priceField.text!)!, verified: false, bio: (classcodeField.text!.uppercased() + classnumber.text!))
         let user = User.SignIn(FSUEmail: emailField.text!, Password: passwordField.text!)
         if (user.status){
             let result = Tutor.CreateAccount(tutor: newtutor)
