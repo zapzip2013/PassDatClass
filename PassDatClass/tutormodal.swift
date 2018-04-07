@@ -10,6 +10,7 @@ import UIKit
 
 class tutormodal: UIViewController {
 
+    @IBOutlet weak var price: UILabel!
     var result : Int? = nil
     
     override func viewDidLoad() {
@@ -17,6 +18,7 @@ class tutormodal: UIViewController {
         view.layer.cornerRadius = 10;
         view.layer.masksToBounds = true;
         name.text = passedValue.name
+        price.text = "$" + String(passedValue.priceperhour)
         if (passedValue.photo != nil){
             picture.image = passedValue.photo
             picture.layer.cornerRadius = picture.frame.size.width / 2.0
@@ -96,6 +98,7 @@ class tutormodal: UIViewController {
         }
     }
 
+    
     
     @IBAction func back(_ sender: Any) {
         changeRating()
