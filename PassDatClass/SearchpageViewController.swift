@@ -39,23 +39,22 @@ class SearchpageViewController: UIViewController {
     var valueToPass:String!
     override func shouldPerformSegue(withIdentifier identifier: String, sender: Any?) -> Bool {
         if(identifier == "searchresultseque"){
-        let num = course_num.text
-        let char = course_chars.text
-        if(num?.count != 4){
-            alert()
-            return false
-        }
-        if(char?.count != 3){
-            alert()
-            return false
-        }
-        let Digits = CharacterSet.decimalDigits
-            for index in num!.unicodeScalars {
-            if(!(Digits.contains(index))){
+            let num = course_num.text
+            if let char = course_chars.text {
+                let charupp = char.uppercased()
+                if(!clasregex.evaluate(with: charupp)){
+                    alert()
+                    return false
+                }
+            }
+            else {
                 alert()
                 return false
             }
-        }
+            if(!numregex.evaluate(with: num)){
+                alert()
+                return false
+            }
         }
         return true
     }
