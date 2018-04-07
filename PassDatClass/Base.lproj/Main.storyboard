@@ -1483,6 +1483,13 @@
                                                 <rect key="frame" x="8" y="131" width="224" height="54"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             </stackView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UxX-BD-NCN">
+                                                <rect key="frame" x="8" y="175" width="224" height="21"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
                                         </subviews>
                                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </view>
@@ -1526,6 +1533,7 @@
                     </view>
                     <connections>
                         <outlet property="name" destination="W8c-QF-OOr" id="0cl-1c-OQ8"/>
+                        <outlet property="notloggedlabel" destination="UxX-BD-NCN" id="raa-eQ-aoy"/>
                         <outlet property="picture" destination="qHp-mn-IOb" id="kcf-AZ-fCE"/>
                         <outlet property="tutorRating" destination="VJF-BK-lil" id="sit-dC-yWJ"/>
                     </connections>
@@ -1561,38 +1569,6 @@
                 </view>
             </objects>
             <point key="canvasLocation" x="4325.6000000000004" y="-516.79160419790105"/>
-        </scene>
-        <!--Rating View Controller-->
-        <scene sceneID="sSq-Wc-45r">
-            <objects>
-                <viewController id="ZLG-7G-siW" customClass="ratingViewController" customModule="PassDatClass" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="tts-sF-Es9">
-                        <rect key="frame" x="0.0" y="0.0" width="343" height="575"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Flg-Gg-Z4z">
-                                <rect key="frame" x="156" y="247" width="30" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Exit"/>
-                                <connections>
-                                    <action selector="exit:" destination="ZLG-7G-siW" eventType="touchUpInside" id="CXD-eA-7Ep"/>
-                                </connections>
-                            </button>
-                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gFE-21-8Vs" customClass="ratings" customModule="PassDatClass" customModuleProvider="target">
-                                <rect key="frame" x="62" y="169" width="226" height="51"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </stackView>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="NHz-7v-05a"/>
-                    </view>
-                    <connections>
-                        <outlet property="rating" destination="gFE-21-8Vs" id="4m8-M3-dRM"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="U83-vA-qwC" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="5008.8000000000002" y="-517.6911544227886"/>
         </scene>
         <!--Generic Modal View Controller-->
         <scene sceneID="eaW-Go-7Vx">
@@ -2443,7 +2419,6 @@ If you have any questions about these Terms, please contact us.
         <image name="white_hamburger_button" width="500" height="500"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="ubY-Gs-FcF"/>
         <segue reference="EQQ-1q-sMF"/>
         <segue reference="Ic9-L7-egx"/>
         <segue reference="Ol2-D9-yLK"/>
