@@ -1609,7 +1609,7 @@
             <objects>
                 <viewController id="ZLG-7G-siW" customClass="ratingViewController" customModule="PassDatClass" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="tts-sF-Es9">
-                        <rect key="frame" x="0.0" y="0.0" width="343" height="575"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Flg-Gg-Z4z">
@@ -2485,7 +2485,6 @@ If you have any questions about these Terms, please contact us.
         <image name="white_hamburger_button" width="500" height="500"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="ubY-Gs-FcF"/>
         <segue reference="EQQ-1q-sMF"/>
         <segue reference="Ic9-L7-egx"/>
         <segue reference="Ol2-D9-yLK"/>
