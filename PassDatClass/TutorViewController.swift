@@ -10,12 +10,17 @@ import UIKit
 
 class TutorViewController: UIViewController {
     
+    @IBOutlet weak var sortView: UIView!
     var passedclassnum:String!
     var passedclassname:String!
     @IBOutlet weak var name: UILabel!
     @IBOutlet weak var num: UILabel!
-    @IBOutlet weak var sortView: UIView!
     @IBOutlet weak var blocktableview: UIView!
+    @IBAction func sort(_ sender: Any) {
+        sortView.isHidden = false
+        blocktableview.isHidden = false
+    }
+    
     
     
     func changeSort(sort: Sorting) { referencetable?.changeOrder(sort: sort)
