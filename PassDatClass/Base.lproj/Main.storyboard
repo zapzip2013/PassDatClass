@@ -355,7 +355,7 @@
                                 <rect key="frame" x="16" y="242" width="343" height="202"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <string key="text">A.  "I Want To Help!" is the option for tutors to register for a course at their University they would like to tutor for. Tutors can add a price for how much they charge for hourly tutoring.</string>
+                                <string key="text">A.  "I Want To Help!" is the option for tutors to register for a course they would like to tutor for. Tutors can add a price for how much they charge for hourly tutoring.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
@@ -489,7 +489,7 @@
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="XP4-pA-aYp">
                                 <rect key="frame" x="16" y="270" width="343" height="202"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <string key="text">A. PassDatClass is an app that allows students to easily find tutors at their University based on the classes they need help in. Tutors can register for multiple courses they would like to tutor.</string>
+                                <string key="text">A. PassDatClass is an app that allows students to easily find tutors at their University based on the classes they need help in. Tutors can register for multiple courses after they register their profile for the first time.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
@@ -550,7 +550,7 @@
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="0ia-K3-4bc">
                                 <rect key="frame" x="16" y="259" width="343" height="202"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <string key="text">A.  To search for a course, simply type in the search bar three letters to represent the subject code and then 4 letters to represent the specific course.</string>
+                                <string key="text">A. To search for a course, simply type in the search bar three letters to represent the subject code and then 4 letters to represent the specific course.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
@@ -665,7 +665,7 @@
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="54y-NR-2cH">
                                 <rect key="frame" x="16" y="278" width="343" height="202"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <string key="text">A. Courses must be entered with three letters to represent the subject code and then 4 letters to represent the specifc course. An example would be: COP 3330.</string>
+                                <string key="text">A. Courses must be entered with three letters to represent the subject code and then four letters to represent the specifc course. An example would be: COP 3330.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
