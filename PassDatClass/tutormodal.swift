@@ -23,9 +23,18 @@ class tutormodal: UIViewController {
 
     }
     var passedValue:Tutor!
+    
+    func changeRating(){
+        if (tutorRating.touched){
+            passedValue.rating = ((passedValue.rating * Float(passedValue.numbervotes)) + Float(tutorRating.rating))/(Float(passedValue.numbervotes + 1))
+            passedValue.numbervotes += 1
+            _ = Tutor.EditAccount(tutor: passedValue)
+        }
+    }
 
     
     @IBAction func back(_ sender: Any) {
+        changeRating()
         dismiss(animated: true, completion: nil)
     }
     @IBOutlet weak var name: UILabel!
@@ -49,6 +58,7 @@ class tutormodal: UIViewController {
         }
         
     }
+    
     @IBOutlet weak var tutormodalpop: UIView!
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         let touch: UITouch? = touches.first
@@ -56,9 +66,7 @@ class tutormodal: UIViewController {
         // do something with the touched point
         if touch?.view != tutormodalpop {
             //calculating new rating and sending to DB before dismissing modal
-            passedValue.rating = ((passedValue.rating * Float(passedValue.numbervotes)) + Float(tutorRating.rating))/(Float(passedValue.numbervotes + 1))
-            _ = Tutor.EditAccount(tutor: passedValue)
-            passedValue.numbervotes += 1
+            changeRating()
             dismiss(animated: true, completion: nil)
         }
     }
