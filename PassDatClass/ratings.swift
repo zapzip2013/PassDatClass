@@ -14,6 +14,7 @@ import UIKit
         private var ratingButtons = [UIButton]()
         var rating = 0 {
             didSet {
+                touched = true
                 updateButtonSelectionStates()
             }
         }
@@ -86,6 +87,9 @@ import UIKit
                 button.isSelected = index < rating
             }
         }
+    
+    
+    public var touched : Bool = false
     
 }
 
