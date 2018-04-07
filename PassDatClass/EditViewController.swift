@@ -12,7 +12,7 @@ var referenceedit : EditViewController? = nil
 
 
 let nameregex = NSPredicate(format:"SELF MATCHES %@", "([A-Za-z- ])+")
-let phoneregex = NSPredicate(format:"SELF MATCHES %@", "[2–9]([0-9]){9}")
+let phoneregex = NSPredicate(format:"SELF MATCHES %@", "([2-9]{1})([0-9]{9})")
 let priceregex = NSPredicate(format: "SELF MATCHES %@", "([0-9])+.([0-9]){1,2}")
 let clasregex = NSPredicate(format:"SELF MATCHES %@", "[A-Z]{3}")
 let numregex = NSPredicate(format:"SELF MATCHES %@", "[1-9][0-9]{3}")
