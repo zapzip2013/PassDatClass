@@ -49,7 +49,6 @@ class TutorTableViewController: UITableViewController {
             
             let indexPath = tableView.indexPathForSelectedRow;
             let tutor = tutors[(indexPath?.row)!]
-            print("hello \(tutor.name) \n")
             valueToPass = tutor//[(indexPath?.row)!]
             viewController.passedValue = valueToPass
         }

@@ -23,7 +23,14 @@ class tutormodal: UIViewController {
 
     }
     var passedValue:Tutor!
-
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if(segue.identifier == "ratingseg"){
+            let viewController = segue.destination as! ratingViewController
+            
+            var valueToPass = passedValue//[(indexPath?.row)!]
+            viewController.passedValue = valueToPass
+        }
+    }
     
     @IBAction func back(_ sender: Any) {
         dismiss(animated: true, completion: nil)

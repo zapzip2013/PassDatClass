@@ -44,6 +44,7 @@
 		65898A97202BF9E600E753E5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65898A96202BF9E600E753E5 /* ViewController.swift */; };
 		65898A9A202BF9E600E753E5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65898A98202BF9E600E753E5 /* Main.storyboard */; };
 		65898A9C202BF9E600E753E5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 65898A9B202BF9E600E753E5 /* Assets.xcassets */; };
+		659EDE2A207816BC00CB20D2 /* ratingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 659EDE29207816BC00CB20D2 /* ratingViewController.swift */; };
 		B1A75FCB1D7C1D7F203393A1 /* Pods_PassDatClass.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D199629CD0715ED23AE0B367 /* Pods_PassDatClass.framework */; };
 /* End PBXBuildFile section */
 
@@ -102,6 +103,7 @@
 		65898A99202BF9E600E753E5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		65898A9B202BF9E600E753E5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		65898AA0202BF9E600E753E5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		659EDE29207816BC00CB20D2 /* ratingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ratingViewController.swift; sourceTree = "<group>"; };
 		D199629CD0715ED23AE0B367 /* Pods_PassDatClass.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PassDatClass.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -190,6 +192,7 @@
 				1C27E1C42062B97300D1FA7C /* InitialViewController.swift */,
 				6569B67F2040DF8700A9CC9B /* TutorTableViewCell.swift */,
 				65898A98202BF9E600E753E5 /* Main.storyboard */,
+				659EDE29207816BC00CB20D2 /* ratingViewController.swift */,
 				23284C0020683F2000576E01 /* SearchpageViewController.swift */,
 				23284BFE20683F1100576E01 /* staticrating.swift */,
 				237FFA81205F29200092CA92 /* tutormodal.swift */,
@@ -411,6 +414,7 @@
 				2383BEB6206552D1009B5408 /* HelperExtensions.swift in Sources */,
 				23284BFF20683F1100576E01 /* staticrating.swift in Sources */,
 				2383BEB0206552B5009B5408 /* RoundedWhiteButton.swift in Sources */,
+				659EDE2A207816BC00CB20D2 /* ratingViewController.swift in Sources */,
 				2367286F202D09EF00287175 /* Sorting.swift in Sources */,
 				237FFA83205F29200092CA92 /* tutormodal.swift in Sources */,
 				1C27E1C52062B97300D1FA7C /* InitialViewController.swift in Sources */,
