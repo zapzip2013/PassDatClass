@@ -16,7 +16,7 @@ import CryptoSwift
 
 
 public class Tutor : User {
-    internal static var tablename = "tutorBool"
+    internal static var tablename = "tutor"
     //MARK: Properties
     public var phone : Int
     public var email: String
