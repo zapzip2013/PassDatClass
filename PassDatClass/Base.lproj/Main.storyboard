@@ -46,7 +46,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <segue destination="kdA-B9-Ifp" kind="show" id="xcX-P7-QGH"/>
+                                    <action selector="checkLogIn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="MHj-pX-BJu"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Stg-QN-E8z" customClass="RoundedWhiteButton" customModule="PassDatClass" customModuleProvider="target">
@@ -1087,7 +1087,7 @@
         <!--Searchpage View Controller-->
         <scene sceneID="tj7-Ww-LdZ">
             <objects>
-                <viewController id="kdA-B9-Ifp" customClass="SearchpageViewController" customModule="PassDatClass" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Search" id="kdA-B9-Ifp" customClass="SearchpageViewController" customModule="PassDatClass" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="i4L-jU-roE">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -2563,7 +2563,7 @@ If you have any questions about these Terms, please contact us.
         <image name="white_hamburger_button" width="500" height="500"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="xcX-P7-QGH"/>
-        <segue reference="wmS-v4-LoK"/>
+        <segue reference="QAp-JL-0Fm"/>
+        <segue reference="ELa-jf-AEp"/>
     </inferredMetricsTieBreakers>
 </document>

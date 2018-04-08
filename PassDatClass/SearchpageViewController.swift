@@ -14,6 +14,7 @@ var searchname : String = ""
 
 class SearchpageViewController: UIViewController {
 
+    
     override func viewDidLoad() {
         super.viewDidLoad()
                 view.addVerticalGradientLayer(topColor: primaryColor, bottomColor: secondaryColor)        // Do any additional setup after loading the view.

@@ -12,6 +12,8 @@ import UIKit
 
 class LoginViewController:UIViewController, UITextFieldDelegate {
     
+    var fromsearch = ""
+    
     @IBOutlet weak var emailField: UITextField!
     @IBOutlet weak var passwordField: UITextField!
     @IBOutlet weak var dismissButton: UIButton!
@@ -152,6 +154,11 @@ class LoginViewController:UIViewController, UITextFieldDelegate {
             continueButton.setTitle("Logged IN!", for: .normal)
             loggedin = email
             let tutor = Tutor.QueryAccount(email: email)
+            if (fromsearch != ""){
+                let vc = storyboard?.instantiateViewController(withIdentifier: "Search")
+                present(vc!, animated: true, completion: nil)
+            }
+            
             if tutor?.bio == "" {
                 let vc = storyboard?.instantiateViewController(withIdentifier: "ViewController") as! ViewController
                 present(vc, animated: true, completion: nil)

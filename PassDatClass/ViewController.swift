@@ -14,6 +14,19 @@ var loggedin : String?
 
 
 class ViewController: UIViewController {
+
+    @IBAction func checkLogIn(_ sender: Any) {
+        if (loggedin != nil){
+            let vc = storyboard?.instantiateViewController(withIdentifier: "Search")
+            vc?.isModalInPopover = true
+            present(vc!, animated: true, completion: nil)
+        }
+        else {
+            let vc = storyboard?.instantiateViewController(withIdentifier: "Login") as! LoginViewController
+            vc.fromsearch = "yes"
+            present(vc, animated: true, completion: nil)
+        }
+    }
     
     @IBAction func logOut(_ sender: Any) {
         if (loggedin != nil){
