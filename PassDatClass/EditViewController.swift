@@ -145,7 +145,7 @@ class EditViewController: UIViewController, UITextFieldDelegate, UIImagePickerCo
         continueButton.setTitleColor(secondaryColor, for: .normal)
         continueButton.setTitle("Edit", for: .normal)
         continueButton.titleLabel?.font = UIFont.systemFont(ofSize: 18.0, weight: UIFont.Weight.bold)
-        continueButton.center = CGPoint(x: view.center.x, y: referenceButton.center.y + continueButton.frame.height)
+        continueButton.center = CGPoint(x: view.center.x, y: referenceButton.center.y + 30)
         continueButton.highlightedColor = UIColor(white: 1.0, alpha: 1.0)
         continueButton.defaultColor = UIColor.white
         continueButton.addTarget(self, action: #selector(handleEdit), for: .touchUpInside)
