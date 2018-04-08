@@ -146,7 +146,6 @@ class LoginViewController:UIViewController, UITextFieldDelegate {
         emailr = email
         setContinueButton(enabled: false)
         continueButton.setTitle("", for: .normal)
-        activityView.startAnimating()
         
         let result = User.LogIn(email: email, password: pass)
         if (result.status) {
