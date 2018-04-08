@@ -5,6 +5,7 @@
 //  Created by Daniel Gibney on 4/6/18.
 //  Copyright © 2018 Daniel Gibney. All rights reserved.
 //
+/* Implemented by Jose Carlos & Alexander Holmstock & Daniel Gibney */
 
 import UIKit
 

@@ -6,6 +6,7 @@
 //  Copyright © 2018 Daniel Gibney. All rights reserved.
 //
 /* Implemented by: Alexander Holmstock */
+/* Implemented by Jose Carlos & Alexander Holmstock & Jordan Mussman */
 
 import UIKit
 

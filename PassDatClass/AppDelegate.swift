@@ -5,6 +5,7 @@
 //  Created by Daniel Gibney on 2/7/18.
 //  Copyright © 2018 Daniel Gibney. All rights reserved.
 //
+/* Implemented by Daniel Gibney */
 
 import UIKit
 import IQKeyboardManagerSwift

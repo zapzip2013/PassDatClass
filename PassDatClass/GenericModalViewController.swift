@@ -5,6 +5,7 @@
 //  Created by Tallafoc on 4/1/18.
 //  Copyright © 2018 Daniel Gibney. All rights reserved.
 //
+/* Implemented by Daniel Gibney */
 
 import UIKit
 

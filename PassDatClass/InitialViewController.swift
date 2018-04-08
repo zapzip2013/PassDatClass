@@ -5,6 +5,7 @@
 //  Created by Bradley Close on 3/21/18.
 //  Copyright © 2018 Daniel Gibney. All rights reserved.
 //
+/* Implemented by Bradley Close */
 
 import Foundation
 import UIKit
