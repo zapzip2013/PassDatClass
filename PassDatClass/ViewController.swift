@@ -15,7 +15,14 @@ var loggedin : String?
 class ViewController: UIViewController {
     
     @IBAction func logOut(_ sender: Any) {
-        loggedin = nil
+        if (loggedin != nil){
+            loggedin = nil
+            // TODO GoToLogOut
+        }
+        else {
+            // TODO GoToLogIn
+        }
+        
     }
     
     @IBOutlet weak var logOutButton: RoundedWhiteButton!

@@ -84,13 +84,15 @@ class SignUpViewController:UIViewController, UITextFieldDelegate, UIImagePickerC
             return false
         }
         
-        if(!clasregex.evaluate(with: Classcode)){
-            alert(warning: "Class code must be 3 letters long")
-            return false
-        }
-        if(!numregex.evaluate(with: Classnum)){
-            alert(warning: "Class number must be 4 numbers long")
-            return false
+        if (Classcode != "" || Classnum != ""){
+            if(!clasregex.evaluate(with: Classcode)){
+                alert(warning: "Class code must be 3 letters long")
+                return false
+            }
+            if(!numregex.evaluate(with: Classnum)){
+                alert(warning: "Class number must be 4 numbers long")
+                return false
+            }
         }
         if(!phoneregex.evaluate(with: phone)){
             alert(warning: "US Phone number must be 10 digits long")
@@ -128,9 +130,14 @@ class SignUpViewController:UIViewController, UITextFieldDelegate, UIImagePickerC
         
         let name = emailField.text!
         let tutor = Tutor.QueryAccount(email: name)
-        let vc = storyboard?.instantiateViewController(withIdentifier: "EditViewController") as! EditViewController
-        vc.tutor = tutor
-        present(vc, animated: true, completion: nil)
+        if (tutor.bio != ""){
+            let vc = storyboard?.instantiateViewController(withIdentifier: "EditViewController") as! EditViewController
+            vc.tutor = tutor
+            present(vc, animated: true, completion: nil)
+        }
+        else {
+            // Go to Main
+        }
     }
     
     @objc func handleSignIn() {

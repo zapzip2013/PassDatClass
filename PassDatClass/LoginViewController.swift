@@ -141,7 +141,14 @@ class LoginViewController:UIViewController, UITextFieldDelegate {
             activityView.stopAnimating()
             continueButton.setTitle("Logged IN!", for: .normal)
             loggedin = email
-            self.performSegue(withIdentifier: "gotoedit", sender: self)
+            let tutor = Tutor.QueryAccount(email: email)
+            if tutor?.bio == "" {
+                // Add gotomainfromlogin
+            }
+            else {
+                self.performSegue(withIdentifier: "gotoedit", sender: self)
+            }
+            
         }
         else {
             activityView.stopAnimating()
