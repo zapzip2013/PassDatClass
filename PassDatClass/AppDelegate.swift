@@ -19,6 +19,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
          IQKeyboardManager.sharedManager().enable = true
+        let view = UIView()
+        view.backgroundColor = UIColor.white.withAlphaComponent(0.3)
+        UITableViewCell.appearance().selectedBackgroundView = view
         return true
     }
     
