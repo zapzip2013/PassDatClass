@@ -12,7 +12,7 @@ var referencetable : TutorTableViewController? = nil
 class TutorTableViewController: UITableViewController {
 
     var tutors = [Tutor]()
-    
+    var fulllist = [Tutor]()
     override func viewDidLoad() {
         super.viewDidLoad()
         referencetable = self
@@ -68,6 +68,7 @@ class TutorTableViewController: UITableViewController {
         let tutor = tutors[indexPath.row]
         // Configure the cell...
         cell.namelabel.text = tutor.name
+        cell.fsuverified.isHidden = true
         cell.profileimage.image = tutor.photo
         cell.profileimage.contentMode = .scaleAspectFill
         cell.profileimage.layer.cornerRadius = cell.profileimage.frame.size.width / 2
@@ -147,11 +148,15 @@ class TutorTableViewController: UITableViewController {
         if (tutors.count == 0){
             testlabel.isHidden = false
         }
+        fulllist = tutors
         
     }
-    
+    func fsuonly(){
+        tutors = Sorted.onlyverified(tutors: tutors)
+        self.tableView.reloadData()
+    }
     func changeOrder(sort : Sorting) {
-        tutors = Sorted.sort(by: sort, tutors: tutors)
+        tutors = Sorted.sort(by: sort, tutors: fulllist)
         self.tableView.reloadData()
     }
     
