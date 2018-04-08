@@ -16,6 +16,8 @@ class LoginViewController:UIViewController, UITextFieldDelegate {
     @IBOutlet weak var dismissButton: UIButton!
     
     var continueButton:RoundedWhiteButton!
+    var continueButton2:RoundedWhiteButton!
+
     var activityView:UIActivityIndicatorView!
     
     override func viewDidLoad() {
@@ -27,7 +29,7 @@ class LoginViewController:UIViewController, UITextFieldDelegate {
         continueButton.setTitleColor(secondaryColor, for: .normal)
         continueButton.setTitle("Log in", for: .normal)
         continueButton.titleLabel?.font = UIFont.systemFont(ofSize: 18.0, weight: UIFont.Weight.bold)
-        continueButton.center = CGPoint(x: view.center.x, y: view.center.y + 10)
+        continueButton.center = CGPoint(x: view.center.x, y: view.frame.size.height/2)
         continueButton.highlightedColor = UIColor(white: 1.0, alpha: 1.0)
         continueButton.defaultColor = UIColor.white
         continueButton.addTarget(self, action: #selector(handleSignIn), for: .touchUpInside)
@@ -35,12 +37,23 @@ class LoginViewController:UIViewController, UITextFieldDelegate {
         view.addSubview(continueButton)
         setContinueButton(enabled: false)
         
-        activityView = UIActivityIndicatorView(activityIndicatorStyle: .gray)
+        continueButton2 = RoundedWhiteButton(frame: CGRect(x: 0, y: 0, width: 200, height: 50))
+        continueButton2.setTitleColor(secondaryColor, for: .normal)
+        continueButton2.setTitle("Sign up", for: .normal)
+        continueButton2.titleLabel?.font = UIFont.systemFont(ofSize: 18.0, weight: UIFont.Weight.bold)
+        continueButton2.center = CGPoint(x: view.center.x, y: view.frame.size.height - 50)
+        continueButton2.highlightedColor = UIColor(white: 1.0, alpha: 1.0)
+        continueButton2.defaultColor = UIColor.white
+        continueButton2.addTarget(self, action: #selector(gotoSignUp), for: .touchUpInside)
+        view.addSubview(continueButton2)
+        
+        
+        /*activityView = UIActivityIndicatorView(activityIndicatorStyle: .gray)
         activityView.color = secondaryColor
         activityView.frame = CGRect(x: 0, y: 0, width: 50.0, height: 50.0)
         activityView.center = continueButton.center
         
-        view.addSubview(activityView)
+        view.addSubview(activityView)*/
         
         emailField.delegate = self
         passwordField.delegate = self
@@ -49,10 +62,14 @@ class LoginViewController:UIViewController, UITextFieldDelegate {
         passwordField.addTarget(self, action: #selector(textFieldChanged), for: .editingChanged)
     }
     
+    @objc func gotoSignUp(){
+        let vc = storyboard?.instantiateViewController(withIdentifier: "SignUp")
+        present(vc!, animated: true, completion: nil)
+    }
+    
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         emailField.becomeFirstResponder()
-        NotificationCenter.default.addObserver(self, selector:#selector(keyboardWillAppear), name: NSNotification.Name.UIKeyboardWillShow, object: nil)
         
     }
     
@@ -71,16 +88,6 @@ class LoginViewController:UIViewController, UITextFieldDelegate {
     
     @IBAction func handleDismissButton(_ sender: Any) {
         self.dismiss(animated: false, completion: nil)
-    }
-    
-    @objc func keyboardWillAppear(notification: NSNotification){
-        
-        let info = notification.userInfo!
-        let keyboardFrame: CGRect = (info[UIKeyboardFrameEndUserInfoKey] as! NSValue).cgRectValue
-        
-        continueButton.center = CGPoint(x: view.center.x,
-                                        y: view.frame.height - keyboardFrame.height - 16.0 - continueButton.frame.height / 2)
-        activityView.center = continueButton.center
     }
     
     @objc func textFieldChanged(_ target:UITextField) {

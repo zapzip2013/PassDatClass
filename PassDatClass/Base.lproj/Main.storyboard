@@ -183,29 +183,12 @@
                                                     <constraint firstAttribute="trailing" secondItem="LM6-EJ-ia3" secondAttribute="trailing" constant="12" id="vj9-nb-SPI"/>
                                                 </constraints>
                                             </view>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vvl-jB-jkQ" customClass="RoundedWhiteButton" customModule="PassDatClass" customModuleProvider="target">
-                                                <rect key="frame" x="24" y="566" width="327" height="64"/>
-                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="64" id="FYF-9H-w3R"/>
-                                                </constraints>
-                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="22"/>
-                                                <state key="normal" title="Sign Up">
-                                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                </state>
-                                                <connections>
-                                                    <segue destination="MhS-bM-6wX" kind="show" id="ubY-Gs-FcF"/>
-                                                </connections>
-                                            </button>
                                         </subviews>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         <constraints>
                                             <constraint firstItem="AGS-Ye-zBg" firstAttribute="top" secondItem="eaM-dF-Nz0" secondAttribute="top" constant="44" id="2rE-2o-THO"/>
                                             <constraint firstAttribute="trailing" secondItem="AGS-Ye-zBg" secondAttribute="trailing" constant="36" id="Dsz-8S-xWC"/>
-                                            <constraint firstAttribute="trailing" secondItem="vvl-jB-jkQ" secondAttribute="trailing" constant="24" id="Fqj-gq-JI6"/>
-                                            <constraint firstAttribute="bottomMargin" secondItem="vvl-jB-jkQ" secondAttribute="bottom" constant="49" id="X58-Bs-x2o"/>
                                             <constraint firstItem="AGS-Ye-zBg" firstAttribute="leading" secondItem="eaM-dF-Nz0" secondAttribute="leading" constant="36" id="lXN-SH-ham"/>
-                                            <constraint firstItem="vvl-jB-jkQ" firstAttribute="leading" secondItem="eaM-dF-Nz0" secondAttribute="leading" constant="24" id="r1c-FK-fJj"/>
                                         </constraints>
                                     </view>
                                 </subviews>
@@ -1707,7 +1690,7 @@ If you have any questions about these Terms, please contact us.
         <!--Sign Up View Controller-->
         <scene sceneID="hvI-Ae-M4l">
             <objects>
-                <viewController automaticallyAdjustsScrollViewInsets="NO" id="MhS-bM-6wX" customClass="SignUpViewController" customModule="PassDatClass" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SignUp" automaticallyAdjustsScrollViewInsets="NO" id="MhS-bM-6wX" customClass="SignUpViewController" customModule="PassDatClass" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="bqb-Gl-x4k"/>
                         <viewControllerLayoutGuide type="bottom" id="6Bv-cE-Y5N"/>
@@ -2589,7 +2572,6 @@ If you have any questions about these Terms, please contact us.
         <image name="white_hamburger_button" width="500" height="500"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="Ic3-NR-mNf"/>
         <segue reference="EQQ-1q-sMF"/>
         <segue reference="xcX-P7-QGH"/>
         <segue reference="ZEX-SC-brD"/>
