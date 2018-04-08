@@ -149,7 +149,6 @@ class LoginViewController:UIViewController, UITextFieldDelegate {
         
         let result = User.LogIn(email: email, password: pass)
         if (result.status) {
-            activityView.stopAnimating()
             continueButton.setTitle("Logged IN!", for: .normal)
             loggedin = email
             let tutor = Tutor.QueryAccount(email: email)
@@ -165,7 +164,6 @@ class LoginViewController:UIViewController, UITextFieldDelegate {
             
         }
         else {
-            activityView.stopAnimating()
             continueButton.setTitle("FAILURE", for: .normal)
         }
        
