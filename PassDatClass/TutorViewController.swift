@@ -5,6 +5,7 @@
 //  Created by Jose Carlos Torres Quiles on 3/28/18.
 //  Copyright © 2018 Daniel Gibney. All rights reserved.
 //
+/* Implemented by Jose Carlos & Alexander Holmstock & Daniel Gibney & Bradley Close */
 
 import UIKit
 

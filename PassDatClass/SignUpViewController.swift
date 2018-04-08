@@ -5,7 +5,8 @@
 //  Created by Bradley Close on 3/21/18.
 //
 
-/* Implemented by Bradley Close and Jose Carlos Torres */
+/* Implemented by Bradley Close and Jose Carlos Torres & Daniel Gibney */
+
 
 import Foundation
 import UIKit
