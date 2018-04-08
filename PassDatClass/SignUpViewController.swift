@@ -75,8 +75,8 @@ class SignUpViewController:UIViewController, UITextFieldDelegate, UIImagePickerC
         let phone = phoneField.text
         let price = priceField.text
         let email = emailField.text
-        if(lastnameField.text == "" || nameField.text == "" || phoneField.text == "" || priceField.text == "" || emailField.text == "" || classcodeField.text == "" || passwordField.text == "" || classnumber.text == ""){
-            alert(warning: "Must enter all fields")
+        if(lastnameField.text == "" || nameField.text == "" || phoneField.text == "" || emailField.text == "" || passwordField.text == ""){
+            alert(warning: "Must enter all required fields")
             return false
         }
         if(!nameregex.evaluate(with: name) || (!nameregex.evaluate(with: lastname))){
@@ -107,10 +107,18 @@ class SignUpViewController:UIViewController, UITextFieldDelegate, UIImagePickerC
         }
 
         let floatTest = priceregex
-        if(!floatTest.evaluate(with: price!)){
+        if(price == "" && (Classcode != "" || Classnum != "")){
             alert(warning: "Price must be in format $$.¢¢")
             return false
         }
+        
+        if(price != "" && !floatTest.evaluate(with: price!)){
+            alert(warning: "Price must be in format $$.¢¢")
+            return false
+        }
+        
+        
+        
         return true
     }
     func alert(warning: String){
@@ -130,18 +138,27 @@ class SignUpViewController:UIViewController, UITextFieldDelegate, UIImagePickerC
         
         let name = emailField.text!
         let tutor = Tutor.QueryAccount(email: name)
-        if (tutor.bio != ""){
+        if (tutor?.bio != ""){
             let vc = storyboard?.instantiateViewController(withIdentifier: "EditViewController") as! EditViewController
             vc.tutor = tutor
             present(vc, animated: true, completion: nil)
         }
         else {
-            // Go to Main
+            let vc = storyboard?.instantiateViewController(withIdentifier: "ViewController") as! ViewController
+            present(vc, animated: true, completion: nil)
         }
     }
     
     @objc func handleSignIn() {
         if(valid_name()){
+            if (priceField.text == ""){
+                priceField.text = "0.0"
+            }
+            if (classcodeField.text == ""){
+                classcodeField.text = ""
+                classnumber.text = ""
+            }
+            
         let newtutor = Tutor(phone: Int(phoneField.text!)!, email: emailField.text!, name: nameField.text!, lastname: lastnameField.text!, rating: 0, numbervotes: 0, photo: profileImageView.image, price: Float(priceField.text!)!, verified: false, bio: (classcodeField.text!.uppercased() + classnumber.text!))
         let user = User.SignIn(FSUEmail: emailField.text!, Password: passwordField.text!)
         if (user.status){
@@ -205,7 +222,7 @@ class SignUpViewController:UIViewController, UITextFieldDelegate, UIImagePickerC
     }
     
     @objc func textFieldChanged(_ target:UITextField) {
-        let formFilled = !(lastnameField.text == "" || nameField.text == "" || phoneField.text == "" || priceField.text == "" || emailField.text == "" || classcodeField.text == "" || passwordField.text == "" || classnumber.text == "")
+        let formFilled = !(lastnameField.text == "" || nameField.text == "" || phoneField.text == "" || emailField.text == "" || passwordField.text == "")
         setContinueButton(enabled: formFilled)
     }
     

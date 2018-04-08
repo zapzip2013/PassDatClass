@@ -17,10 +17,13 @@ class ViewController: UIViewController {
     @IBAction func logOut(_ sender: Any) {
         if (loggedin != nil){
             loggedin = nil
-            // TODO GoToLogOut
+            let vc = storyboard?.instantiateViewController(withIdentifier: "Logout")
+            vc?.isModalInPopover = true
+            present(vc!, animated: true, completion: nil)
         }
         else {
-            // TODO GoToLogIn
+            let vc = storyboard?.instantiateViewController(withIdentifier: "Login") as! LoginViewController
+            present(vc, animated: true, completion: nil)
         }
         
     }
@@ -36,8 +39,8 @@ class ViewController: UIViewController {
             present(vc, animated: true, completion: nil)
         }
         else {
-            let vc = storyboard?.instantiateViewController(withIdentifier: "MenuViewController") as! MenuViewController
-            present(vc, animated: true, completion: nil)
+            let vc = storyboard?.instantiateViewController(withIdentifier: "Login")
+            present(vc!, animated: true, completion: nil)
         }
     }
     
@@ -67,7 +70,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         if (loggedin == nil && logOutButton != nil){
-            logOutButton.isHidden = true
+            logOutButton.setTitle("Log in", for: .normal)
         }
         
         view.addVerticalGradientLayer(topColor: primaryColor, bottomColor: secondaryColor)

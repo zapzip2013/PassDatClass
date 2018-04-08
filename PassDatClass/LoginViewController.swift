@@ -25,9 +25,9 @@ class LoginViewController:UIViewController, UITextFieldDelegate {
         
         continueButton = RoundedWhiteButton(frame: CGRect(x: 0, y: 0, width: 200, height: 50))
         continueButton.setTitleColor(secondaryColor, for: .normal)
-        continueButton.setTitle("Next", for: .normal)
+        continueButton.setTitle("Log in", for: .normal)
         continueButton.titleLabel?.font = UIFont.systemFont(ofSize: 18.0, weight: UIFont.Weight.bold)
-        continueButton.center = CGPoint(x: view.center.x, y: view.frame.height - continueButton.frame.height - 24)
+        continueButton.center = CGPoint(x: view.center.x, y: view.center.y + 10)
         continueButton.highlightedColor = UIColor(white: 1.0, alpha: 1.0)
         continueButton.defaultColor = UIColor.white
         continueButton.addTarget(self, action: #selector(handleSignIn), for: .touchUpInside)
@@ -87,6 +87,7 @@ class LoginViewController:UIViewController, UITextFieldDelegate {
         let email = emailField.text
         let password = passwordField.text
         let formFilled = email != nil && email != "" && password != nil && password != ""
+        continueButton.setTitle("Log in", for: .normal)
         setContinueButton(enabled: formFilled)
     }
     
@@ -123,6 +124,9 @@ class LoginViewController:UIViewController, UITextFieldDelegate {
             let tutor = Tutor.QueryAccount(email: emailr!)
             viewController.tutor = tutor
         }
+        if (segue.identifier == "gotomainfromlogin"){
+            // DO NOTHING
+        }
     }
     
     var emailr : String?
@@ -143,10 +147,13 @@ class LoginViewController:UIViewController, UITextFieldDelegate {
             loggedin = email
             let tutor = Tutor.QueryAccount(email: email)
             if tutor?.bio == "" {
-                // Add gotomainfromlogin
+                let vc = storyboard?.instantiateViewController(withIdentifier: "ViewController") as! ViewController
+                present(vc, animated: true, completion: nil)
             }
             else {
-                self.performSegue(withIdentifier: "gotoedit", sender: self)
+                let vc = storyboard?.instantiateViewController(withIdentifier: "EditViewController") as! EditViewController
+                vc.tutor = tutor
+                present(vc, animated: true, completion: nil)
             }
             
         }
