@@ -22,7 +22,7 @@ class ratingViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-        let touch: UITouch? = touches.first
+        let _: UITouch? = touches.first
         //location is relative to the current view
         // do something with the touched point
     }
