@@ -27,7 +27,10 @@ class TutorViewController: UIViewController {
         sortView.isHidden = true
         blocktableview.isHidden = true
     }
-    
+    func fsuonly(){referencetable?.fsuonly()
+        sortView.isHidden = true
+        blocktableview.isHidden = true	
+    }
     @IBAction func firsNameSort(_ sender: Any) {
         changeSort(sort: .alph)
     }
@@ -46,6 +49,10 @@ class TutorViewController: UIViewController {
     
     @IBAction func photoSort(_ sender: Any) {
         changeSort(sort: .firstwithphoto)
+    }
+    
+    @IBAction func fsuverifiedonly(_ sender: Any) {
+        fsuonly()
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
