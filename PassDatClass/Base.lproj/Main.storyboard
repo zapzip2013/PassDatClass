@@ -868,7 +868,7 @@
                                             <action selector="exit:" destination="BFl-qU-eQc" eventType="touchUpInside" id="ySQ-Rc-Z8i"/>
                                         </connections>
                                     </button>
-                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="Tutors" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7K2-Jy-4H9">
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" scrollEnabled="NO" editable="NO" text="Tutors" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7K2-Jy-4H9">
                                         <rect key="frame" x="6" y="322" width="60" height="33"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -878,7 +878,7 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
-                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="Basics" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D2V-0R-rMu">
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" scrollEnabled="NO" editable="NO" text="Basics" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D2V-0R-rMu">
                                         <rect key="frame" x="2" y="96" width="64" height="32"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -898,7 +898,7 @@
                                             <segue destination="ob9-Tu-hlO" kind="presentation" id="xPr-mh-3zv"/>
                                         </connections>
                                     </button>
-                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="2." textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Fq-SK-XME">
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" scrollEnabled="NO" editable="NO" text="2." textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Fq-SK-XME">
                                         <rect key="frame" x="4" y="150" width="23" height="30"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -908,7 +908,7 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
-                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="3." textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fUv-Ep-qm8">
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" scrollEnabled="NO" editable="NO" text="3." textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fUv-Ep-qm8">
                                         <rect key="frame" x="4" y="175" width="23" height="30"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -918,7 +918,7 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
-                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="2." textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="suG-Qd-hhJ">
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" scrollEnabled="NO" editable="NO" text="2." textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="suG-Qd-hhJ">
                                         <rect key="frame" x="4" y="373" width="27" height="33"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -928,7 +928,7 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
-                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="1." textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eLH-sX-S2e">
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" scrollEnabled="NO" editable="NO" text="1." textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eLH-sX-S2e">
                                         <rect key="frame" x="4" y="349" width="22" height="33"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -948,7 +948,7 @@
                                             <segue destination="dcD-dH-Rz4" kind="presentation" id="fCl-Yx-Bdu"/>
                                         </connections>
                                     </button>
-                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="3." textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dh5-dQ-8Cb">
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" bounces="NO" scrollEnabled="NO" bouncesZoom="NO" editable="NO" text="3." textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dh5-dQ-8Cb">
                                         <rect key="frame" x="3" y="398" width="28" height="32"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -978,7 +978,7 @@
                                             <segue destination="Poh-Yq-RSE" kind="presentation" id="BPK-xc-IT4"/>
                                         </connections>
                                     </button>
-                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="4." textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Iqq-3w-GRc">
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" scrollEnabled="NO" editable="NO" text="4." textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Iqq-3w-GRc">
                                         <rect key="frame" x="4" y="422" width="28" height="33"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -988,7 +988,7 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
-                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="4." textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oSg-xU-Bhk">
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" scrollEnabled="NO" editable="NO" text="4." textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oSg-xU-Bhk">
                                         <rect key="frame" x="3" y="198" width="23" height="33"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -1008,7 +1008,7 @@
                                             <segue destination="pTS-87-PiF" kind="presentation" id="s2q-Ee-bJM"/>
                                         </connections>
                                     </button>
-                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="2." textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K7G-on-JSE">
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" scrollEnabled="NO" editable="NO" text="2." textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K7G-on-JSE">
                                         <rect key="frame" x="4" y="282" width="25" height="33"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -1039,7 +1039,7 @@
                                             <segue destination="oFK-n8-7er" kind="presentation" id="Gvl-7i-JLr"/>
                                         </connections>
                                     </button>
-                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="1." textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ol3-yW-3JC">
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" scrollEnabled="NO" editable="NO" text="1." textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ol3-yW-3JC">
                                         <rect key="frame" x="4" y="262" width="29" height="30"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -1049,7 +1049,7 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
-                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="Students" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UyN-Zf-p7g">
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" scrollEnabled="NO" editable="NO" text="Students" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UyN-Zf-p7g">
                                         <rect key="frame" x="6" y="237" width="89" height="32"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -1059,7 +1059,7 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
-                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="1." textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m8T-8a-tYp">
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" scrollEnabled="NO" editable="NO" text="1." textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m8T-8a-tYp">
                                         <rect key="frame" x="4" y="125" width="22" height="31"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -1069,7 +1069,7 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
-                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="Frequenty Asked Questions" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8uz-UN-oai">
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" text="Frequenty Asked Questions" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8uz-UN-oai">
                                         <rect key="frame" x="4" y="47" width="211" height="33"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <accessibility key="accessibilityConfiguration">
