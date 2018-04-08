@@ -351,19 +351,19 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="ECd-Gn-dqc">
-                                <rect key="frame" x="16" y="242" width="343" height="202"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <string key="text">A.  "I Want To Help!" is the option for tutors to register for a course they would like to tutor for. Tutors can add a price for how much they charge for hourly tutoring.</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" text="Q. What is &quot;I Want To Help!&quot;?" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="ect-YD-rd3">
-                                <rect key="frame" x="16" y="178" width="343" height="56"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" text="Q. What is &quot;TutorDatClass&quot;?" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="ect-YD-rd3">
+                                <rect key="frame" x="16" y="178" width="343" height="57"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="ECd-Gn-dqc">
+                                <rect key="frame" x="16" y="232" width="343" height="202"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <string key="text">A.  "TutorDatClass" is the option for tutors to register for a course they would like to tutor for. Tutors can add a price for how much they charge for hourly tutoring.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                         </subviews>
@@ -435,13 +435,13 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="A. &quot;Help Me!&quot; is the option for students to search for a course they would like to have tutoring help in." textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="v9V-fQ-KY7">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="A. &quot;FindDatTutor&quot; is the option for students to search for a course they would like to have tutoring help in." textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="v9V-fQ-KY7">
                                 <rect key="frame" x="16" y="270" width="343" height="202"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="Q. What is &quot;Help Me!&quot;?" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Mot-Vt-H0N">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="Q. What is &quot;FindDatTutor&quot;?" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Mot-Vt-H0N">
                                 <rect key="frame" x="16" y="209" width="343" height="53"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
@@ -599,7 +599,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="28"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="A. Simple press &quot;I Want to Help!&quot; and Tutors can add any courses they would like to tutor." textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="e88-Mb-bCP">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="A. Simple press &quot;TutorDatClass&quot; and Tutors can add any courses they would like to tutor." textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="e88-Mb-bCP">
                                 <rect key="frame" x="16" y="262" width="343" height="202"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
@@ -707,7 +707,7 @@
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="6FL-er-wJs">
                                 <rect key="frame" x="16" y="262" width="343" height="202"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <string key="text">A. To login, tutors must have a username and password. On the first use of "I Want to Help!" tutors can set their own username and password.</string>
+                                <string key="text">A. To login, tutors must have a username and password. On the first use of "TutorDatClass" tutors can set their own username and password.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
@@ -763,7 +763,7 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="332" id="n7b-eI-Tdk"/>
                                 </constraints>
-                                <string key="text">A.  When a student clicks the "Help Me!" button, they will be prompted to input the class that they need help with. We will show them a list of tutors that help with that class, which they can sort by various metrics, and if they choose you, they can send you an email from within the app that shows that they're interested. From there, all you have to do is get into contact with them.</string>
+                                <string key="text">A.  When a student clicks the "FindDatTutor" button, they will be prompted to input the class that they need help with. We will show them a list of tutors that help with that class, which they can sort by various metrics, and if they choose you, they can send you an email from within the app that shows that they're interested. From there, all you have to do is get into contact with them.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
@@ -869,7 +869,7 @@
                                         </connections>
                                     </button>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" scrollEnabled="NO" editable="NO" text="Tutors" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7K2-Jy-4H9">
-                                        <rect key="frame" x="6" y="322" width="60" height="33"/>
+                                        <rect key="frame" x="6" y="348" width="60" height="33"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <accessibility key="accessibilityConfiguration">
@@ -889,7 +889,7 @@
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gYP-1L-o35">
-                                        <rect key="frame" x="28" y="374" width="169" height="30"/>
+                                        <rect key="frame" x="28" y="400" width="169" height="30"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <state key="normal" title="How to login as a Tutor?">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -919,7 +919,7 @@
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" scrollEnabled="NO" editable="NO" text="2." textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="suG-Qd-hhJ">
-                                        <rect key="frame" x="4" y="373" width="27" height="33"/>
+                                        <rect key="frame" x="4" y="399" width="27" height="33"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <accessibility key="accessibilityConfiguration">
@@ -929,7 +929,7 @@
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" scrollEnabled="NO" editable="NO" text="1." textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eLH-sX-S2e">
-                                        <rect key="frame" x="4" y="349" width="22" height="33"/>
+                                        <rect key="frame" x="4" y="375" width="22" height="33"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <accessibility key="accessibilityConfiguration">
@@ -939,7 +939,7 @@
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XkG-6Q-bgB">
-                                        <rect key="frame" x="25" y="349" width="172" height="30"/>
+                                        <rect key="frame" x="25" y="375" width="172" height="30"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <state key="normal" title="How to create a profile?">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -949,7 +949,7 @@
                                         </connections>
                                     </button>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" bounces="NO" scrollEnabled="NO" bouncesZoom="NO" editable="NO" text="3." textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dh5-dQ-8Cb">
-                                        <rect key="frame" x="3" y="398" width="28" height="32"/>
+                                        <rect key="frame" x="3" y="424" width="28" height="32"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <accessibility key="accessibilityConfiguration">
@@ -959,7 +959,7 @@
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fd6-6t-f0P">
-                                        <rect key="frame" x="29" y="398" width="193" height="30"/>
+                                        <rect key="frame" x="29" y="424" width="193" height="30"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <state key="normal" title="Can I tutor multiple classes?">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -969,7 +969,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r5w-Q1-TDH">
-                                        <rect key="frame" x="30" y="423" width="184" height="30"/>
+                                        <rect key="frame" x="29" y="448" width="184" height="30"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <state key="normal" title="How will students find me?">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -979,7 +979,7 @@
                                         </connections>
                                     </button>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" scrollEnabled="NO" editable="NO" text="4." textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Iqq-3w-GRc">
-                                        <rect key="frame" x="4" y="422" width="28" height="33"/>
+                                        <rect key="frame" x="3" y="448" width="28" height="33"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <accessibility key="accessibilityConfiguration">
@@ -1083,23 +1083,13 @@
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="niM-ht-4hg">
-                                        <rect key="frame" x="27" y="150" width="160" height="30"/>
+                                        <rect key="frame" x="27" y="150" width="164" height="30"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <state key="normal" title="What is &quot;Help Me!&quot;?">
+                                        <state key="normal" title="What is &quot;FindDatTutor&quot;?">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                         <connections>
                                             <segue destination="I06-JN-0eb" kind="presentation" id="Z8d-sz-vdA"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I3c-bW-MPI">
-                                        <rect key="frame" x="14" y="175" width="195" height="30"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <state key="normal" title="   What is &quot;I Want To Help!&quot;?">
-                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        </state>
-                                        <connections>
-                                            <segue destination="wcO-wF-aLr" kind="presentation" id="vlv-vW-M6G"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g0W-td-TzN">
@@ -1110,6 +1100,56 @@
                                         </state>
                                         <connections>
                                             <segue destination="WrR-Pv-LIQ" kind="presentation" id="hVJ-gV-rcU"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WId-7E-U7p">
+                                        <rect key="frame" x="27" y="303" width="148" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="How do I rate a tutor?">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="G2d-Cj-Iej" kind="presentation" id="78S-5t-dsr"/>
+                                        </connections>
+                                    </button>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" scrollEnabled="NO" editable="NO" text="3." textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H8s-vB-4nJ">
+                                        <rect key="frame" x="4" y="302" width="25" height="33"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <accessibility key="accessibilityConfiguration">
+                                            <accessibilityTraits key="traits" notEnabled="YES"/>
+                                        </accessibility>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="zYj-9f-jH3">
+                                        <rect key="frame" x="-17" y="474" width="280" height="58"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Why do some tutors have  checkmarks by there names while others do not?">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="Zk0-f2-Iic" kind="presentation" id="cRE-C7-EaX"/>
+                                        </connections>
+                                    </button>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" scrollEnabled="NO" editable="NO" text="5." textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IGR-6e-UdU">
+                                        <rect key="frame" x="3" y="470" width="28" height="33"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <accessibility key="accessibilityConfiguration">
+                                            <accessibilityTraits key="traits" notEnabled="YES"/>
+                                        </accessibility>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I3c-bW-MPI">
+                                        <rect key="frame" x="8" y="175" width="195" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="    What is &quot;TutorDatClass&quot;?">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="wcO-wF-aLr" kind="presentation" id="vlv-vW-M6G"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -1438,7 +1478,7 @@
                         <color key="separatorColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <color key="sectionIndexBackgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <color key="sectionIndexTrackingBackgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <label key="tableFooterView" hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No results found" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="fJp-4a-UCI">
+                        <label key="tableFooterView" hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="No results found" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="fJp-4a-UCI">
                             <rect key="frame" x="0.0" y="118" width="343" height="44"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -2509,6 +2549,114 @@ If you have any questions about these Terms, please contact us.
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1kt-gS-YTp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="4108" y="167.76611694152925"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="QM2-xg-A7P">
+            <objects>
+                <viewController id="G2d-Cj-Iej" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="iAm-cJ-C9U">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" editable="NO" textAlignment="justified" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Ci-Ua-pyV">
+                                <rect key="frame" x="16" y="311" width="343" height="202"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="202" id="R45-K0-sSM"/>
+                                </constraints>
+                                <string key="text">A. To rate a tutor, you need to sign up as a Tutor. After signing up, you'll be able to remove classes and keep yourself invisible. Also, you will be ready to tutor other students.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" editable="NO" text="Q. How do I rate a tutor?" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xOP-WE-Ihr">
+                                <rect key="frame" x="16" y="251" width="343" height="52"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="52" id="GP0-M9-YSQ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tap Screen to Exit" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K9T-tF-D3h">
+                                <rect key="frame" x="118" y="591" width="138" height="21"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" staticText="YES" notEnabled="YES"/>
+                                </accessibility>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="xOP-WE-Ihr" firstAttribute="trailing" secondItem="6Ci-Ua-pyV" secondAttribute="trailing" id="QF2-EM-B4Y"/>
+                            <constraint firstItem="hOH-Mw-kLQ" firstAttribute="trailing" secondItem="xOP-WE-Ihr" secondAttribute="trailing" constant="16" id="R6G-1w-EY1"/>
+                            <constraint firstItem="xOP-WE-Ihr" firstAttribute="top" secondItem="hOH-Mw-kLQ" secondAttribute="top" constant="231" id="Sr2-Qu-7iA"/>
+                            <constraint firstItem="K9T-tF-D3h" firstAttribute="bottom" secondItem="hOH-Mw-kLQ" secondAttribute="bottom" constant="-55" id="VO0-Ia-z0h"/>
+                            <constraint firstItem="6Ci-Ua-pyV" firstAttribute="top" secondItem="xOP-WE-Ihr" secondAttribute="bottom" constant="8" symbolic="YES" id="a67-e1-8LF"/>
+                            <constraint firstItem="K9T-tF-D3h" firstAttribute="centerX" secondItem="6Ci-Ua-pyV" secondAttribute="centerX" constant="-0.5" id="cMg-ta-hRs"/>
+                            <constraint firstItem="xOP-WE-Ihr" firstAttribute="leading" secondItem="6Ci-Ua-pyV" secondAttribute="leading" id="ctH-P1-Reh"/>
+                            <constraint firstItem="xOP-WE-Ihr" firstAttribute="leading" secondItem="hOH-Mw-kLQ" secondAttribute="leading" constant="16" id="oY6-VU-Ax8"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="hOH-Mw-kLQ"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="m9D-M5-wgi" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1362" y="-1281"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="ZLG-ko-FQK">
+            <objects>
+                <viewController id="Zk0-f2-Iic" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="FDY-Fc-PH7">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" editable="NO" textAlignment="justified" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sm3-Te-7bZ">
+                                <rect key="frame" x="25" y="285" width="343" height="202"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <string key="text">A. Certain tutors have checkmarks by there names. because they are FSU-Verified. This means that tutor information was given to PassDatClass and was not individually registered through the app.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tap Screen to Exit" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NPN-6w-kzW">
+                                <rect key="frame" x="133" y="580" width="138" height="21"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" staticText="YES" notEnabled="YES"/>
+                                </accessibility>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" editable="NO" text="Q. Why do some tutors have checkmarks by there names while others do not?" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z0b-HO-ox8">
+                                <rect key="frame" x="25" y="177" width="342" height="106"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="106" id="j5Q-2g-6ms"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Sm3-Te-7bZ" firstAttribute="centerX" secondItem="NPN-6w-kzW" secondAttribute="centerX" constant="-5.5" id="1EF-xT-dCq"/>
+                            <constraint firstItem="NPN-6w-kzW" firstAttribute="top" secondItem="Sm3-Te-7bZ" secondAttribute="bottom" constant="93" id="8cD-7t-txl"/>
+                            <constraint firstItem="NPN-6w-kzW" firstAttribute="leading" secondItem="GOY-zJ-LxN" secondAttribute="leading" constant="133" id="N4z-hX-XWu"/>
+                            <constraint firstItem="Z0b-HO-ox8" firstAttribute="leading" secondItem="Sm3-Te-7bZ" secondAttribute="leading" id="R21-oI-t5j"/>
+                            <constraint firstItem="Z0b-HO-ox8" firstAttribute="leading" secondItem="GOY-zJ-LxN" secondAttribute="leading" constant="25" id="RIR-aE-pFu"/>
+                            <constraint firstItem="Z0b-HO-ox8" firstAttribute="trailing" secondItem="Sm3-Te-7bZ" secondAttribute="trailing" constant="-1" id="ZDo-vs-ZtT"/>
+                            <constraint firstItem="Z0b-HO-ox8" firstAttribute="top" secondItem="GOY-zJ-LxN" secondAttribute="top" constant="157" id="cOb-o4-rGA"/>
+                            <constraint firstItem="Sm3-Te-7bZ" firstAttribute="top" secondItem="Z0b-HO-ox8" secondAttribute="bottom" constant="2" id="k2b-xv-qNl"/>
+                            <constraint firstItem="GOY-zJ-LxN" firstAttribute="bottom" secondItem="NPN-6w-kzW" secondAttribute="bottom" constant="66" id="pT3-uK-H6O"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="GOY-zJ-LxN"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pVJ-MQ-yEC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-388" y="-1280"/>
         </scene>
     </scenes>
     <resources>
