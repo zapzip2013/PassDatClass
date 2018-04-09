@@ -92,7 +92,7 @@ public class SQLInteract{
         )
         
     }
-    
+    /*implemented by Bradley Close & Jordan Mussman*/
     public class func donwloadPhoto(email: String) -> UIImage {
         let emailjpg = email + ".jpg"
         let photoresult = Alamofire.download(downloadURL+emailjpg).responseData()
