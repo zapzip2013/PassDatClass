@@ -96,14 +96,19 @@ public class SQLInteract{
     public class func donwloadPhoto(email: String) -> UIImage {
         let emailjpg = email + ".jpg"
         let photoresult = Alamofire.download(downloadURL+emailjpg).responseData()
-        if (photoresult.error == nil) {
+        
+//        if (photoresult.error == nil) {
+//            return UIImage(data: photoresult.value!)!
+//        }
+//        else {
+//            return #imageLiteral(resourceName: "userIcon")
+//        }
+        if photoresult.value != nil{
             return UIImage(data: photoresult.value!)!
-        }
-        else {
-            return #imageLiteral(resourceName: "userIcon")
+        } else {
+            return UIImage(named: "userIcon")!
         }
     }
-    
     //MARK: Methods
     public class func ExecuteSelect(query: String) -> ([[String:Any]], StatusMsg){
         /* ***TO DO***: Figure out how to force errors; figure out when the alamofire.request() doesn't work and at what stage it failed */
